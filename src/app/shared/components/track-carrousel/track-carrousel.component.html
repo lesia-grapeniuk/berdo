@@ -1,0 +1,75 @@
+<section id="tours" class="tracks-carrousel">
+  <div class="tracks-carrousel__wrapper">
+    <div class="tracks-carrousel__container container-tracks-carrousel">
+      <div class="container-tracks-carrousel__wrapper">
+        <div class="container-tracks-carrousel__slider">
+
+          <ng-container *ngFor="let card of cardsRoute; let i = index">
+            <input type="radio" name="slider" [id]="'s' + (i + 1)" [checked]="i === 0" />
+          </ng-container>
+
+          <div class="cards">
+            <ng-container *ngFor="let card of cardsRoute; let i = index">
+              <label [for]="'s' + (i + 1)" [id]="'slider' + (i + 1)" [ngClass]="getCardPosition(i)">
+
+                <div class="card card-container">
+                  <div class="card-container__level-title-list">
+                    <div class="card-container__level-wrapper">
+                      <h3 class="card-container__level">{{ card.level }}</h3>
+                      <!-- dots -->
+                      <ng-container *ngIf="i < 4">
+                        <div class="level-dots">
+                          <span *ngFor="let dot of [1,2,3,4]; let j = index" class="dot"
+                            [class.active]="j < i + 1"></span>
+                        </div>
+                      </ng-container>
+                    </div>
+
+                    <div class="card-container__title-wrapper" (click)="toggleList(i)" [attr.data-open]="openStates[i]">
+                      <h2 class="card-container__title">{{ card.title }}</h2>
+                    </div>
+
+                    <ul [@fadeExpand]="openStates[i] ? 'open' : 'closed'"  class="card-container__list" [class.hidden]="!openStates[i]"
+                      [attr.aria-expanded]="openStates[i]">
+                      <li class="card-container__item" *ngFor="let point of card.points">{{ point }}</li>
+                    </ul>
+                  </div>
+
+                  <div class="card-container__description-price">
+                    <p class="card-container__description">{{ card.description }}</p>
+                    <strong class="card-container__price">{{ card.price }}</strong>
+                  </div>
+
+                  <div class="card-container__video-block">
+                    <video ʼ
+                      *ngIf="activeSlideIndex === i"
+                      [@fadeInOut] class="card-container__video"
+                      [src]="card.videoUrl"
+                      loading="lazy"
+                      autoplay muted loop playsinline>
+                    </video>
+                  </div>
+
+                  <div [attr.data-price]="card.price" class="card-container__wrapper-booking-trip">
+                    <app-booking-trip class="card-container__booking-trip"></app-booking-trip>
+                  </div>
+
+                </div>
+              </label>
+            </ng-container>
+          </div>
+
+          <div class="tracks-carrousel__dots">
+            <ng-container *ngFor="let card of cardsRoute; let i = index">
+              <label [for]="'s' + (i + 1)" [class.active]="i === activeSlideIndex" (click)="goToSlide(i)"></label>
+            </ng-container>
+          </div>
+
+          <div class="tracks-carrousel__arrow-prev" (click)="goToPreviousSlide()"></div>
+          <div class="tracks-carrousel__arrow-next" (click)="goToNextSlide()"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

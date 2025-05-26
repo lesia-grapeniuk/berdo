@@ -1,0 +1,27 @@
+@import "main";
+
+.lang-switcher {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 11%;
+  right: 3%;
+  @include adaptiveValue("gap", 8, 5);
+  z-index: 10;
+  color: #666161;
+  font-family: $helveticaNeueCyr;
+  font-weight: 200;
+  @include adaptiveValue("font-size", 16, 12);
+
+  // @media (max-width: toEm(1680)) {
+  //   flex-direction: row;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   top: 7%;
+  //   right: 11%;
+  // }
+  & button {
+    padding: 2px;
+    // background-color: hsl(0, 1%, 97%);
+  }
+}

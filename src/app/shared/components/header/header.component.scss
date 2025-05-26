@@ -1,0 +1,155 @@
+@import "main";
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+  @include adaptiveValue('padding', 15, 7);
+  width: 100%;
+  max-width: toRem(1650);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @include adaptiveValue("gap", 35, 16);
+  font-weight: 550;
+
+  @media (max-width: toEm(555)) {
+    padding-top: 10px;
+      }
+
+  @media (max-width: toEm(377)) {
+    // flex-wrap: wrap;
+    gap: toRem(10);
+  }
+}
+.logo-title {
+  max-width: toRem(115);
+  flex-shrink: 0;
+  line-height: 1.2;
+  @include adaptiveValue("font-size", 32, 22);
+  color: $fontMainGreen;
+}
+.location-contacts {
+  max-width: toRem(855);
+  @include adaptiveValue("padding-right", 10, 2);
+  @include adaptiveValue("gap", 90, 4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $fontColorDark;
+  // font-weight: 300;
+
+  @media (max-width: toEm(555)) {
+    gap: 10px;
+    flex-direction: column;
+    align-items: start;
+  }
+  @media (max-width: toEm(377)) {
+    // align-items: end;
+    padding-left: toRem(5);
+
+    // gap: toRem(5);
+  }
+}
+.location,
+.contact {
+  @include adaptiveValue("padding-left", 10, 2);
+  position: relative;
+  line-height: 1.5;
+  @include adaptiveValue("font-size", 24, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+
+  @media (max-width: toEm(559.98)) {
+  background-color:#ffffff78;
+  }
+}
+.location span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: toRem(10);
+  transition: all 0.3s;
+  flex-shrink: 0;
+  &::before {
+    content: "";
+    // @include adaptiveValue("width", 19, 11);
+    // @include adaptiveValue("height", 27, 13);
+    @include adaptiveValue("width", 20, 11);
+    @include adaptiveValue("height", 25, 13);
+    background-image: url(@assets/icons/location-green.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.4s;
+    }
+  }
+}
+.contact span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: toRem(10);
+  transition: all 0.3s;
+  flex-shrink: 0;
+  &::before {
+    content: "";
+    left: 0;
+    @include adaptiveValue("width", 22, 12);
+    @include adaptiveValue("height", 27, 15);
+    background-image: url(@assets/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s;
+    }
+  }
+}
+.card {
+}
+.flex {
+}
+.justify-center {
+}
+.wrapper-burger-menu {
+}
+.burger-menu {
+  // .burger-menu__list
+
+  &__list {
+  }
+
+  // .burger-menu__item
+
+  &__item {
+  }
+}
+.btn-burger-menu {
+  @include adaptiveValue("width", 40, 20);
+}
+::ng-deep .btn-burger-menu .pi {
+  @include adaptiveValue("font-size", 48, 20);
+}
+.burger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $bgDark;
+}

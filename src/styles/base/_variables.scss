@@ -1,0 +1,22 @@
+// Налаштування адаптивної сітки ===========================
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1990;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1550;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+$widthFrom: $maxWidth;
+
+// шрифти
+
+$helveticaNeueCyr: 'Helvetica Neue Cyr', sans-serif;
+$mont: "Mont", sans-serif;
+
+// parallax
+$parallax-shift: 0.3;

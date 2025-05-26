@@ -1,0 +1,58 @@
+@keyframes flyInLeft {
+  0% {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flyInRight {
+  0% {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flyUp {
+  from {
+    transform: translateY(-8%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-left,
+.animate-right {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  will-change: opacity, transform;
+}
+
+.animate-left.in-view {
+  animation: flyInLeft 1s ease-out forwards;
+}
+.animate-right.in-view {
+  animation: flyInRight 1s ease-out forwards;
+}
+.responsive-anim {
+  &.slide-up.in-view {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+  @media (max-width: 560px) {
+    .responsive-anim {
+      &.slide-up.in-view {
+        animation: flyInLeft 0.6s ease-out forwards;
+      }
+    }
+  }
+}

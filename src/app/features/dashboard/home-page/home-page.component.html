@@ -1,0 +1,128 @@
+<div class="wrapper">
+  <app-language-switcher></app-language-switcher>
+  <app-header class="app-header"></app-header>
+
+  <div class="wrapper-main">
+    <section id="home" #mainScreenSection class="main-screen parallax">
+      <div class="main-screen__container container-main">
+        <!-- top -->
+        <div class="container-main__top">
+          <div #leftParallax #animated class="wrapper-title slide-left in-view">
+            <h1 class="main-screen__title">{{'main-screen.title-1row' | translate }}</h1>
+          </div>
+          <div #rightParallax #animated class="main-screen__text-wrapper slide-right in-view">
+            <p class="main-screen__text">{{ 'main-screen.text-1row' | translate }}</p>
+            <p class="main-screen__text">{{ 'main-screen.text-2row' | translate }}</p>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="container-main__bottom bottom-block-main-screen">
+          <!-- left bottom block -->
+          <div #upParallax #animated class="
+              bottom-block-main-screen__left
+              left-block-main-screen
+              slide-up
+              in-view
+              responsive-anim">
+            <p class="left-block-main-screen__text"> {{ 'left-block-main-screen.text' | translate }} </p>
+          </div>
+          <!-- right bottom block -->
+          <div class="bottom-block-main-screen__right">
+            <a href="tel:380960861515" class="bottom-block-main-screen__call">
+              <img src="/assets/icons/phone.svg" alt="іконка трубки телефонаю зателефонувати">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <video #backgroundVideo src="/assets/videos/video-main.mp4" autoplay muted loop [class.video-hidden]="hideVideo"
+        class="main-screen__video"></video>
+
+      <div class="main-screen__gradient"></div>
+    </section>
+    <!-- next content-for-parallax -->
+    <section id="advantages" #parallaxSection class="content-for-parallax">
+      <div class="content-for-parallax__wrapper">
+        <div class="content-for-parallax__content">
+          <!-- content-for-parallax first block for title-->
+          <div class="content-for-parallax__title-wrapper">
+            <h2 #animatedTitle class="content-for-parallax__title animate-left title-1row">
+              {{'content-for-parallax.title-1row' | translate}}</h2>
+            <h2 #animatedTitle class="content-for-parallax__title animate-right title-2row">
+              {{'content-for-parallax.title-2row' | translate}}</h2>
+            <h2 #animatedTitle class="content-for-parallax__title animate-left title-3row">
+              {{'content-for-parallax.title-3row' | translate}}</h2>
+          </div>
+          <!-- content-for-parallax second content block -->
+          <div class="content-for-parallax__advantages advantages">
+            <!-- advantages__content-block left-container -->
+            <div class="advantages__content-block advantages__content-block--left">
+              <div class="advantages__container">
+                <div class="advantages__image">
+                  <img src="../../../../assets/images/advantages/individual-trip.webp"
+                    alt="фото з райдером на мотоциклі в гірському лісі">
+                </div>
+                <h4 class="advantages__title">{{'advantages.title-1-block' | translate }}</h4>
+                <p class="advantages__description">{{"advantages.description-1-block" | translate }}</p>
+              </div>
+            </div>
+            <!-- advantages__content-block center-container -->
+            <div class="advantages__content-block advantages__content-block--center">
+              <div class="advantages__container">
+                <div class="advantages__image image-center-block">
+                  <img src="../../../../assets/images/advantages/safety.webp"
+                    alt="фото з райдером на мотоциклі в гірському лісі з повним екіпіруванням">
+                </div>
+                <h4 class="advantages__title">{{'advantages.title-2-block' | translate }}</h4>
+                <p class="advantages__description">{{"advantages.description-2-block" | translate }}</p>
+              </div>
+            </div>
+            <!-- advantages__content-block right-container -->
+            <div class="advantages__content-block advantages__content-block--right">
+              <div class="advantages__container">
+                <div class="advantages__image">
+                  <img src="../../../../assets/images/advantages/comfort.webp"
+                    alt="фото з рушниками та засобами для душу">
+                </div>
+                <h4 class="advantages__title">{{'advantages.title-3-block' | translate }}</h4>
+                <p class="advantages__description">{{"advantages.description-3-block" | translate }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="location">
+      <div class="location__wrapper">
+        <div class="location__title-wrapper">
+          <h2 #animatedTitle class="location__title-1-row animate-left title-location">{{'location.title-1-row' |
+            translate}}</h2>
+          <h2 #animatedTitle class="location__title-2-row animate-right title-location">{{'location.title-2-row' |
+            translate}}</h2>
+          <h2 #animatedTitle class="location__title-3-row animate-left title-location">{{'location.title-3-row' |
+            translate}}</h2>
+        </div>
+
+        <p class="location__text">{{'location.text' | translate}}</p>
+
+        <div class="location__description-wrapper">
+          <h2 #animatedTitle class="location__description-1-row animate-left description-location">
+            {{'location.description-1-row' | translate}}</h2>
+          <h2 #animatedTitle class="location__description-2-row animate-left description-location">
+            {{'location.description-2-row' | translate}}</h2>
+          <h2 #animatedTitle class="location__description-3-row animate-right description-location">
+            {{'location.description-3-row' | translate}}</h2>
+          <h2 #animatedTitle class="location__description-4-row animate-left description-location">
+            {{'location.description-4-row' | translate}}</h2>
+        </div>
+      </div>
+
+      <div class="location__gradient"></div>
+    </section>
+
+    <app-track-carrousel></app-track-carrousel>
+  </div>
+
+  <app-footer class="app-footer"></app-footer>
+</div>

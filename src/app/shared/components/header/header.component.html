@@ -1,0 +1,28 @@
+<header class="header">
+  <h3 class="logo-title">BERDO</h3>
+  <div class="location-contacts">
+    <a class="location" href="https://g.co/kgs/RYsGSa">
+      <span>{{ "header.location" | translate }}</span>
+    </a>
+    <a class="contact" href="tel:380960861515">
+      <span>+38 096 086 15 15</span>
+    </a>
+  </div>
+
+  <p-button class="btn-burger-menu" (click)="toggleMenu()" icon="pi-mobile pi pi-bars"></p-button>
+
+  <div class="wrapper-burger-menu burger-menu" *ngIf="menuOpen">
+    <div class="burger-menu__header">
+      <h4 class="burger-menu__title">BERDO</h4>
+
+    </div>
+    <nav class="burger-menu" aria-label="Main navigation">
+      <ul class="burger-menu__list">
+        <li *ngFor="let id of sectionService.sectionIds" class="burger-menu__item">
+          <a (click)="scrollTo(id)">{{ id | titlecase }}</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.angular/
+.metadata/
+*.tsbuildinfo
+*.log
+.DS_Store
+.env
+.vscode/

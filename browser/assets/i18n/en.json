@@ -1,0 +1,42 @@
+{
+  "main-screen": {
+    "title-1row": "Enduro",
+    "title-2row": "Riding",
+    "text-1row": "personalized for everyone",
+    "text-2row": "in the picturesque Carpathians"
+  },
+  "left-block-main-screen": {
+    "text": "We’ve mastered all the subtleties of enduro over 5 years, so we’ll easily help you feel the true power of the mountains and the freedom of movement"
+  },
+  "content-for-parallax": {
+    "title-1row": "Our rental is truly",
+    "title-2row": "special and suitable",
+    "title-3row": "for everyone"
+  },
+  "advantages": {
+    "title-1-block": "We create unique adventures for everyone",
+    "title-2-block": "We care about your safety",
+    "title-3-block": "We care about your comfort and emotions",
+    "description-1-block": "All rides are personalized, so you can choose the perfect route for yourself – from beginner to pro",
+    "description-2-block": "The price includes full gear: helmet, motocross boots, and riding suit",
+    "description-3-block": "All you need is a change of clothes — we take care of the rest: shower, parking, GoPro, coffee, and sweets"
+  },
+  "location": {
+    "title-1-row": "We are located",
+    "title-2-row": "in the highest",
+    "title-3-row": "mountain range of the Carpathians",
+    "text": "Our location is surrounded by six 2000-meter mountains in a 360° radius. Reaching the base of one of them takes about 1.5 hours",
+    "description-1-row": "you choose",
+    "description-2-row": "an individual route –",
+    "description-3-row": "we gift you",
+    "description-4-row": "unforgettable emotions"
+  },
+  "header": {
+    "location": "Bohdan, Zakarpattia region"
+  },
+  "footer": {
+    "policy-privacy": "Privacy",
+    "policy-policy": "Policy",
+    "data-saved": "All data is protected"
+  }
+}

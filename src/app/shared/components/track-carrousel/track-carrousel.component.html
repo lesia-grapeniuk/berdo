@@ -46,11 +46,7 @@
                       *ngIf="activeSlideIndex === i"
                       [@fadeInOut]
                       class="card-container__video"
-                      autoplay
-                      muted
-                      loop
-                      playsinline
-                      preload="auto"
+                      autoplay muted loop playsinline preload="auto"
                     >
                       <source [src]="card.videoUrl" type="video/mp4" />
                     </video>

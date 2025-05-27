@@ -50,6 +50,14 @@ export class HomePageComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+      setTimeout(() => {
+    const video = this.backgroundVideoRef?.nativeElement;
+    if (video) {
+      video.muted = true;
+      video.play().catch((e: Error) => console.warn('Autoplay failed:', e.message));
+    }
+  }, 0);
+
     // Встановлення паддінгу для наступної секції
     const mainScreenHeight = this.mainScreenRef.nativeElement.offsetHeight;
     // this.parallaxSectionRef.nativeElement.style.paddingTop = `${mainScreenHeight * 1.01}px`;
@@ -72,11 +80,11 @@ export class HomePageComponent implements AfterViewInit {
     this.titles.forEach((el) => observer.observe(el.nativeElement));
 
   // for video
-    const video: HTMLVideoElement = this.backgroundVideoRef.nativeElement;
+    // const video: HTMLVideoElement = this.backgroundVideoRef.nativeElement;
   // Додатковий захист від блокування
-  video.play().catch((e) => {
-    console.warn('Autoplay blocked:', e);
-  });
+  // video.play().catch((e) => {
+  //   console.warn('Autoplay blocked:', e);
+  // });
 
   }
 

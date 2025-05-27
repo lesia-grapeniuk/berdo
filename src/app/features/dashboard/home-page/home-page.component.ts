@@ -48,11 +48,12 @@ export class HomePageComponent implements AfterViewInit {
   onNavigateTo(section: SectionId) {
     this.sectionService.scrollToSection(section);
   }
-  
+
   ngAfterViewInit(): void {
     // Встановлення паддінгу для наступної секції
     const mainScreenHeight = this.mainScreenRef.nativeElement.offsetHeight;
-    this.parallaxSectionRef.nativeElement.style.paddingTop = `${mainScreenHeight * 1.01}px`;
+    // this.parallaxSectionRef.nativeElement.style.paddingTop = `${mainScreenHeight * 1.01}px`;
+    this.parallaxSectionRef.nativeElement.style.paddingTop = `0px`;
 
     // Анімації (IntersectionObserver)
     const observer = new IntersectionObserver(
@@ -69,15 +70,24 @@ export class HomePageComponent implements AfterViewInit {
 
     this.animatedBlocks.forEach((el) => observer.observe(el.nativeElement));
     this.titles.forEach((el) => observer.observe(el.nativeElement));
+
+  // for video
+    const video: HTMLVideoElement = this.backgroundVideoRef.nativeElement;
+  // Додатковий захист від блокування
+  video.play().catch((e) => {
+    console.warn('Autoplay blocked:', e);
+  });
+
   }
 
   @HostListener('window:scroll', [])
   onScroll(): void {
     const scrollY = window.scrollY;
+    const isMobile = window.innerWidth <= 778;
 
     // Приховуємо відео при прокрутці
     if (this.mainScreenRef) {
-      const threshold = this.mainScreenRef.nativeElement.offsetHeight * 0.9;
+      const threshold = this.mainScreenRef.nativeElement.offsetHeight * 0.2;
       this.hideVideo = scrollY > threshold;
     }
 
@@ -89,8 +99,10 @@ export class HomePageComponent implements AfterViewInit {
       el.nativeElement.style.transform = `translateX(${scrollY * 0.4}px)`;
     });
     this.upEls.forEach(el => {
-      el.nativeElement.style.transform = `translateY(${scrollY * -0.2}px)`;
-    });
+    el.nativeElement.style.transform = isMobile
+      ? `translateX(-${scrollY * 0.07}px)`
+      : `translateY(${scrollY * 0.2}px)`;
+  });
 
     if (this.backgroundVideoRef?.nativeElement) {
       this.backgroundVideoRef.nativeElement.style.transform = `translateY(${scrollY * 0.8}px)`;

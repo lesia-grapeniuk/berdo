@@ -22,6 +22,7 @@
               bottom-block-main-screen__left
               left-block-main-screen
               slide-up
+              slide-left
               in-view
               responsive-anim">
             <p class="left-block-main-screen__text"> {{ 'left-block-main-screen.text' | translate }} </p>
@@ -35,8 +36,9 @@
         </div>
       </div>
 
-      <video #backgroundVideo src="assets/videos/video-main.mp4" autoplay muted loop [class.video-hidden]="hideVideo"
-        class="main-screen__video"></video>
+      <video #backgroundVideo autoplay muted loop playsinline [class.video-hidden]="hideVideo">
+        <source class="main-screen__video" src="assets/videos/video-main.mp4" type="video/mp4" />
+      </video>
 
       <div class="main-screen__gradient"></div>
     </section>
@@ -81,8 +83,7 @@
             <div class="advantages__content-block advantages__content-block--right">
               <div class="advantages__container">
                 <div class="advantages__image">
-                  <img src="assets/images/advantages/comfort.webp"
-                    alt="фото з рушниками та засобами для душу">
+                  <img src="assets/images/advantages/comfort.webp" alt="фото з рушниками та засобами для душу">
                 </div>
                 <h4 class="advantages__title">{{'advantages.title-3-block' | translate }}</h4>
                 <p class="advantages__description">{{"advantages.description-3-block" | translate }}</p>
@@ -102,9 +103,11 @@
             translate}}</h2>
           <h2 #animatedTitle class="location__title-3-row animate-left title-location">{{'location.title-3-row' |
             translate}}</h2>
-        </div>
 
-        <p class="location__text">{{'location.text' | translate}}</p>
+          <div class="location__wrapper-text">
+            <p class="location__text">{{'location.text' | translate}}</p>
+          </div>
+        </div>
 
         <div class="location__description-wrapper">
           <h2 #animatedTitle class="location__description-1-row animate-left description-location">
@@ -121,7 +124,7 @@
       <div class="location__gradient"></div>
     </section>
 
-    <app-track-carrousel></app-track-carrousel>
+    <app-track-carrousel class="tracks-carrousel"></app-track-carrousel>
   </div>
 
   <app-footer class="app-footer"></app-footer>

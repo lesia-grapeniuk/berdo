@@ -15,7 +15,7 @@
                 <div class="card card-container">
                   <div class="card-container__level-title-list">
                     <div class="card-container__level-wrapper">
-                      <h3 class="card-container__level">{{ card.level }}</h3>
+                      <h3 class="card-container__level">{{ card.level | translate }}</h3>
                       <!-- dots -->
                       <ng-container *ngIf="i < 4">
                         <div class="level-dots">
@@ -26,31 +26,32 @@
                     </div>
 
                     <div class="card-container__title-wrapper" (click)="toggleList(i)" [attr.data-open]="openStates[i]">
-                      <h2 class="card-container__title">{{ card.title }}</h2>
+                      <h2 class="card-container__title">{{ card.title | translate }}</h2>
                     </div>
 
-                    <ul [@fadeExpand]="openStates[i] ? 'open' : 'closed'"  class="card-container__list" [class.hidden]="!openStates[i]"
+                    <ul [@fadeExpand]="openStates[i] ? 'open' : 'closed'" class="card-container__list" [class.hidden]="!openStates[i]"
                       [attr.aria-expanded]="openStates[i]">
-                      <li class="card-container__item" *ngFor="let point of card.points">{{ point }}</li>
+                      <li class="card-container__item" *ngFor="let point of card.points">{{ point | translate }}</li>
                     </ul>
                   </div>
 
                   <div class="card-container__description-price">
-                    <p class="card-container__description">{{ card.description }}</p>
-                    <strong class="card-container__price">{{ card.price }}</strong>
+                    <p class="card-container__description">{{ card.description | translate }}</p>
+                    <strong class="card-container__price">{{ card.price | translate }}</strong>
                   </div>
 
                   <div class="card-container__video-block">
-                    <video ʼ
+                    <video
+                      #carouselVideo
                       *ngIf="activeSlideIndex === i"
-                      [@fadeInOut] class="card-container__video"
+                      [@fadeInOut]
+                      class="card-container__video"
                       [src]="card.videoUrl"
-                      loading="lazy"
-                      autoplay muted loop playsinline>
-                    </video>
+                      autoplay muted loop playsinlin
+                    ></video>
                   </div>
 
-                  <div [attr.data-price]="card.price" class="card-container__wrapper-booking-trip">
+                  <div [attr.data-price]="card.price | translate" class="card-container__wrapper-booking-trip">
                     <app-booking-trip class="card-container__booking-trip"></app-booking-trip>
                   </div>
 

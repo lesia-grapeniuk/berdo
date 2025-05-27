@@ -46,9 +46,14 @@
                       *ngIf="activeSlideIndex === i"
                       [@fadeInOut]
                       class="card-container__video"
-                      [src]="card.videoUrl"
-                      autoplay muted loop playsinlin preload="auto"
-                    ></video>
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                      preload="auto"
+                    >
+                      <source [src]="card.videoUrl" type="video/mp4" />
+                    </video>
                   </div>
 
                   <div [attr.data-price]="card.price | translate" class="card-container__wrapper-booking-trip">

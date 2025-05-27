@@ -48,7 +48,9 @@ export class TrackCarrouselComponent implements OnInit {
   }
 
   closeAllLists(): void {
-  this.openStates = this.cardsRoute.map(() => false);
+    if (this.isMobile) {
+    this.openStates = this.cardsRoute.map(() => false);
+  }
 }
 
   goToSlide(index: number): void {

@@ -87,7 +87,7 @@ export class HomePageComponent implements AfterViewInit {
 
     // Приховуємо відео при прокрутці
     if (this.mainScreenRef) {
-      const threshold = this.mainScreenRef.nativeElement.offsetHeight * 0.2;
+      const threshold = this.mainScreenRef.nativeElement.offsetHeight * 0.9;
       this.hideVideo = scrollY > threshold;
     }
 

@@ -1,6 +1,7 @@
 {
   "name": "berdo",
   "version": "0.0.0",
+  "homepage": "https://lesia-grapeniuk.github.io/berdo",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

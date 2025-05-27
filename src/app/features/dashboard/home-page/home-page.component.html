@@ -36,8 +36,13 @@
         </div>
       </div>
 
-      <video #backgroundVideo autoplay muted loop playsinline [class.video-hidden]="hideVideo">
-        <source class="main-screen__video" src="assets/videos/video-main.mp4" type="video/mp4" />
+      <video
+        class="main-screen__video"
+        src="assets/videos/video-main.mp4"
+        type="video/mp4"
+        #backgroundVideo
+        autoplay muted loop playsinline
+        [class.video-hidden]="hideVideo">
       </video>
 
       <div class="main-screen__gradient"></div>

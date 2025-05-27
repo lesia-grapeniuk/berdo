@@ -1,42 +1,106 @@
 {
   "main-screen": {
-    "title-1row": "Enduro",
-    "title-2row": "Riding",
-    "text-1row": "personalized for everyone",
-    "text-2row": "in the picturesque Carpathians"
+    "title-1row": "Enduro Riding",
+    "text-1row": "Tailored to Every Rider",
+    "text-2row": "In the Breathtaking Carpathians"
   },
   "left-block-main-screen": {
-    "text": "We’ve mastered all the subtleties of enduro over 5 years, so we’ll easily help you feel the true power of the mountains and the freedom of movement"
+    "text": "With 5 years of hands-on enduro experience, we’ll help you unlock the power of the mountains and the freedom of true off-road riding."
   },
   "content-for-parallax": {
-    "title-1row": "Our rental is truly",
-    "title-2row": "special and suitable",
-    "title-3row": "for everyone"
+    "title-1row": "Our Rentals Are",
+    "title-2row": "Truly Unique and",
+    "title-3row": "Fit for Everyone"
   },
   "advantages": {
-    "title-1-block": "We create unique adventures for everyone",
-    "title-2-block": "We care about your safety",
-    "title-3-block": "We care about your comfort and emotions",
-    "description-1-block": "All rides are personalized, so you can choose the perfect route for yourself – from beginner to pro",
-    "description-2-block": "The price includes full gear: helmet, motocross boots, and riding suit",
-    "description-3-block": "All you need is a change of clothes — we take care of the rest: shower, parking, GoPro, coffee, and sweets"
+    "title-1-block": "Customized Adventures for Every Skill Level",
+    "title-2-block": "Your Safety — Our Top Priority",
+    "title-3-block": "We Focus on Comfort and Experience",
+    "description-1-block": "Each ride is tailored to you — from easy scenic trails to challenging pro-level routes.",
+    "description-2-block": "Pricing includes full gear: helmet, boots, protective suit — everything you need to ride safely.",
+    "description-3-block": "Just bring a change of clothes. We’ll take care of the rest: showers, parking, GoPro footage, coffee & snacks."
   },
   "location": {
-    "title-1-row": "We are located",
-    "title-2-row": "in the highest",
-    "title-3-row": "mountain range of the Carpathians",
-    "text": "Our location is surrounded by six 2000-meter mountains in a 360° radius. Reaching the base of one of them takes about 1.5 hours",
-    "description-1-row": "you choose",
-    "description-2-row": "an individual route –",
-    "description-3-row": "we gift you",
-    "description-4-row": "unforgettable emotions"
+    "title-1-row": "Located In",
+    "title-2-row": "The Highest",
+    "title-3-row": "Mountain Range of the Carpathians",
+    "text": "Our base is surrounded by six 2000m+ peaks. Reaching the foot of any of them takes just about 1.5 hours.",
+    "description-1-row": "Choose your",
+    "description-2-row": "custom route —",
+    "description-3-row": "and we’ll give you",
+    "description-4-row": "an experience to remember"
   },
   "header": {
-    "location": "Bohdan, Zakarpattia region"
+    "location": "Bohdan, Zakarpattia, Ukraine"
   },
   "footer": {
     "policy-privacy": "Privacy",
     "policy-policy": "Policy",
-    "data-saved": "All data is protected"
-  }
+    "data-saved": "All data is securely protected"
+  },
+  "routes": {
+    "walk": {
+      "level": "easy level",
+      "title": "CARPATHIAN NATURE WALK",
+      "points": [
+        "Beginner-friendly forest trails",
+        "Mount Hoverla base (optional summit hike)",
+        "Mount Petros base (optional summit hike)",
+        "Svydivets Ridge views"
+      ],
+      "description": "Relaxed ride through serene trails and meadows — the ideal way to connect with nature and gain basic off-road skills.",
+      "price": "3,000"
+    },
+    "panoramas": {
+      "level": "intermediate level",
+      "title": "THRILLING PANORAMAS",
+      "points": [
+        "Advanced Petros base route",
+        "Eco-farm Rosenthal (mountain-to-village trail, cheese tasting)",
+        "Arshytsia to Petros route",
+        "Svydivets Ridge crossing"
+      ],
+      "description": "Ride through scenic ridgelines, stream crossings, and uphill trails with panoramic views and a dose of adrenaline.",
+      "price": "3,000"
+    },
+    "brave": {
+      "level": "advanced level",
+      "title": "TRAIL OF THE BRAVE",
+      "points": [
+        "Hidden Hutsul trails and guide-only paths",
+        "Dense forests and steep descents",
+        "Expert guide included",
+        "Challenging terrain and wild landscapes",
+        "Strictly for experienced riders"
+      ],
+      "description": "Ready for a real challenge? Ride deep into the wild Carpathians with steep climbs, rocky paths, and wild beauty.",
+      "price": "3,000"
+    },
+    "extreme": {
+      "level": "extreme level",
+      "title": "CARPATHIAN EXTREME RIDE",
+      "points": [
+        "Routes only the toughest can conquer",
+        "Led by pro instructors",
+        "Toughest checkpoints and trails",
+        "Steep ascents and technical terrain",
+        "Raw Svydivets landscapes"
+      ],
+      "description": "🔥 Heart-pounding adrenaline in the mountains 🏔️. Extreme climbs, sharp drops, wild streams, and no room for fear 💪",
+      "price": "3,000"
+    },
+    "study": {
+      "level": "beginner level",
+      "title": "FIRST STEPS ON TWO WHEELS",
+      "points": [
+        "Safe, flat training zone",
+        "Constant guidance from instructors (emotional support too 😄)",
+        "Full protective gear included",
+        "Svydivets Ridge background"
+      ],
+      "description": "Our instructors believe in you even more than your mom 😄. We make your first ride fun, safe, and unforgettable 🚀",
+      "price": "3,000"
+    }
+  },
+  "btn-book": "Book Now"
 }

@@ -1,11 +1,13 @@
 // font colors
 $fontMainGreen: #569922;
-$fontHoverGreen: #76AD4C;
-;
+$fontHoverGreen: #76ad4c;
 $fontColorWhite: #fff;
-$fontColorDark: #13191A;
+$fontColorDark: #13191a;
 
 // bg colors
 $bgDark: #000;
 $bgWhite: #fff;
 $bgLightDarc: #131919;
+
+// bg gradient
+$bgGradient: linear-gradient(180deg, #0c1810 0%, #177a2d 50%, #35ef57 100%);

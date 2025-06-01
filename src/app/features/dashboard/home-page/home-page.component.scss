@@ -19,6 +19,7 @@
   background-color: transparent;
   z-index: 99;
 }
+/* #region main */
 .wrapper-main {
   position: relative;
   width: 100%;
@@ -195,13 +196,9 @@
     }
   }
 }
-
+/* #endregion main */
 /* #region content-for-parallax */
 .content-for-parallax {
-  // border: 2px solid rgb(128, 0, 85);
-  // position: relative;
-  // margin-top: 100vh;
-  // width: 100%;
   margin-top: 0;
   position: relative;
   z-index: 3;
@@ -210,15 +207,52 @@
     &::before {
     }
   }
-  // .content-for-parallax__wrapper
 
   &__wrapper {
     position: relative;
     z-index: 2;
-
     background-color: $bgDark;
-
     @include adaptiveValue("padding-top", 60, 10);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14%;
+      left: 70%;
+      z-index: -2;
+      display: block;
+      width: 97%;
+      height: 63%;
+      background: $bgGradient;
+      filter: blur(80px);
+      pointer-events: none;
+      opacity: 0;
+      transform: rotate(-39deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 10%;
+      left: -37%;
+      z-index: -1;
+      display: block;
+      width: 97%;
+      height: 23%;
+      background: $bgGradientSkyBlue;
+      filter: blur(80px);
+      pointer-events: none;
+      opacity: 0;
+      transform: rotate(-164deg);
+    }
+
+    @media (max-width: toEm(970.98)) {
+      // overflow: hidden;
+      &::before {
+        opacity: 1;
+      }
+      &::after {
+        opacity: 1;
+      }
+    }
   }
 
   &__content {
@@ -233,45 +267,84 @@
     flex-direction: column;
     justify-content: center;
     max-width: toRem(1582);
+    @media (max-width: toEm(970.98)) {
+      gap: toRem(5);
+      @include adaptiveValue("margin-top", 50, 20);
+    }
   }
 
   &__title {
     font-weight: 550;
     text-transform: uppercase;
     line-height: 0.95;
-    @include adaptiveValue("font-size", 100, 22);
+    @include adaptiveValue("font-size", 58, 24);
   }
 
   &__advantages {
+    z-index: 20;
     @include adaptiveValue("margin-top", 120, 80);
+
+    @media (max-width: toEm(970.98)) {
+      @include adaptiveValue("margin-top", 200, 80);
+    }
+    @media (max-width: toEm(942.98)) {
+      @include adaptiveValue("margin-top", 250, 120);
+    }
+    @media (max-width: toEm(753.98)) {
+      @include adaptiveValue("margin-top", 250, 160);
+    }
+
+    @media (max-width: toEm(553.98)) {
+      @include adaptiveValue("margin-top", 200, 190);
+    }
+    @media (max-width: toEm(503.98)) {
+      @include adaptiveValue("margin-top", 200, 170);
+    }
+    @media (max-width: toEm(453.98)) {
+      @include adaptiveValue("margin-top", 200, 150);
+    }
+    @media (max-width: toEm(383.98)) {
+      @include adaptiveValue("margin-top", 200, 120);
+    }
   }
 }
 
 .title-2row {
   text-align: right;
-  // @include adaptiveValue('padding-left', 175, 0);
+  @include adaptiveValue("font-size", 58, 22);
   white-space: nowrap;
 }
-
+/* #endregion content-for-parallax */
+/* #region advantages */
 .advantages {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  gap: toRem(10);
-  border: 1px solid grey;
+  @include adaptiveValue("gap", 40, 16);
+  // gap: toRem(10);
   width: 100%;
+  z-index: 13;
   height: toRem(380);
+
+  @media (max-width: toEm(970.98)) {
+    flex-direction: column;
+    height: 100%;
+    @include adaptiveValue("gap", 300, 100);
+  }
+  @media (max-width: toEm(870.98)) {
+    @include adaptiveValue("gap", 300, 150);
+  }
 
   &__content-block {
     border: 1px solid $fontColorWhite;
     max-width: toRem(490);
-    @include adaptiveValue("padding-inline", 37, 20);
-    @include adaptiveValue("padding-bottom", 42, 30);
-    height: toRem(380);
+    @include adaptiveValue("padding-inline", 30, 10);
+    @include adaptiveValue("padding-bottom", 22, 15);
+    @include adaptiveValue("height", 380, 268);
   }
 
-  &__container {
+  &__card {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -280,27 +353,42 @@
     max-width: toRem(490);
     @include adaptiveValue("gap", 15, 10);
   }
-  &__image {
-    position: absolute;
-    top: -25%;
-    left: 0;
-    width: 100%;
-    max-width: toRem(415);
-    max-height: toRem(194);
+  &__image-wrapper {
+    position: relative;
+    aspect-ratio: 415 / 247;
 
     img {
+      position: absolute;
+      top: -10%;
+      left: 0;
       width: 100%;
       height: 100%;
-      aspect-ratio: 415 / 194;
       object-fit: cover;
-      overflow: hidden;
+
+      @media (max-width: toRem(970.98)) {
+        top: -5%;
+      }
+    }
+  }
+  .content-block-center-wrapper {
+    position: absolute;
+  }
+  .card-center {
+    h4 {
+      // padding-top: 5%;
     }
   }
   .image-center-block {
-    max-height: toRem(276);
-    top: -45%;
+    aspect-ratio: 415 / 276;
+
     img {
-      aspect-ratio: 415 / 276;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @media (max-width: toRem(970.98)) {
+        top: -5%;
+      }
     }
   }
   // .advantages__title
@@ -315,26 +403,40 @@
     @include adaptiveValue("font-size", 30, 8);
     flex-shrink: 0;
     white-space: normal;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
+
+    @media (max-width: toEm(970.98)) {
+      max-width: toRem(340);
+      @include adaptiveValue("font-size", 30, 18);
+    }
   }
 
   // .advantages__description
 
   &__description {
     line-height: 1.4;
-    @include adaptiveValue("font-size", 24, 18);
+    @include adaptiveValue("font-size", 24, 16);
   }
 
   // .advantages__content-block--center
 
   &__content-block--center {
-    position: absolute;
-    left: 50%;
-    bottom: toRem(-150);
-    transform: translateX(-50%);
-    width: clamp(toRem(200), 35vw, toRem(490));
+    position: relative;
+    left: 0;
+    top: 33%;
+    z-index: 14;
+    @media (max-width: toEm(1655)) {
+      top: 29%;
+    }
+    @media (max-width: toEm(1395)) {
+      top: 25%;
+    }
+    img {
+      // position: absolute;
+      // left: 50%;
+      // bottom: toRem(-150);
+      // transform: translateX(-50%);
+      // width: clamp(toRem(200), 35vw, toRem(490));
+    }
 
     color: $fontColorDark;
     background-color: $bgWhite;
@@ -343,11 +445,12 @@
   // .advantages__content-block--right
 
   &__content-block--right {
+    @media (max-width: toEm(970.98)) {
+      border-bottom: 0;
+    }
   }
 }
-
-/* #endregion content-for-parallax */
-
+/* #endregion advantages */
 /* #region location */
 .location {
   position: relative;
@@ -358,8 +461,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 11;
-  padding: toRem(40) toRem(15);
+  // z-index: 11;
+  padding-inline: toRem(15);
+  @include adaptiveValue("padding-block", 133, 50);
 
   @media (max-width: toEm(1465)) {
     background-position: right;
@@ -378,12 +482,15 @@
     grid-template-columns: 1fr;
     align-items: center;
 
-    @include adaptiveValue("gap", 230, 3);
+    @include adaptiveValue("gap", 200, 3);
     max-width: toRem(1670);
     margin: 0 auto;
 
     @media (max-width: toEm(1175)) {
       gap: toRem(255);
+    }
+    @media (max-width: toEm(455)) {
+      gap: toRem(285);
     }
   }
 
@@ -491,7 +598,7 @@
 
   &__wrapper {
     position: relative;
-    @include adaptiveValue("margin-block", 100, 40);
+    @include adaptiveValue("margin-block", 100, 88);
     width: 100%;
 
     &::before {
@@ -506,7 +613,7 @@
       background: $bgGradient;
       filter: blur(120px);
       pointer-events: none;
-      transform: rotate(-92deg)
+      transform: rotate(-92deg);
     }
   }
 
@@ -664,3 +771,60 @@
   }
 }
 /* #endregion gallery-photo */
+/* #region pricing */
+.pricing {
+  width: 100%;
+  height: 100vh;
+  padding-inline: toRem(10);
+
+  &__wrapper {
+    margin: 0 auto;
+    @include adaptiveValue("margin-block", 100, 40);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("gap", 70, 30);
+    border: 1px solid red;
+  }
+
+  // .pricing__title-wrapper
+
+  &__title-wrapper {
+    margin: 0 auto;
+    max-width: toRem(1178);
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: toRem(5);
+  }
+
+  // .pricing__title
+
+  &__title {
+    width: 100%;
+    font-weight: 550;
+    text-transform: uppercase;
+    @include adaptiveValue("font-size", 78, 24);
+    line-height: 0.95;
+  }
+}
+.animate-left {
+}
+.pricing-title-1row {
+}
+.animate-right {
+}
+.pricing-title-2row {
+  text-align: right;
+  @media (max-width: toEm(466.98)) {
+    @include adaptiveValue("padding-left", 100, 20);
+  }
+}
+.pricing-title-3row {
+  @media (max-width: toEm(371.98)) {
+    text-align: right;
+  }
+}
+
+/* #endregion pricing */

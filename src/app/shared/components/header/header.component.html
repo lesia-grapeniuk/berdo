@@ -18,7 +18,7 @@
     </div>
     <nav class="burger-menu" aria-label="Main navigation">
       <ul class="burger-menu__list">
-        <li *ngFor="let id of sectionService.sectionIds" class="burger-menu__item">
+        <li *ngFor="let id of sectionsService.sectionIds" class="burger-menu__item">
           <a (click)="scrollTo(id)">{{ id | titlecase }}</a>
         </li>
       </ul>

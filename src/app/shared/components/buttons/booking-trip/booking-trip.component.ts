@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -8,5 +8,5 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './booking-trip.component.scss'
 })
 export class BookingTripComponent {
-
+@Input() labelKey: string = 'btn-book'; 
 }

@@ -13,8 +13,9 @@ import { HeaderComponent } from '@shared/components/header/header.component';
 import { FooterComponent } from '@shared/components/footer/footer.component';
 import { LanguageSwitcherComponent } from '@shared/components/language-switcher/language-switcher.component';
 import { TrackCarrouselComponent } from "@shared/components/track-carrousel/track-carrousel.component";
-import { SectionService } from '@shared/services/section.service';
+import { SectionsService } from '@shared/services/sections.service';
 import { SectionId } from '@shared/enums/section.enum';
+import { PricingComponent } from "@shared/components/pricing/pricing.component";
 
 @Component({
   selector: 'app-home-page',
@@ -25,7 +26,8 @@ import { SectionId } from '@shared/enums/section.enum';
     HeaderComponent,
     FooterComponent,
     LanguageSwitcherComponent,
-    TrackCarrouselComponent
+    TrackCarrouselComponent,
+    PricingComponent
 ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
@@ -43,10 +45,10 @@ export class HomePageComponent implements AfterViewInit {
   hideVideo = false;
   SectionId = SectionId; // щоб використовувати в шаблоні
 
-  constructor(private sectionService: SectionService) {}
+  constructor(private sectionsService: SectionsService) {}
 
   onNavigateTo(section: SectionId) {
-    this.sectionService.scrollToSection(section);
+    this.sectionsService.scrollToSection(section);
   }
 
   ngAfterViewInit(): void {

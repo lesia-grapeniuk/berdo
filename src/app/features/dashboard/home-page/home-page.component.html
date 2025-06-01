@@ -36,16 +36,8 @@
         </div>
       </div>
 
-      <video
-        class="main-screen__video"
-        #backgroundVideo
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        [class.video-hidden]="hideVideo"
-      >
+      <video class="main-screen__video" #backgroundVideo autoplay muted loop playsinline preload="auto"
+        [class.video-hidden]="hideVideo">
         <source src="assets/videos/video-main-muted.mp4" type="video/mp4" />
       </video>
 
@@ -68,8 +60,8 @@
           <div class="content-for-parallax__advantages advantages">
             <!-- advantages__content-block left-container -->
             <div class="advantages__content-block advantages__content-block--left">
-              <div class="advantages__container">
-                <div class="advantages__image">
+              <div class="advantages__card">
+                <div class="advantages__image-wrapper">
                   <img src="assets/images/advantages/individual-trip.webp"
                     alt="фото з райдером на мотоциклі в гірському лісі">
                 </div>
@@ -79,19 +71,21 @@
             </div>
             <!-- advantages__content-block center-container -->
             <div class="advantages__content-block advantages__content-block--center">
-              <div class="advantages__container">
-                <div class="advantages__image image-center-block">
-                  <img src="assets/images/advantages/safety.webp"
-                    alt="фото з райдером на мотоциклі в гірському лісі з повним екіпіруванням">
+              <div class="advantages__card card-center">
+                  <div class="advantages__content-block-center-wrapper">
+                  <div class="advantages__image-wrapper image-center-block">
+                    <img src="assets/images/advantages/safety.webp"
+                      alt="фото з райдером на мотоциклі в гірському лісі з повним екіпіруванням">
+                  </div>
+                  <h4 class="advantages__title">{{'advantages.title-2-block' | translate }}</h4>
+                  <p class="advantages__description">{{"advantages.description-2-block" | translate }}</p>
                 </div>
-                <h4 class="advantages__title">{{'advantages.title-2-block' | translate }}</h4>
-                <p class="advantages__description">{{"advantages.description-2-block" | translate }}</p>
               </div>
             </div>
             <!-- advantages__content-block right-container -->
             <div class="advantages__content-block advantages__content-block--right">
-              <div class="advantages__container">
-                <div class="advantages__image">
+              <div class="advantages__card">
+                <div class="advantages__image-wrapper">
                   <img src="assets/images/advantages/comfort.webp" alt="фото з рушниками та засобами для душу">
                 </div>
                 <h4 class="advantages__title">{{'advantages.title-3-block' | translate }}</h4>
@@ -140,27 +134,48 @@
         <div class="gallery-photos__container container-gallery-block">
           <div class="container-gallery-block__top top-block-gallery">
             <div class="top-block-gallery__left-photo-wrapper">
-              <img src="assets/images/gallery-photos/top-left.webp" alt="фото з райдером який сидить на мотоциклі високо в горах">
+              <img #animatedTitle class="animate-left" src="assets/images/gallery-photos/top-left.webp"
+                alt="фото з райдером який сидить на мотоциклі високо в горах">
             </div>
             <div class="top-block-gallery__right-photo-wrapper">
               <div class="gallery-photos__title-wrapper">
                 <h2 class="gallery-photos__title-logo">BERDO</h2>
               </div>
-              <img src="assets/images/gallery-photos/top-right.webp" alt="фото з клієнтами які сидять на квадроциклах та мотоциклах та готові стартувати в подорож">
+              <img src="assets/images/gallery-photos/top-right.webp"
+                alt="фото з клієнтами які сидять на квадроциклах та мотоциклах та готові стартувати в подорож">
             </div>
           </div>
           <div class="container-gallery-block__bottom bottom-block-gallery">
             <div class="bottom-block-gallery__left-photo-wrapper">
-              <img src="assets/images/gallery-photos/bottom-left.webp" alt="фото з клієнтами які сидять на мотоциклах в горах">
+              <img src="assets/images/gallery-photos/bottom-left.webp"
+                alt="фото з клієнтами які сидять на мотоциклах в горах">
             </div>
             <div class="bottom-block-gallery__right-photo-wrapper">
-              <img src="assets/images/gallery-photos/bottom-right.webp" alt="фото з клієнтами які сидять на мотоциклах в горах">
+              <img #animatedTitle class="animate-right" src="assets/images/gallery-photos/bottom-right.webp"
+                alt="фото з клієнтами які сидять на мотоциклах в горах">
             </div>
           </div>
         </div>
       </div>
     </section>
   </div>
+
+  <section id="pricing" class="pricing">
+    <div class="pricing__wrapper">
+      <div class="pricing__title-wrapper">
+        <h2 class="pricing__title"></h2>
+        <h2 #animatedTitle class="pricing__title animate-left pricing-title-1row">
+          {{'pricing.pricing-title-1row' | translate}}</h2>
+        <h2 #animatedTitle class="pricing__title animate-right pricing-title-2row">
+          {{'pricing.pricing-title-2row' | translate}}</h2>
+        <h2 #animatedTitle class="pricing__title animate-left pricing-title-3row">
+          {{'pricing.pricing-title-3row' | translate}}</h2>
+      </div>
+
+      <app-pricing></app-pricing>
+    </div>
+  </section>
+
 
   <app-footer class="app-footer"></app-footer>
 </div>

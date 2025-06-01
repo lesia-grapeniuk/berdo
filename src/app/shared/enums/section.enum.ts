@@ -4,7 +4,7 @@ export enum SectionId {
   Advantages = 'advantages',
   Location = 'location',
   Tours = 'tours',
-  Price = 'price',
+  Pricing = 'pricing',
   GalleryPhoto = 'galleryPhoto',
   Feedback = 'feedback',
   Instructors = 'instructor',

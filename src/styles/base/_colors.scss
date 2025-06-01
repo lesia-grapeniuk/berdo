@@ -8,6 +8,16 @@ $fontColorDark: #13191a;
 $bgDark: #000;
 $bgWhite: #fff;
 $bgLightDarc: #131919;
+$bgButtonGrayDefolt: #BABABA;
+$bgButtonHover: #F0F0F0;
+$bgButtonActive: #569922;
+
 
 // bg gradient
 $bgGradient: linear-gradient(180deg, #0c1810 0%, #177a2d 50%, #35ef57 100%);
+$bgGradientSkyBlue: linear-gradient(278deg,
+      rgba(22, 166, 187, 0.9) -37%,
+      rgba(59, 196, 241, 0.9) 97%,
+      rgba(135, 206, 250, 0.95) 361%,
+      rgb(166, 214, 230) 91%,
+      rgb(51, 186, 246) 51%);

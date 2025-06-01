@@ -1,0 +1,220 @@
+@import "main";
+
+.table {
+  margin: 0 auto;
+  width: 100%;
+}
+.pricing-card {
+  max-width: toRem(1520);
+  border: 1px solid red;
+  // .pricing-card__tablet-title-wrapper
+
+  &__tablet-title-wrapper {
+    border: 1px solid rgb(94, 211, 122);
+  }
+
+  // .pricing-card__tablet-title
+
+  &__tablet-title {
+        // border: 1px solid rgb(94, 211, 122);
+    // max-width: toRem(500);
+    // margin: 0 auto;
+    @include adaptiveValue("font-size", 32, 14);
+    @include adaptiveValue("padding-block", 26, 10);
+    padding: 0;
+    text-transform: capitalize;
+
+    &.active-tab {
+    background-color: $bgButtonActive !important;
+  }
+
+  }
+
+  .p-tablist-nav-button {
+    display: none;
+  }
+  // .pricing-card__table-panels-block
+
+  &__table-panels-block {
+    width: 100%;
+    max-width: toRem(1520);
+  }
+
+  // .pricing-card__panel
+
+  &__panel {
+  }
+
+  // .pricing-card__table-wrapper
+
+  &__table-wrapper {
+  }
+
+  // .pricing-card__min-time-wrapper
+
+  &__min-time-wrapper {
+  }
+
+  // .pricing-card__min-time-riding
+
+  &__min-time-riding {
+  }
+
+  // .pricing-card__min-time
+
+  &__min-time {
+  }
+
+  // .pricing-card__table
+
+  &__table {
+  }
+
+  // .pricing-card__table-title-block
+
+  &__table-title-block {
+  }
+
+  // .pricing-card__table-title-1
+
+  &__table-title-1 {
+  }
+
+  // .pricing-card__table-title-2
+
+  &__table-title-2 {
+  }
+
+  // .pricing-card__table-title-3
+
+  &__table-title-3 {
+  }
+
+  // .pricing-card__table-row-1
+
+  &__table-row-1 {
+  }
+
+  // .pricing-card__table-text-row-1-1
+
+  &__table-text-row-1-1 {
+  }
+
+  // .pricing-card__table-text-row-1-2
+
+  &__table-text-row-1-2 {
+  }
+
+  // .pricing-card__table-text-row-1-3
+
+  &__table-text-row-1-3 {
+  }
+
+  // .pricing-card__table-row-2
+
+  &__table-row-2 {
+  }
+
+  // .pricing-card__table-text-row-2-1
+
+  &__table-text-row-2-1 {
+  }
+
+  // .pricing-card__table-text-row-2-2
+
+  &__table-text-row-2-2 {
+  }
+
+  // .pricing-card__table-text-row-2-3
+
+  &__table-text-row-2-3 {
+  }
+
+  // .pricing-card__table-row-3
+
+  &__table-row-3 {
+  }
+
+  // .pricing-card__table-text-row-3-1
+
+  &__table-text-row-3-1 {
+  }
+
+  // .pricing-card__table-text-row-3-2
+
+  &__table-text-row-3-2 {
+  }
+
+  // .pricing-card__table-text-row-3-3
+
+  &__table-text-row-3-3 {
+  }
+
+  // .pricing-card__table-row-4
+
+  &__table-row-4 {
+  }
+
+  // .pricing-card__table-text-row-4-1
+
+  &__table-text-row-4-1 {
+  }
+
+  // .pricing-card__table-text-row-4-2
+
+  &__table-text-row-4-2 {
+  }
+
+  // .pricing-card__table-text-row-4-3
+
+  &__table-text-row-4-3 {
+  }
+
+  // .pricing-card__comfort-included
+
+  &__comfort-included {
+  }
+
+  // .pricing-card__wrapper-img
+
+  &__wrapper-img {
+    max-width: toRem(511);
+    max-height: toRem(845);
+    aspect-ratio: 511 / 845;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .pricing-card__booking-adventure
+
+  &__booking-adventure {
+  }
+
+  // .pricing-card__extra-services-title
+
+  &__extra-services-title {
+  }
+
+  // .pricing-card__extra-services-table
+
+  &__extra-services-table {
+  }
+}
+.tablet-title-1 {
+}
+.tablet-title-2 {
+}
+.tablet-title-3 {
+}
+.services-title {
+}
+.table-services {
+  // .table-services__row-1
+
+  &__row-1 {
+  }
+}

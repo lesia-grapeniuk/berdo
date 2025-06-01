@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
-import { SectionId } from '@shared/enums/section.enum';
+import { Injectable } from "@angular/core";
+import { SectionId } from "@shared/enums/section.enum";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
-export class SectionService {
+export class SectionsService {
   public sectionIds: SectionId[] = [
     SectionId.About,
     SectionId.Advantages,
@@ -13,7 +13,7 @@ export class SectionService {
     SectionId.Feedback,
     SectionId.GalleryPhoto,
     SectionId.Instructors,
-    SectionId.Price,
+    SectionId.Pricing,
     SectionId.Contact,
   ];
 

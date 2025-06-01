@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { SectionId } from '@shared/enums/section.enum';
-import { SectionService } from '@shared/services/section.service';
+import { SectionsService } from '@shared/services/sections.service';
 import { UiKitModule } from '@shared/UI-KIT/ui-kit.module';
 
 @Component({
@@ -15,10 +15,10 @@ export class HeaderComponent {
   public menuOpen = false;
   sectionId = SectionId;
 
-  constructor(public sectionService: SectionService) {}
+  constructor(public sectionsService: SectionsService) {}
 
   scrollTo(id: SectionId) {
-    this.sectionService.scrollToSection(id);
+    this.sectionsService.scrollToSection(id);
     this.menuOpen = false;
   }
 

@@ -3,6 +3,7 @@ import {
   Component,
   ElementRef,
   HostListener,
+  Input,
   OnInit,
   QueryList,
   ViewChildren,
@@ -27,7 +28,9 @@ export class TrackCarrouselComponent implements OnInit {
   isMobile = false;
   openStates: boolean[] = [];
 
-  @ViewChildren("carouselVideo") carouselVideos!: QueryList<ElementRef<HTMLVideoElement>>;
+  @ViewChildren("carouselVideo") carouselVideos!: QueryList<
+    ElementRef<HTMLVideoElement>
+  >;
 
   constructor(private routeService: RouteService) {}
 
@@ -48,27 +51,26 @@ export class TrackCarrouselComponent implements OnInit {
   }
 
   ngAfterViewInit(): void {
-  // Коли ViewChildren оновляться після рендеру
-  this.carouselVideos.changes.subscribe(() => {
-    this.tryPlayCarouselVideo();
-  });
+    // Коли ViewChildren оновляться після рендеру
+    this.carouselVideos.changes.subscribe(() => {
+      this.tryPlayCarouselVideo();
+    });
 
-  // Спроба програти одразу (на випадок, якщо DOM уже готовий)
-  setTimeout(() => this.tryPlayCarouselVideo(), 0);
-}
+    // Спроба програти одразу (на випадок, якщо DOM уже готовий)
+    setTimeout(() => this.tryPlayCarouselVideo(), 0);
+  }
 
-private tryPlayCarouselVideo(): void {
-  const videoRef = this.carouselVideos?.get(this.activeSlideIndex);
-  if (!videoRef) return;
+  private tryPlayCarouselVideo(): void {
+    const videoRef = this.carouselVideos?.get(this.activeSlideIndex);
+    if (!videoRef) return;
 
-  const video = videoRef.nativeElement;
-  video.muted = true;
+    const video = videoRef.nativeElement;
+    video.muted = true;
 
-  video.play().catch((e: unknown) => {
-    console.log('Autoplay blocked or failed:', e);
-  });
-}
-
+    video.play().catch((e: unknown) => {
+      console.log("Autoplay blocked or failed:", e);
+    });
+  }
 
   setInitialOpenStates(): void {
     this.openStates = this.cardsRoute.map(() => !this.isMobile);

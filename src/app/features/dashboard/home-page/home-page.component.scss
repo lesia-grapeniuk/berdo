@@ -203,11 +203,6 @@
   position: relative;
   z-index: 3;
 
-  @media (max-width: 1200px) {
-    &::before {
-    }
-  }
-
   &__wrapper {
     position: relative;
     z-index: 2;
@@ -282,7 +277,7 @@
 
   &__advantages {
     z-index: 20;
-    @include adaptiveValue("margin-top", 120, 80);
+    @include adaptiveValue("margin-top", 160, 140);
 
     @media (max-width: toEm(970.98)) {
       @include adaptiveValue("margin-top", 200, 80);
@@ -322,7 +317,6 @@
   justify-content: flex-start;
   align-items: center;
   @include adaptiveValue("gap", 40, 16);
-  // gap: toRem(10);
   width: 100%;
   z-index: 13;
   height: toRem(380);
@@ -352,6 +346,12 @@
     height: 100%;
     max-width: toRem(490);
     @include adaptiveValue("gap", 15, 10);
+    @media (max-width: toEm(1900.98)) {
+@include adaptiveValue("gap", 35, 20);
+    }
+    @media (max-width: toEm(1458.98)) {
+@include adaptiveValue("gap", 15, 10);
+    }
   }
   &__image-wrapper {
     position: relative;
@@ -774,7 +774,7 @@
 /* #region pricing */
 .pricing {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding-inline: toRem(10);
 
   &__wrapper {
@@ -784,7 +784,31 @@
     display: flex;
     flex-direction: column;
     @include adaptiveValue("gap", 70, 30);
-    border: 1px solid red;
+    position: relative;
+    z-index: 2;
+    background-color: $bgDark;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -21%;
+      left: -19%;
+      z-index: -1;
+      border-radius: 30%;
+      display: block;
+      width: 73%;
+      height: 80%;
+      background: $bgGradientPriceFeedback;
+      filter: blur(80px);
+      pointer-events: none;
+      transform: rotate(90deg);
+
+      @media (max-width: toEm(960.98)) {
+        bottom: -10%;
+        transform: rotate(-180deg);
+        height: 100%;
+      }
+    }
   }
 
   // .pricing__title-wrapper
@@ -792,7 +816,6 @@
   &__title-wrapper {
     margin: 0 auto;
     max-width: toRem(1178);
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     width: 100%;

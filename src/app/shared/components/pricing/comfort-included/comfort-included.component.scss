@@ -1,10 +1,10 @@
 @import "main";
 
 .comfort {
-  max-width: toRem(740);
+  width: 100%;
   display: flex;
   flex-direction: column;
-  @include adaptiveValue("gap", 40, 20);
+  @include adaptiveValue("gap", 50, 20);
   justify-content: center;
 
   &__title {
@@ -12,26 +12,186 @@
     @include adaptiveValue("font-size", 30, 18);
     font-weight: 700;
     line-height: 1.3;
+    color: $fontColorWhite;
     text-transform: uppercase;
+    @media (max-width: toEm(960.98)) {
+      @include adaptiveValue("font-size", 34, 18);
+    }
+    @media (max-width: toEm(382.98)) {
+      max-width: toRem(275);
+    }
   }
 
   // .comfort__list
 
   &__list {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, toRem(68));
+    @include adaptiveValue("row-gap", 40, 10);
+    @include adaptiveValue("column-gap", 70, 5);
+
+    @media (max-width: toEm(515.98)) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, toRem(90));
+    }
   }
 
   // .comfort__item
 
   &__item {
+    width: 100%;
+    color: $fontColorWhite;
+    line-height: 1.2;
+      height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include adaptiveValue("gap", 15, 7);
+
+    @media (max-width: toEm(515.98)) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &.item-instructor {
+      grid-column: 1 / 1;
+      grid-row: 1 / 2;
+
+      @media (max-width: toEm(515.98)) {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+      }
+    }
+
+    &.item-coffee {
+      grid-column: 2 / 3;
+      grid-row: 2 / 1;
+
+      @media (max-width: toEm(515.98)) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+    }
+
+    &.item-camera {
+      grid-column: 3 / 3;
+      grid-row: 1 / 2;
+
+      @media (max-width: toEm(515.98)) {
+        grid-column: 2 / 2;
+        grid-row: 3 / 4;
+      }
+    }
+
+    &.item-shower {
+      grid-column: 2 / 3;
+      grid-row: 2 / 2;
+       min-width: toRem(142);
+
+      @media (max-width: toEm(515.98)) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+      }
+    }
+
+    &.item-parking {
+      grid-column: 3 / 3;
+      grid-row: 2 / 2;
+
+      @media (max-width: toEm(515.98)) {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+      }
+    }
+
+    &.item-equipment {
+      grid-column: 1 / 1;
+      grid-row: 2 / 2;
+
+      @media (max-width: toEm(515.98)) {
+        grid-column: 2 / 2;
+        grid-row: 2 / 1;
+      }
+    }
   }
 
-  // .comfort__icon
+  .comfort__icon {
+    width: toRem(40);
+    height: toRem(40);
+    object-fit: contain;
+    display: block;
 
-  &__icon {
+    @media (max-width: toEm(427.98)) {
+      width: toRem(25);
+      height: toRem(25);
+    }
+
+    &.icon-instructor {
+      width: toRem(38);
+      margin-top: toRem(2);
+      @media (max-width: toEm(427.98)) {
+        width: toRem(25);
+        height: toRem(25);
+      }
+    }
+
+    &.icon-coffee {
+      width: toRem(32);
+      transform: translateY(2px);
+      @media (max-width: toEm(427.98)) {
+        width: toRem(25);
+        height: toRem(25);
+      }
+    }
+
+    &.icon-camera {
+      width: toRem(34);
+      filter: brightness(1.2);
+      @media (max-width: toEm(427.98)) {
+        width: toRem(25);
+        height: toRem(25);
+      }
+    }
+
+    &.icon-shower {
+      height: toRem(38);
+      margin-right: toRem(4);
+      @media (max-width: toEm(427.98)) {
+        width: toRem(25);
+        height: toRem(25);
+      }
+    }
+
+    &.icon-parking {
+      width: toRem(36);
+      @media (max-width: toEm(427.98)) {
+        width: toRem(25);
+        height: toRem(25);
+      }
+    }
+
+    &.icon-equipment {
+      width: toRem(35);
+      height: toRem(35);
+      @media (max-width: toEm(427.98)) {
+        width: toRem(25);
+        height: toRem(25);
+      }
+    }
   }
 
   // .comfort__label
 
   &__label {
+    // width: 100%;
+
+    max-width: toRem(175);
+    text-align: left;
+    vertical-align: bottom;
+    @include adaptiveValue("font-size", 20, 16);
+    line-height: 1.2;
   }
 }

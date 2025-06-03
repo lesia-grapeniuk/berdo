@@ -158,23 +158,24 @@
         </div>
       </div>
     </section>
+    
+    <section id="pricing" class="pricing">
+      <div class="pricing__wrapper">
+        <div class="pricing__title-wrapper">
+          <h2 class="pricing__title"></h2>
+          <h2 #animatedTitle class="pricing__title animate-left pricing-title-1row">
+            {{'pricing.pricing-title-1row' | translate}}</h2>
+          <h2 #animatedTitle class="pricing__title animate-right pricing-title-2row">
+            {{'pricing.pricing-title-2row' | translate}}</h2>
+          <h2 #animatedTitle class="pricing__title animate-left pricing-title-3row">
+            {{'pricing.pricing-title-3row' | translate}}</h2>
+        </div>
+
+        <app-pricing></app-pricing>
+      </div>
+    </section>
   </div>
 
-  <section id="pricing" class="pricing">
-    <div class="pricing__wrapper">
-      <div class="pricing__title-wrapper">
-        <h2 class="pricing__title"></h2>
-        <h2 #animatedTitle class="pricing__title animate-left pricing-title-1row">
-          {{'pricing.pricing-title-1row' | translate}}</h2>
-        <h2 #animatedTitle class="pricing__title animate-right pricing-title-2row">
-          {{'pricing.pricing-title-2row' | translate}}</h2>
-        <h2 #animatedTitle class="pricing__title animate-left pricing-title-3row">
-          {{'pricing.pricing-title-3row' | translate}}</h2>
-      </div>
-
-      <app-pricing></app-pricing>
-    </div>
-  </section>
 
 
   <app-footer class="app-footer"></app-footer>

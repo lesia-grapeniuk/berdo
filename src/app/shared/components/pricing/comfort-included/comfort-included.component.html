@@ -1,8 +1,14 @@
 <div class="comfort">
   <h3 class="comfort__title">{{ 'comfort.title' | translate }}</h3>
   <ul class="comfort__list">
-    <li class="comfort__item" *ngFor="let item of comfortItems">
-      <img [src]="item.icon" alt="іконки які ілюструють наявність послуг" class="comfort__icon" />
+    <li class="comfort__item" [ngClass]="item.itemClass" *ngFor="let item of comfortItems">
+      <div class="comfort__icon-wrapper">
+        <img
+          [src]="item.icon"
+          [ngClass]="item.class"
+          alt="іконки які ілюструють наявність послуг"
+          class="comfort__icon">
+      </div>
       <span class="comfort__label">{{ item.label | translate }}</span>
     </li>
   </ul>

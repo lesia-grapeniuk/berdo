@@ -146,6 +146,8 @@
 ::ng-deep .btn-burger-menu .pi {
   @include adaptiveValue("font-size", 48, 20);
 }
+
+
 .burger-menu {
   position: absolute;
   top: 0;

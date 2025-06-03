@@ -9,28 +9,22 @@
     width: 100%;
     margin: 0 auto;
     height: 100%;
-
   }
   &__container {
     width: 100%;
-        height: 100%;
-// @include adaptiveValue('margin-block', 256, 80);
-
+    height: 100%;
   }
 }
 .container-tracks-carrousel {
-
   width: 100%;
   height: 100%;
   max-width: toRem(1900);
   margin: 0 auto;
-@include adaptiveValue('margin-block', 156, 80);
-  // padding-inline: toRem(25) toRem(15);
+  @include adaptiveValue("margin-block", 156, 80);
   display: flex;
   justify-content: center;
   align-items: center;
   color: $fontColorWhite;
-
 
   &__wrapper {
     width: 100%;
@@ -66,13 +60,11 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  // height: fit-content;
 }
 .container-tracks-carrousel__slider input {
   display: none;
 }
 .cards {
-
   max-width: toRem(1720);
   transform-style: preserve-3d;
   position: relative;
@@ -87,9 +79,7 @@
 .card-wrapper {
   overflow: hidden;
 }
-
 .cards label {
-
   border-radius: 6%;
   position: absolute;
   left: 0;
@@ -115,19 +105,14 @@
   width: 100%;
   max-width: 100%;
   height: max-content;
-  // min-height: 42.5rem;
-  // min-height: 55.5rem;
   transition: all 0.35s ease;
 
   @media (max-width: toEm(991.98)) {
-    // min-height: 45.5rem;
     border-radius: 1%;
     padding: 0;
   }
   @media (max-width: toEm(768.98)) {
-    // min-height: 45.5rem;
   }
-
   @media (any-hover: hover) {
     &:hover {
       transition: all 0.35s ease;
@@ -136,7 +121,6 @@
     }
   }
 }
-
 .card-container {
   overflow: hidden;
   width: 100%;
@@ -184,7 +168,6 @@
   &__level-wrapper {
     @include adaptiveValue("padding-bottom", 10, 5);
   }
-  // .card-container__level
 
   &__level {
     line-height: 1.2;
@@ -242,8 +225,6 @@
     @include adaptiveValue("font-size", 30, 18);
   }
 
-  // .card-container__list
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -255,15 +236,10 @@
     transition: max-height 0.3s ease, opacity 0.3s ease;
     @include adaptiveValue("gap", 10, 5);
 
-    // @media (max-width: toEm(991.98)) {
-    //   max-height: 20rem;
-    // }
     &.hidden {
       display: none;
     }
   }
-
-  // .card-container__item
 
   &__item {
     padding-left: 1.5rem;
@@ -284,8 +260,6 @@
     }
   }
 
-  // .card-container__description-price
-
   &__description-price {
     grid-column: 1 / 2;
     grid-row: 2 / 2;
@@ -304,8 +278,6 @@
       }
     }
   }
-
-  // .card-container__description
 
   &__description {
     min-width: toRem(225);
@@ -326,8 +298,6 @@
     }
   }
 
-  // .card-container__price
-
   &__price {
     align-self: last baseline;
     display: flex;
@@ -342,7 +312,6 @@
       margin-block: toRem(8);
     }
   }
-
   &__wrapper-booking-trip {
     grid-column: 2;
     grid-row: 2;
@@ -360,7 +329,6 @@
       height: auto;
       padding-inline: toRem(20);
       padding-bottom: toRem(10);
-      // flex-direction: column-reverse;
 
       &::after {
         content: attr(data-price);
@@ -402,7 +370,6 @@
   }
 }
 
-// decoration cards
 .cards {
   position: relative;
   height: auto;
@@ -416,7 +383,6 @@
   pointer-events: auto;
   box-shadow: 0 toRem(6) toRem(34) toRem(12) rgba(100, 184, 36, 0.671);
 }
-
 .cards label.left1 {
   opacity: 1;
   transform: translate3d(-7%, 0, -120px) scaleY(0.75);
@@ -441,7 +407,6 @@
   z-index: 3;
   box-shadow: 0 toRem(4) toRem(12) toRem(4) rgba(100, 184, 36, 0.835);
 }
-
 .tracks-carrousel__dots {
   width: fit-content;
   margin: 0 auto;

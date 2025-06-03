@@ -18,6 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-style: none !important;
 }
 ::ng-deep .p-tabs {
   max-width: toRem(1520);
@@ -33,28 +34,35 @@
   color: $fontColorDark !important;
 
   &:hover {
-    background-color: $bgButtonActive !important;
-    color: $fontColorWhite !important;
+    background-color: $bgButtonHover !important;
+    color: $fontColorDark !important;
   }
   &:visited {
     background-color: $bgButtonActive !important;
   }
 }
-// ::ng-deep .last-tab {
-//   white-space: wrap !important;
-//   flex-shrink: 1 !important;
-//   flex-grow: 0;
-//   text-align: center !important;
-//   min-width: toRem(83) !important;
-//   min-height: toRem(51) !important;
-// }
-// ::ng-deep .tablet-title-2 {
-//   min-height: toRem(51) !important;
-// }
-// ::ng-deep .tablet-title-1 {
-//   min-height: toRem(51) !important;
-//   white-space: wrap !important;
-//   flex-shrink: 1 !important;
-//   text-align: center !important;
-//   min-width: toRem(83) !important;
-// }
+.p-tablist-active-bar {
+  display: none !important;
+}
+
+::ng-deep .p-tablist-next-button {
+  display: none !important;
+}
+::ng-deep .p-tabpanels {
+  padding: 0 !important;
+}
+::ng-deep .tablet-title-3 {
+  white-space: wrap !important;
+  flex-shrink: 1 !important;
+  // flex-grow: 0;
+  text-align: center !important;
+  min-height: toRem(51) !important;
+  @media (max-width: toEm(384.98)) {
+    width: toRem(85) !important;
+  }
+}
+::ng-deep .p-tab-active {
+  border-color: transparent !important;
+  background-color: $bgButtonActive !important;
+  color: $fontColorWhite !important;
+}

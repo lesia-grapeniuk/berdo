@@ -32,10 +32,11 @@
   height: 100%;
   background-color: $bgButtonGrayDefolt !important;
   color: $fontColorDark !important;
-
-  &:hover {
-    background-color: $bgButtonHover !important;
-    color: $fontColorDark !important;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $bgButtonHover !important;
+      color: $fontColorDark !important;
+    }
   }
   &:visited {
     background-color: $bgButtonActive !important;

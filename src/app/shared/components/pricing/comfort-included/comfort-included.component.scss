@@ -22,8 +22,6 @@
     }
   }
 
-  // .comfort__list
-
   &__list {
     width: 100%;
     height: max-content;
@@ -39,13 +37,11 @@
     }
   }
 
-  // .comfort__item
-
   &__item {
     width: 100%;
     color: $fontColorWhite;
     line-height: 1.2;
-      height: max-content;
+    height: max-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,7 +85,7 @@
     &.item-shower {
       grid-column: 2 / 3;
       grid-row: 2 / 2;
-       min-width: toRem(142);
+      min-width: toRem(142);
 
       @media (max-width: toEm(515.98)) {
         grid-column: 1 / 2;
@@ -183,11 +179,7 @@
     }
   }
 
-  // .comfort__label
-
   &__label {
-    // width: 100%;
-
     max-width: toRem(175);
     text-align: left;
     vertical-align: bottom;

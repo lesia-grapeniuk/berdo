@@ -40,18 +40,17 @@
     width: 100%;
     min-height: 100%;
     padding-inline: 15%;
-    gap: toRem(50);
-    padding-bottom: toRem(15);
+    gap: toRem(80);
+    // padding-bottom: toRem(15);
 
     @media (max-width: toEm(1615)) {
-      @include adaptiveValue("gap", 60, 45);
+      @include adaptiveValue("gap", 80, 45);
     }
     @media (max-width: toEm(991.98)) {
       padding-inline: 10%;
     }
     @media (max-width: toEm(651.98)) {
-      padding-inline: 10%;
-      gap: toRem(30);
+      gap: toRem(50);
     }
   }
 }
@@ -127,7 +126,7 @@
   display: grid;
   grid-template-columns: 1fr 0.85fr;
   grid-template-rows: max-content min-content;
-  gap: toRem(40) toRem(20);
+  gap: toRem(75) toRem(20);
   max-width: toRem(1720);
   padding: toRem(20);
   background-color: $bgLightDarc;

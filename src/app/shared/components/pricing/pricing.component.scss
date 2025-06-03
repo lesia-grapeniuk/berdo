@@ -28,7 +28,6 @@
       height: toRem(58);
     }
   }
-  // .pricing-card__tablet-title-wrapper
   &__wrapper {
     margin: 0 auto;
     height: 100%;
@@ -41,9 +40,6 @@
   &__tablet-title-wrapper {
     width: 100%;
   }
-
-  // .pricing-card__tablet-title
-
   &__tablet-title {
     @include adaptiveValue("font-size", 32, 14);
     @include adaptiveValue("padding-block", 26, 10);
@@ -57,20 +53,14 @@
   .p-tablist-nav-button {
     display: none;
   }
-  // .pricing-card__table-panels-block
 
   &__table-panels-block {
     width: 100%;
-    // max-width: toRem(1520);
   }
-
-  // .pricing-card__panel
 
   &__panel {
     width: 100%;
   }
-
-  // .pricing-card__table-wrapper
 
   &__table-wrapper {
     max-width: 100%;
@@ -87,7 +77,6 @@
       grid-template-rows: toRem(36) auto auto auto;
     }
   }
-  // .pricing-card__min-time-wrapper
 
   &__min-time-wrapper {
     width: 100%;
@@ -113,18 +102,12 @@
     }
   }
 
-  // .pricing-card__min-time-riding
-
   &__min-time-riding {
   }
-
-  // .pricing-card__min-time
 
   &__min-time {
     @include adaptiveValue("font-size", 30, 12);
   }
-
-  // .pricing-card__table
 
   &__table {
     border-collapse: collapse;
@@ -139,7 +122,6 @@
       grid-row: 2 / 2;
     }
   }
-  // .pricing-card__table-title-block
 
   &__table-title-block {
     background-color: $bgButtonGrayDefolt;
@@ -198,13 +180,10 @@
       max-width: toRem(92);
     }
   }
-  // .pricing-card__table-title-2
 
   &__table-title-2 {
     max-width: toRem(245);
   }
-
-  // .pricing-card__table-title-3
 
   &__table-title-3 {
     max-width: toRem(245);
@@ -217,8 +196,6 @@
       @include adaptiveValue("font-size", 18, 12);
     }
   }
-
-  // .pricing-card__table-text-row-4-2
 
   &__table-row-1,
   &__table-row-2,
@@ -236,12 +213,8 @@
     }
   }
 
-  // .pricing-card__table-text-row-4-3
-
   &__table-text-row-4-3 {
   }
-
-  // .pricing-card__comfort-included
 
   &__comfort-included {
     height: max-content;
@@ -253,8 +226,6 @@
       grid-row: 3 / 3;
     }
   }
-
-  // .pricing-card__wrapper-img
 
   &__wrapper-img {
     grid-column: 2 / 2;
@@ -408,8 +379,6 @@
     @include adaptiveValue("row-gap", 30, 15);
   }
 
-  // .extra-services__min-time-wrapper
-
   &__min-time-wrapper {
     grid-column: span 1;
     grid-row: span 1;
@@ -428,12 +397,8 @@
     }
   }
 
-  // .extra-services__extra-services-title
-
   &__extra-services-title {
   }
-
-  // .extra-services__extra-services-table
 
   &__extra-services-table {
     border-collapse: collapse;
@@ -447,8 +412,6 @@
       grid-row: 2 / 3;
     }
   }
-
-  // .extra-services__row-1
 
   &__row-1 {
     @include adaptiveValue("font-size", 24, 16);
@@ -476,8 +439,6 @@
     max-width: toRem(68);
   }
 
-  // .extra-services__comfort-included
-
   &__comfort-included {
     height: max-content;
     grid-column: span 1;
@@ -488,8 +449,6 @@
       grid-row: 3 / 4;
     }
   }
-
-  // .extra-services__wrapper-img
 
   &__wrapper-img {
     grid-column: 2 / 2;
@@ -510,8 +469,6 @@
     }
     }
   }
-
-  // .extra-services__booking-adventure
 
   &__booking-adventure {
     position: absolute;

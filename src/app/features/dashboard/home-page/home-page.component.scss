@@ -604,12 +604,12 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0%;
+      top: 19%;
       right: -12%;
       z-index: -1;
       display: block;
       width: 66%;
-      height: 66%;
+      height: 57%;
       background: $bgGradient;
       filter: blur(120px);
       pointer-events: none;

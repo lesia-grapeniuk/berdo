@@ -1,24 +1,22 @@
-import { Component } from '@angular/core';
-import { TranslateService, TranslateModule } from '@ngx-translate/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { AppLanguage } from '@shared/enums/language.enum';
+import { Component } from "@angular/core";
+import { TranslateModule } from "@ngx-translate/core";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
+import { AppLanguage } from "@shared/enums/language.enum";
+import { LanguageService } from "@shared/services/language.service";
 
 @Component({
-  selector: 'app-language-switcher',
+  selector: "app-language-switcher",
   imports: [CommonModule, TranslateModule, RouterModule],
-  templateUrl: './language-switcher.component.html',
-  styleUrl: './language-switcher.component.scss'
+  templateUrl: "./language-switcher.component.html",
+  styleUrl: "./language-switcher.component.scss",
 })
 export class LanguageSwitcherComponent {
-  lang = AppLanguage;
-
-  constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang(this.lang.Ukrainian);
-    this.translate.use(this.lang.Ukrainian);
+  constructor(private languageService: LanguageService) {
+    this.languageService.initLang();
   }
 
-  changeLang(lang: AppLanguage) {
-    this.translate.use(lang);
+  changeLang(lang: string) {
+    this.languageService.changeLang(lang as AppLanguage);
   }
 }

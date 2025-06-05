@@ -24,11 +24,11 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    @include adaptiveValue("gap", 80, 5);
-
-    @media (max-width: toEm(1149.98)) {
-      @include adaptiveValue("gap", 20, 5);
-    }
+    // @include adaptiveValue("gap", 40, 5);
+    gap: toRem(2);
+    // @media (max-width: toEm(584.98)) {
+    //   @include adaptiveValue("gap", 50, 5);
+    // }
   }
 }
 .top {
@@ -50,17 +50,17 @@
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: auto auto;
       gap: toRem(16);
-      @include adaptiveValue("row-gap", 170, 140);
+      @include adaptiveValue("row-gap", 180, 170);
       justify-items: center;
     }
-    @media (max-width: toEm(584.98)) {
-      @include adaptiveValue("row-gap", 170, 105);
+    @media (max-width: toEm(489.98)) {
+      @include adaptiveValue("row-gap", 170, 110);
     }
     @media (max-width: toEm(375.98)) {
       @include adaptiveValue("row-gap", 170, 85);
     }
     @media (max-width: toEm(335.98)) {
-      @include adaptiveValue("row-gap", 170, 65);
+      @include adaptiveValue("row-gap", 170, 75);
     }
   }
 }

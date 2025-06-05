@@ -9,6 +9,7 @@
   flex-direction: column;
   font-family: $helveticaNeueCyr;
   min-height: 100%;
+  overflow: hidden;
 }
 .app-header {
   width: 100%;
@@ -177,7 +178,7 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     word-break: break-word;
-    hyphens: auto;
+    // hyphens: auto;
     @include adaptiveValue("font-size", 24, 18);
   }
   &__call {
@@ -215,7 +216,7 @@
       left: 70%;
       z-index: -2;
       display: block;
-      width: 97%;
+      width: 80vh;
       height: 63%;
       background: $bgGradient;
       filter: blur(80px);
@@ -230,13 +231,13 @@
       left: -37%;
       z-index: -1;
       display: block;
-      width: 97%;
+      width: 80vh;
       height: 23%;
       background: $bgGradientSkyBlue;
       filter: blur(80px);
       pointer-events: none;
       opacity: 0;
-      transform: rotate(-164deg);
+      transform: translateX(-50%) rotate(-164deg);
     }
 
     @media (max-width: toEm(970.98)) {
@@ -261,7 +262,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: toRem(1582);
+    margin: 0 auto;
+    max-width: toRem(1100);
     @media (max-width: toEm(970.98)) {
       gap: toRem(5);
       @include adaptiveValue("margin-top", 50, 20);
@@ -311,6 +313,14 @@
 }
 /* #endregion content-for-parallax */
 /* #region advantages */
+// animation
+.pre-animation {
+  .advantages__content-block {
+    opacity: 0;
+    transform: translateY(toRem(-30));
+  }
+}
+
 .advantages {
   position: relative;
   display: flex;
@@ -347,10 +357,10 @@
     max-width: toRem(490);
     @include adaptiveValue("gap", 15, 10);
     @media (max-width: toEm(1900.98)) {
-@include adaptiveValue("gap", 35, 20);
+      @include adaptiveValue("gap", 35, 20);
     }
     @media (max-width: toEm(1458.98)) {
-@include adaptiveValue("gap", 15, 10);
+      @include adaptiveValue("gap", 15, 10);
     }
   }
   &__image-wrapper {
@@ -431,18 +441,11 @@
       top: 25%;
     }
     img {
-      // position: absolute;
-      // left: 50%;
-      // bottom: toRem(-150);
-      // transform: translateX(-50%);
-      // width: clamp(toRem(200), 35vw, toRem(490));
     }
 
     color: $fontColorDark;
     background-color: $bgWhite;
   }
-
-  // .advantages__content-block--right
 
   &__content-block--right {
     @media (max-width: toEm(970.98)) {
@@ -832,12 +835,7 @@
     line-height: 0.95;
   }
 }
-.animate-left {
-}
-.pricing-title-1row {
-}
-.animate-right {
-}
+
 .pricing-title-2row {
   text-align: right;
   @media (max-width: toEm(466.98)) {
@@ -851,3 +849,225 @@
 }
 
 /* #endregion pricing */
+/* #region instructors */
+.instructors {
+  width: 100%;
+  height: 100%;
+  @include adaptiveValue("padding-inline", 40, 16);
+
+  // @media (max-width: toEm(1339.98)) {
+  //   padding-left: 0;
+  // }
+
+  &__wrapper {
+    margin: 0 auto;
+    @include adaptiveValue("margin-block", 100, 50);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("gap", 70, 30);
+    position: relative;
+    z-index: 2;
+  }
+
+  // .instructors__title-wrapper
+
+  &__title-wrapper {
+    margin: 0 auto;
+    max-width: toRem(1478);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @include adaptiveValue("gap", 7, 5);
+
+    // @media (max-width: toEm(1579.98)) {
+    //   max-width: toRem(940);
+    // }
+  }
+
+  // .instructors__title
+
+  &__title {
+    width: 100%;
+    font-weight: 550;
+    text-transform: uppercase;
+    @include adaptiveValue("font-size", 78, 24);
+    line-height: 0.95;
+  }
+
+  // .instructors__instructors-wrapper
+
+  &__instructors-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+}
+.animate-left {
+}
+.instructors-title-1row {
+  @media (max-width: toEm(1579.98)) {
+    max-width: toRem(1182);
+    align-self: start;
+  }
+  @media (max-width: toEm(1234.98)) {
+    max-width: toRem(986);
+  }
+  @media (max-width: toEm(499.98)) {
+    max-width: toRem(380);
+  }
+  @media (max-width: toEm(470.98)) {
+    max-width: toRem(334);
+  }
+  @media (max-width: toEm(421.98)) {
+    max-width: toRem(304);
+  }
+}
+.instructors-title-2row {
+  text-align: right;
+}
+.instructors-title-3row {
+}
+
+.instructors-block {
+  width: 100%;
+  height: 100%;
+  &__cards {
+    position: relative;
+    max-width: toRem(1920);
+    min-height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: toRem(2);
+
+    @media (max-width: toEm(983.98)) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      @include adaptiveValue("gap", 40, 10);
+    }
+  }
+}
+.instructor-card-container {
+  width: 100%;
+
+  // .instructor-card-container__card
+
+  &__card {
+    flex: 1 1 toRem(490);
+    max-width: toRem(490);
+    min-width: toRem(280);
+    position: relative;
+    @media (max-width: toEm(983.98)) {
+      flex: 1 1 toRem(346);
+    }
+  }
+
+  // .instructor-card-container__card--first
+
+  &__card--first {
+    @include adaptiveValue("margin-right", 140, 0);
+
+    @media (max-width: toEm(1339.98)) {
+      @include adaptiveValue("margin-right", 50, 0);
+    }
+  }
+  &__card--second {
+    position: relative;
+    @include adaptiveValue("margin-right", 90, 50);
+    @include adaptiveValue("margin-top", 90, 30);
+
+    @media (max-width: toEm(1339.98)) {
+      @include adaptiveValue("margin-right", 30, 0);
+    }
+  }
+  &__wrapper-card {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    @include adaptiveValue("gap", 70, 30);
+  }
+
+  &__name {
+    @include adaptiveValue("font-size", 32, 18);
+    line-height: 1.2;
+    color: $fontColorWhite;
+  }
+
+  &__wrapper-img {
+    max-width: 100%;
+    aspect-ratio: 490 / 669;
+
+    @media (max-width: toEm(983.98)) {
+      aspect-ratio: 372 / 346;
+    }
+    @media (max-width: toEm(513.98)) {
+      aspect-ratio: 372 / 346;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__discription-block {
+    background-color: $bgDescriptionInstructors;
+    @include adaptiveValue("font-size", 24, 18);
+    color: $fontColorWhite;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media (max-width: toEm(1339.98)) {
+      hyphens: auto;
+    }
+  }
+
+  &__expirience {
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+
+    @include adaptiveValue("padding", 30, 10);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: toRem(10);
+
+    &::before {
+      content: "❯";
+      position: absolute;
+      right: 5%;
+      top: 40%;
+      transition: transform 0.3s ease;
+      transform: rotate(-90deg);
+    }
+
+    &.expanded::before {
+      transform: rotate(90deg);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__discription {
+    @include adaptiveValue("padding", 20, 10);
+    @include adaptiveValue("font-size", 24, 14);
+    text-align: justify;
+  }
+
+  &__card--third {
+  }
+}
+.wrapper-card-second {
+  // @include adaptiveValue("margin-top", 90, 30);
+}

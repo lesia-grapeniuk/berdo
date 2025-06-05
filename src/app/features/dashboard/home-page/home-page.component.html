@@ -57,7 +57,8 @@
               {{'content-for-parallax.title-3row' | translate}}</h2>
           </div>
           <!-- content-for-parallax second content block -->
-          <div class="content-for-parallax__advantages advantages">
+          <div [ngClass]="{ 'pre-animation': !advantagesInView }" [@staggerFadeDown]="advantagesInView ? 'in' : 'out'"
+            #advantagesSection class="content-for-parallax__advantages advantages">
             <!-- advantages__content-block left-container -->
             <div class="advantages__content-block advantages__content-block--left">
               <div class="advantages__card">
@@ -72,7 +73,7 @@
             <!-- advantages__content-block center-container -->
             <div class="advantages__content-block advantages__content-block--center">
               <div class="advantages__card card-center">
-                  <div class="advantages__content-block-center-wrapper">
+                <div class="advantages__content-block-center-wrapper">
                   <div class="advantages__image-wrapper image-center-block">
                     <img src="assets/images/advantages/safety.webp"
                       alt="фото з райдером на мотоциклі в гірському лісі з повним екіпіруванням">
@@ -158,11 +159,10 @@
         </div>
       </div>
     </section>
-    
+
     <section id="pricing" class="pricing">
       <div class="pricing__wrapper">
         <div class="pricing__title-wrapper">
-          <h2 class="pricing__title"></h2>
           <h2 #animatedTitle class="pricing__title animate-left pricing-title-1row">
             {{'pricing.pricing-title-1row' | translate}}</h2>
           <h2 #animatedTitle class="pricing__title animate-right pricing-title-2row">
@@ -172,6 +172,76 @@
         </div>
 
         <app-pricing></app-pricing>
+      </div>
+    </section>
+
+    <section id="instructor" class="instructors">
+      <div class="instructors__wrapper">
+        <div class="instructors__title-wrapper">
+          <h2 #animatedTitle class="instructors__title instructors-title-1row">
+            {{'instructors.instructor-title-1row' | translate}}</h2>
+          <h2 #animatedTitle class="instructors__title instructors-title-2row">
+            {{'instructors.instructor-title-2row' | translate}}</h2>
+          <h2 #animatedTitle class="instructors__title  instructors-title-3row">
+            {{'instructors.instructor-title-3row' | translate}}</h2>
+        </div>
+
+        <div class="instructors__instructors-wrapper instructors-block">
+          <div class="instructors-block__cards instructor-card-container">
+            <div class="instructor-card-container__card instructor-card-container__card--first">
+              <div class="instructor-card-container__wrapper-card">
+                <div class="instructor-card-container__name">{{ 'instructors.konan.name' | translate }}</div>
+                <div class="instructor-card-container__wrapper-img">
+                  <img src="assets/images/instructors/konan.webp" alt="фото інструктора">
+                </div>
+                <div class="instructor-card-container__discription-block">
+                  <p
+                    class="instructor-card-container__discription"
+                    [@fadeExpand]="expandedInstructors['konan'] ? 'open' : 'closed'"
+                    class="instructor-card-container__discription">{{"instructors.konan.description" | translate}}</p>
+                  <p
+                    (click)="toggleExpanded('konan')"
+                    [class.expanded]="expandedInstructors['konan']"
+                    class="instructor-card-container__expirience">{{"instructors.konan.experience" | translate}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="instructor-card-container__card instructor-card-container__card--second">
+              <div class="instructor-card-container__wrapper-card wrapper-card-second">
+                <div class="instructor-card-container__name">{{"instructors.yuriy.name" | translate}}</div>
+                <div class="instructor-card-container__wrapper-img">
+                  <img src="assets/images/instructors/yuriy.webp" alt="фото інструктора">
+                </div>
+                <div class="instructor-card-container__discription-block">
+                  <p
+                    class="instructor-card-container__discription"
+                    [@fadeExpand]="expandedInstructors['yuriy'] ? 'open' : 'closed'">{{"instructors.yuriy.description" | translate}}</p>
+                  <p
+                    (click)="toggleExpanded('yuriy')"
+                    [class.expanded]="expandedInstructors['yuriy']"
+                    class="instructor-card-container__expirience">{{"instructors.yuriy.experience" | translate}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="instructor-card-container__card instructor-card-container__card--third">
+              <div class="instructor-card-container__wrapper-card">
+                <div class="instructor-card-container__name">{{"instructors.sasha.name" | translate}}</div>
+                <div class="instructor-card-container__wrapper-img">
+                  <img src="assets/images/instructors/sasha.webp" alt="фото інструктора">
+                </div>
+                <div class="instructor-card-container__discription-block">
+                  <p
+                    [@fadeExpand]="expandedInstructors['sasha'] ? 'open' : 'closed'"
+                    class="instructor-card-container__discription">{{"instructors.sasha.description" | translate}}</p>
+                  <p
+                    (click)="toggleExpanded('sasha')"
+                    [class.expanded]="expandedInstructors['sasha']"
+                    class="instructor-card-container__expirience">{{"instructors.sasha.experience" | translate}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>

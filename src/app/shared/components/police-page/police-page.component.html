@@ -1,11 +1,27 @@
-<p>Політика конфіденційності
+<section class="privacy-policy">
+  <div class="privacy-policy__container">
+    <h1 class="privacy-policy__title">{{ 'privacy.title' | translate }}</h1>
 
-  Ми не збираємо, не зберігаємо та не обробляємо жодної особистої інформації користувачів нашого сайту.
+    <p class="privacy-policy__text">{{ 'privacy.intro' | translate }}</p>
 
-  Ми не використовуємо файли cookie, аналітичні інструменти чи інші технології для відстеження відвідувачів.
+    <p class="privacy-policy__text">{{ 'privacy.no-data' | translate }}</p>
 
-  Якщо ви зв'яжетеся з нами через надані контактні засоби, ваша інформація буде використана виключно для відповіді на ваш запит і не буде передана третім особам.
+    <p class="privacy-policy__text">{{ 'privacy.contact-info' | translate }}</p>
 
-  Ми залишаємо за собою право оновлювати цю політику конфіденційності. Усі зміни будуть опубліковані на цій сторінці.
+    <div class="privacy-policy__rights">
+      <h2 class="privacy-policy__subtitle">{{ 'privacy.user-rights-title' | translate }}</h2>
+      <ul class="privacy-policy__list">
+        <li>{{ 'privacy.user-rights.know' | translate }}</li>
+        <li>{{ 'privacy.user-rights.correct' | translate }}</li>
+        <li>{{ 'privacy.user-rights.withdraw' | translate }}</li>
+        <li>{{ 'privacy.user-rights.complain' | translate }}</li>
+      </ul>
+    </div>
 
-  Якщо у вас є запитання щодо цієї політики, будь ласка, зв'яжіться з нами за адресою: email.</p>
+    <p class="privacy-policy__text">
+      {{ 'privacy.update-info' | translate }}
+      <a href="mailto:berdo@ukr.com" class="privacy-policy__email">berdo&#64;ukr.com</a>
+    </p>
+  </div>
+  <a routerLink="/home-page" class="privacy__back-link">{{ 'common.back-to-home' | translate }}</a>
+</section>

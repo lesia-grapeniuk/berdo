@@ -7,12 +7,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: 15%;
+    top: -47%;
     left: 0;
     z-index: -1;
     display: block;
-    width: 95%;
-    height: 83%;
+    width: 103%;
+    height: 147%;
     background: $bgGradient;
     filter: blur(80px);
     pointer-events: none;
@@ -25,6 +25,10 @@
     flex-direction: column;
     justify-content: space-between;
     @include adaptiveValue("gap", 80, 5);
+
+    @media (max-width: toEm(1149.98)) {
+      @include adaptiveValue("gap", 20, 5);
+    }
   }
 }
 .top {
@@ -46,17 +50,17 @@
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: auto auto;
       gap: toRem(16);
-      @include adaptiveValue('row-gap', 170, 140);
+      @include adaptiveValue("row-gap", 170, 140);
       justify-items: center;
     }
     @media (max-width: toEm(584.98)) {
-      @include adaptiveValue('row-gap', 170, 105);
+      @include adaptiveValue("row-gap", 170, 105);
     }
     @media (max-width: toEm(375.98)) {
-      @include adaptiveValue('row-gap', 170, 85);
+      @include adaptiveValue("row-gap", 170, 85);
     }
     @media (max-width: toEm(335.98)) {
-      @include adaptiveValue('row-gap', 170, 65);
+      @include adaptiveValue("row-gap", 170, 65);
     }
   }
 }
@@ -179,12 +183,12 @@
   @media (max-width: toEm(1535)) {
     @include adaptiveValue("height", 390, 80);
   }
-    @media (max-width: toEm(584.98)) {
+  @media (max-width: toEm(584.98)) {
     position: absolute;
     top: 21%;
     left: 0;
   }
-    @media (max-width: toEm(484.98)) {
+  @media (max-width: toEm(484.98)) {
     position: absolute;
     top: 23%;
     left: 0;

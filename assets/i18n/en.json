@@ -49,7 +49,7 @@
         "Svydivets Ridge views"
       ],
       "description": "Relaxed ride through serene trails and meadows — the ideal way to connect with nature and gain basic off-road skills.",
-      "price": "3,000"
+      "price": "3 000 UAH"
     },
     "panoramas": {
       "level": "intermediate level",
@@ -61,7 +61,7 @@
         "Svydivets Ridge crossing"
       ],
       "description": "Ride through scenic ridgelines, stream crossings, and uphill trails with panoramic views and a dose of adrenaline.",
-      "price": "3,000"
+      "price": "3 000 UAH"
     },
     "brave": {
       "level": "advanced level",
@@ -74,7 +74,7 @@
         "Strictly for experienced riders"
       ],
       "description": "Ready for a real challenge? Ride deep into the wild Carpathians with steep climbs, rocky paths, and wild beauty.",
-      "price": "3,000"
+      "price": "3 000 UAH"
     },
     "extreme": {
       "level": "extreme level",
@@ -87,7 +87,7 @@
         "Raw Svydivets landscapes"
       ],
       "description": "🔥 Heart-pounding adrenaline in the mountains 🏔️. Extreme climbs, sharp drops, wild streams, and no room for fear 💪",
-      "price": "3,000"
+      "price": "3 000 UAH"
     },
     "study": {
       "level": "beginner level",
@@ -99,7 +99,7 @@
         "Svydivets Ridge background"
       ],
       "description": "Our instructors believe in you even more than your mom 😄. We make your first ride fun, safe, and unforgettable 🚀",
-      "price": "3,000"
+      "price": "3 000 UAH"
     }
   },
   "btn-book-adventure": "Book your adventure",
@@ -113,27 +113,27 @@
     "tablet-title-3": "extra services",
     "min-time-riding": "minimum ride time",
     "min-time": "2 hours",
-    "min-time-for-atv": "1 hr / 1,500 UAH",
+    "min-time-for-atv": "1 hr / 1 500 UAH",
     "table-title-1": "engine volume",
     "table-title-2": "125–250 cc",
     "table-title-3": "300 cc",
     "table-text-row-1-1": "2 hours",
-    "table-text-row-1-2": "3,000 UAH",
-    "table-text-row-1-3": "3,500 UAH",
+    "table-text-row-1-2": "3 000 UAH",
+    "table-text-row-1-3": "3 500 UAH",
     "table-text-row-2-1": "3 hours",
-    "table-text-row-2-2": "3,800 UAH",
-    "table-text-row-2-3": "4,300 UAH",
+    "table-text-row-2-2": "3 800 UAH",
+    "table-text-row-2-3": "4 300 UAH",
     "table-text-row-3-1": "extra hour",
     "table-text-row-3-2": "800 UAH",
     "table-text-row-3-3": "800 UAH",
     "table-text-row-4-1": "full day",
     "table-text-row-4-1-span": " (bike with gear + fuel, no guide included)",
-    "table-text-row-4-2": "4,500 UAH",
-    "table-text-row-4-3": "5,000 UAH",
+    "table-text-row-4-2": "4 500 UAH",
+    "table-text-row-4-3": "5 000 UAH",
     "extra-services-title": "additional services",
-    "row-1-price-1": "4,500 UAH",
-    "row-1-price-2": "4,500 UAH",
-    "row-1-price-3": "1,000 UAH",
+    "row-1-price-1": "4 500 UAH",
+    "row-1-price-2": "4 500 UAH",
+    "row-1-price-3": "1 000 UAH",
     "row-1-price-4": "100 UAH",
     "row-1-price-5": "500 UAH/hr",
     "row-1-price-6": "200 UAH/hr",
@@ -154,5 +154,44 @@
     "label-equipment": "gear and fuel included",
     "label-shower": "shower after the ride",
     "label-parking": "secure parking with surveillance"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This website is owned and operated by Sole Proprietor Hrapeniuk L.M. We respect the privacy of our users and comply with the requirements of the Law of Ukraine 'On Personal Data Protection' as well as international standards (GDPR).",
+    "no-data": "We do not collect, store, or process any personal information automatically. We do not use cookies, analytics services, or any other tools to track user activity.",
+    "contact-info": "If you contact us via forms on the site, email, or other means of communication, the data you provide will be used solely to respond to your inquiry. This data is not shared with third parties and is retained only as long as necessary to process your request.",
+    "user-rights-title": "Each user has the right to:",
+    "user-rights": {
+      "know": "- know what personal data is stored about them (if any);",
+      "correct": "- request correction or deletion of such data;",
+      "withdraw": "- withdraw their consent to data processing;",
+      "complain": "- lodge a complaint with the relevant supervisory authority."
+    },
+    "update-info": "We reserve the right to update this policy. The current version is always available on this page.",
+    "contact-us": "If you have any questions about this policy, please contact us at:",
+    "email": "berdo&#64;ukr.com"
+  },
+  "common": {
+    "back-to-home": "Back to Home"
+  },
+  "instructors": {
+    "instructor-title-1row": "Our team has only higher-level, passionate pros",
+    "instructor-title-2row": "who truly love",
+    "instructor-title-3row": "what they do",
+    "konan": {
+      "name": "Vasyl",
+      "experience": "years of experience",
+      "description": "Enduro isn’t just a hobby for me — it’s a way of life. I love exploring new trails and sharing my experience with others. During my training sessions, we don’t just focus on riding techniques — we also enjoy the nature, overcome obstacles, and create unforgettable memories. I’m always there to support you, offer tips, and make sure your first (or next) ride is as safe and exciting as possible. Join me, and together we’ll discover the true spirit of enduro!"
+    },
+    "yuriy": {
+      "name": "Yura",
+      "experience": "years of experience",
+      "description": "For me, enduro is about the mountains, freedom, and the journey to yourself. I don’t just ride – I live it. I love guiding guests through mountain trails, discovering new routes, and sharing the energy of adventure. Tourism and thrill are my element."
+    },
+    "sasha": {
+      "name": "Sasha",
+      "experience": "5 years of experience",
+      "description": "I live for motorcycles and the mountains. Every ride is a chance to share what I love: freedom, technique, and emotion. I carefully listen to each rider’s needs and always generously share tips to make your ride not just safe, but truly unforgettable."
+    }
   }
 }

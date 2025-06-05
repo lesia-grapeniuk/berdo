@@ -1034,27 +1034,30 @@
 
   &__expirience {
     height: 100%;
+    flex-shrink: 0;
+    white-space: nowrap;
     position: relative;
     cursor: pointer;
-
     @include adaptiveValue("padding", 30, 10);
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
     gap: toRem(10);
+    padding-right: toRem(15);
 
     &::before {
       content: "❯";
       position: absolute;
       right: 5%;
-      top: 40%;
+      top: 50%;
       transition: transform 0.3s ease;
-      transform: rotate(-90deg);
+      transform: translateY(-50%) rotate(-90deg);
+      font-size: toRem(20);
     }
 
     &.expanded::before {
-      transform: rotate(90deg);
+      transform: translateY(-50%) rotate(90deg);
       transition: transform 0.3s ease;
     }
   }

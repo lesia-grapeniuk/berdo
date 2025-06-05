@@ -13,7 +13,7 @@ export const fadeExpand = trigger('fadeExpand', [
     padding: '*',
     overflow: 'hidden',
   })),
-  transition('closed <=> open', animate('0.5s ease-in-out')),
+  transition('closed <=> open', animate('0.4s ease')),
 ]);
 
 export const fadeInOut = trigger('fadeInOut', [
@@ -22,7 +22,7 @@ export const fadeInOut = trigger('fadeInOut', [
     animate('500ms ease-in', style({ opacity: 1 })),
   ]),
   transition(':leave', [
-    animate('300ms ease-out', style({ opacity: 0 })),
+    animate('400ms ease-out', style({ opacity: 0 })),
   ]),
 ]);
 

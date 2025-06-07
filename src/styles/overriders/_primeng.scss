@@ -12,7 +12,30 @@
 ::ng-deep .p-tabpanels {
   background-color: transparent !important;
 }
-::ng-deep .p-tablist-tab-list {
+.p-button:not(:disabled):hover {
+  background: transparent !important;
+  border: none !important;
+  transform: scale(1.07) !important;
+  transition: all 0.4s;
+}
+.p-button-danger:focus-visible {
+  outline-color: transparent !important;
+}
+.p-button-text.p-button-danger:not(:disabled):active {
+  background: transparent !important;
+}
+.p-button-text.p-button-danger:not(:disabled):active {
+    background: transparent !important;
+    border-color: transparent;
+    color: #569922 !important;
+}
+.p-button-text.p-button-danger {
+      color: #569922 !important;
+}
+.pi-times {
+    font-size: 2rem !important;
+}
+.p-tablist-tab-list {
   @include adaptiveValue("gap", 10, 2);
   background: transparent !important;
   display: flex;

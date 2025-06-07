@@ -4,6 +4,17 @@
     "text-1row": "Tailored to Every Rider",
     "text-2row": "In the Breathtaking Carpathians"
   },
+  "sections": {
+    "about": "About Us",
+    "advantages": "Why Choose Us",
+    "location": "Location",
+    "tours": "Tours",
+    "pricing": "Pricing",
+    "galleryPhoto": "Gallery",
+    "feedback": "Reviews",
+    "instructor": "Instructors",
+    "contact": "Contact"
+  },
   "left-block-main-screen": {
     "text": "With 5 years of hands-on enduro experience, we’ll help you unlock the power of the mountains and the freedom of true off-road riding."
   },

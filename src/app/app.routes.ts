@@ -3,7 +3,7 @@ import { PolicePageComponent } from "@shared/components/police-page/police-page.
 
 export const routes: Routes = [
   {
-    path: "",
+    path: "**",
     redirectTo: "home-page",
     pathMatch: "full",
   },

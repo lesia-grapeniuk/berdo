@@ -17,6 +17,7 @@ import { SectionsService } from "@shared/services/sections.service";
 import { SectionId } from "@shared/enums/section.enum";
 import { PricingComponent } from "@shared/components/pricing/pricing.component";
 import { fadeExpand, staggerFadeDown } from "@shared/animations/global-animations";
+import { ReviewsComponent } from "@shared/components/reviews/reviews.component";
 
 @Component({
   selector: "app-home-page",
@@ -29,6 +30,7 @@ import { fadeExpand, staggerFadeDown } from "@shared/animations/global-animation
     LanguageSwitcherComponent,
     TrackCarrouselComponent,
     PricingComponent,
+    ReviewsComponent,
   ],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
@@ -141,8 +143,8 @@ export class HomePageComponent implements AfterViewInit {
       }
     });
   }
-// for openning the description about instructors
+  // for openning the description about instructors
   toggleExpanded(name: string): void {
-  this.expandedInstructors[name] = !this.expandedInstructors[name];
-}
+    this.expandedInstructors[name] = !this.expandedInstructors[name];
+  }
 }

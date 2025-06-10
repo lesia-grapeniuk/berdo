@@ -43,6 +43,7 @@
     line-height: 1.5;
     gap: toRem(3);
     @include adaptiveValue("font-size", 24, 16);
+    padding-inline: toRem(10);
 
     @media (max-width: toEm(584.98)) {
       display: grid;
@@ -59,7 +60,7 @@
       @include adaptiveValue("row-gap", 170, 85);
     }
     @media (max-width: toEm(335.98)) {
-      @include adaptiveValue("row-gap", 170, 75);
+      @include adaptiveValue("row-gap", 170, 80);
     }
   }
 }
@@ -138,6 +139,7 @@
     @media (max-width: toEm(584.98)) {
       grid-column: 2 / 1;
       grid-row: 2 / 2;
+      margin-bottom: toRem(10);
     }
     @media (any-hover: hover) {
       &:hover {
@@ -166,6 +168,7 @@
   @media (max-width: toEm(584.98)) {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
+    margin-bottom: toRem(10);
   }
 }
 .footer-logo-grid {
@@ -175,7 +178,7 @@
   max-width: toRem(1989);
   @include adaptiveValue("height", 460, 60);
   min-height: toRem(60);
-  padding: toRem(1) 1rem;
+  // padding: toRem(1) 1rem;
   margin: 0 auto;
   overflow: hidden;
 

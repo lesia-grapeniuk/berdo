@@ -5,13 +5,13 @@
     "text-2row": "в мальовничих Карпатах"
   },
   "sections": {
-    "about": "Про нас",
+    "home": "BERDO",
     "advantages": "Переваги",
     "location": "Локація",
     "tours": "Тури",
-    "pricing": "Пакети",
-    "galleryPhoto": "Фото галерея",
-    "feedback": "Відгуки",
+    "pricing": "Ціни",
+    "galleryphotos": "Фото галерея",
+    "reviews": "Відгуки",
     "instructor": "Інструктори",
     "contact": "Контакти"
   },

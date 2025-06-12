@@ -28,7 +28,7 @@
   width: 100%;
   margin: 0 auto;
   z-index: 1;
-    @media (max-width: 550px) {
+  @media (max-width: 550px) {
     height: auto;
     min-height: 100vh;
   }
@@ -107,6 +107,11 @@
     max-width: 100%;
     width: 100%;
   }
+}
+.slide-left,
+.slide-right,
+.slide-up {
+  will-change: transform;
 }
 .main-screen__text {
   width: 100%;

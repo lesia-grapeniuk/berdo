@@ -119,7 +119,7 @@ export class HomePageComponent implements AfterViewInit {
     this.upEls.forEach((el) => {
       el.nativeElement.style.transform = isMobile
         ? `translateX(-${scrollY * 0.07}px)`
-        : `translateY(${scrollY * 0.1}px)`;
+        : `translateY(${scrollY * 0.}px)`;
     });
 
     if (this.backgroundVideoRef?.nativeElement) {

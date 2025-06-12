@@ -3,24 +3,36 @@
 .reviews {
   width: 100%;
   height: 100%;
-  border: 1px solid red;
+  // border: 1px solid red;
 
   &__wrapper {
     max-width: toRem(1720);
     min-height: 100%;
     display: flex;
     align-items: center;
+
+    @media (max-width: toEm(998.98)) {
+      @include adaptiveValue("margin-inline", 100, 10);
+    }
   }
 
   &__card {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     min-height: 100%;
     flex: 1 1 auto;
     height: 100%;
     align-items: stretch;
-    @include adaptiveValue("gap", 60, 30);
+    @include adaptiveValue("gap", 160, 15);
+
+    @media (max-width: toEm(1243.98)) {
+      @include adaptiveValue("gap", 60, 15);
+    }
+    @media (max-width: toEm(998.98)) {
+      flex-direction: column-reverse;
+      @include adaptiveValue("gap", 20, 10);
+    }
   }
 
   &__wrapper-content {
@@ -30,6 +42,12 @@
     @include adaptiveValue("gap", 40, 15);
     flex-direction: column;
     margin-right: 3%;
+
+    @media (max-width: toEm(998.98)) {
+      margin-right: 0;
+      // max-width: toRem(700);
+      margin: 0 auto;
+    }
   }
   &__container {
     width: 100%;
@@ -43,12 +61,27 @@
   // .reviews__img-wrapper
 
   &__img-wrapper {
-  // display: grid;
-  // grid-template-columns: minmax(toRem(1140));
-  // grid-template-rows: minmax(600);
-  // width: 100%;
-    // max-width: toRem(1040);
-    aspect-ratio: 840 / 600;
+    max-width: 100%;
+    aspect-ratio: 1040 / 700;
+
+    @media (max-width: toEm(1656.98)) {
+      aspect-ratio: 860 / 600;
+    }
+    @media (max-width: toEm(1566.98)) {
+      aspect-ratio: 840 / 600;
+    }
+    @media (max-width: toEm(1509.98)) {
+      aspect-ratio: 800 / 650;
+    }
+    @media (max-width: toEm(1375.98)) {
+      aspect-ratio: 700 / 670;
+    }
+    @media (max-width: toEm(1208.98)) {
+      aspect-ratio: 690 / 665;
+    }
+    @media (max-width: toEm(998.98)) {
+      aspect-ratio: 350 / 200;
+    }
 
     img {
       width: 100%;
@@ -76,41 +109,102 @@
   // .reviews__text
 
   &__text {
-    max-width: toRem(512);
-    @include adaptiveValue("font-size", 18, 14);
+    // max-width: toRem(512);
+    height: toRem(475);
+    @include adaptiveValue("font-size", 22, 14);
     line-height: 1.4;
     text-align: justify;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    // border: 1px solid red;
+
+    @media (max-width: toEm(998.98)) {
+      height: toRem(280);
+      @include adaptiveValue("font-size", 22, 18);
+       line-height: 1.5;
+      // height: max-content;
+    }
+    @media (max-width: toEm(835.98)) {
+      height: toRem(300);
+    }
+    @media (max-width: toEm(757.98)) {
+      height: toRem(330);
+    }
+    @media (max-width: toEm(696.98)) {
+      height: toRem(330);
+      @include adaptiveValue("font-size", 22, 16);
+      line-height: 1.6;
+    }
+    @media (max-width: toEm(635.98)) {
+      height: toRem(340);
+      @include adaptiveValue("font-size", 22, 16);
+      line-height: 1.6;
+    }
+    @media (max-width: toEm(564.98)) {
+      height: toRem(360);
+      @include adaptiveValue("font-size", 22, 16);
+      line-height: 1.6;
+    }
+    @media (max-width: toEm(537.98)) {
+      height: toRem(385);
+      @include adaptiveValue("font-size", 22, 16);
+      line-height: 1.4;
+    }
+    @media (max-width: toEm(430.98)) {
+      line-height: 1.2;
+    }
+    @media (max-width: toEm(347.98)) {
+      line-height: 1.1;
+    }
+  }
+
+  &__custom-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include adaptiveValue("gap", 50, 15);
+  }
+  &__btn-wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include adaptiveValue("gap", 50, 15);
+  }
+  &__arrow {
+    background: none;
+    border: 2px solid green;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: green;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.4s ease;
+      }
+    }
   }
 }
 
-::ng-deep .p-carousel-next-button {
-  position: absolute;
-  right: 20%;
-  bottom: 1%;
+.carousel-window {
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+  width: 100%;
 }
-::ng-deep .p-carousel-prev-button {
-  position: absolute;
-  right: 25%;
-  bottom: 1%;
+
+.reviews__img-wrapper,
+.reviews__wrapper-content {
+  flex: 1;
 }
-::ng-deep .p-carousel {
-}
-::ng-deep .p-carousel-viewport {
-  height: toRem(600) !important;
-}
-::ng-deep .p-carousel-item-list {
-  // height: toRem(600) !important;
-}
-::ng-deep .p-carousel-item {
-  height: 100% !important;
-}
-::ng-deep .p-button-text.p-button-secondary {
-  border-color: $bgButtonActive !important;
-}
-::ng-deep .p-button-text.p-button-first {
-  border-color: $bgButtonActive !important;
-}
-::ng-deep .p-disabled,
-.p-component:disabled {
-  opacity: 1;
+.carousel-item {
+  height: 600px;
+  transition: transform 0.5s ease;
 }

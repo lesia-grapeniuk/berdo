@@ -16,8 +16,9 @@ import { TrackCarrouselComponent } from "@shared/components/track-carrousel/trac
 import { SectionsService } from "@shared/services/sections.service";
 import { SectionId } from "@shared/enums/section.enum";
 import { PricingComponent } from "@shared/components/pricing/pricing.component";
-import { fadeExpand, staggerFadeDown } from "@shared/animations/global-animations";
+import { fadeExpand, staggerFadeDown, } from "@shared/animations/global-animations";
 import { ReviewsComponent } from "@shared/components/reviews/reviews.component";
+import { UiKitModule } from "@shared/UI-KIT/ui-kit.module";
 
 @Component({
   selector: "app-home-page",
@@ -31,6 +32,7 @@ import { ReviewsComponent } from "@shared/components/reviews/reviews.component";
     TrackCarrouselComponent,
     PricingComponent,
     ReviewsComponent,
+    UiKitModule
   ],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
@@ -117,7 +119,7 @@ export class HomePageComponent implements AfterViewInit {
     this.upEls.forEach((el) => {
       el.nativeElement.style.transform = isMobile
         ? `translateX(-${scrollY * 0.07}px)`
-        : `translateY(${scrollY * 0.2}px)`;
+        : `translateY(${scrollY * 0.1}px)`;
     });
 
     if (this.backgroundVideoRef?.nativeElement) {

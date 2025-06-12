@@ -33,7 +33,7 @@ export const fadeExpand = trigger("fadeExpand", [
 export const fadeInOut = trigger("fadeInOut", [
   transition(":enter", [
     style({ opacity: 0 }),
-    animate("500ms ease-in", style({ opacity: 1 })),
+    animate("500ms ease-in-out", style({ opacity: 1 })),
   ]),
   transition(":leave", [animate("400ms ease-out", style({ opacity: 0 }))]),
 ]);
@@ -46,7 +46,7 @@ export const staggerFadeDown = trigger("staggerFadeDown", [
         style({ opacity: 0, transform: "translateY(-30px)" }),
         stagger(600, [
           animate(
-            "700ms ease-out",
+            "700ms ease-in-out",
             style({ opacity: 1, transform: "translateY(0)" })
           ),
         ]),

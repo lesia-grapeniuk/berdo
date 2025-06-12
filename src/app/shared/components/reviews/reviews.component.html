@@ -1,24 +1,32 @@
 <div class="reviews">
   <div class="reviews__wrapper">
     <div class="reviews__container">
-
-      <p-carousel class="reviews__carousel" [value]="reviews" [numVisible]="1" [numScroll]="1" orientation="vertical">
-        <ng-template let-review #item>
-          <div class="reviews__card">
-            <div class="reviews__img-wrapper">
-              <img [src]="review.image" alt="{{ review.name }}" />
-            </div>
-            <div class="reviews__wrapper-content">
-              <div class="reviews__author-wrapper">
-                <h3 class="reviews__title mb-1">{{ review.nameKey | translate }}</h3>
-                <a class="reviews__instagram-link" [href]="review.instagram" target="_blank">instagram</a>
+      <div class="reviews__custom-carousel">
+        <div class="reviews__carousel-window">
+          <div
+            class="reviews__carousel-item"
+            *ngIf="currentReview"
+            @fadeInCard
+          >
+            <div class="reviews__card">
+              <div class="reviews__img-wrapper">
+                <img [src]="currentReview.image" />
               </div>
-              <p class="reviews__text mr-2">{{ review.textKey | translate }}</p>
+              <div class="reviews__wrapper-content">
+                <div class="reviews__author-wrapper">
+                  <h3 class="reviews__title">{{ currentReview.nameKey | translate }}</h3>
+                  <a class="reviews__instagram-link" [href]="currentReview.instagram" target="_blank">instagram</a>
+                </div>
+                <p class="reviews__text">{{ currentReview.textKey | translate }}</p>
+                <div class="reviews__btn-wrapper">
+                  <button (click)="prev()" class="reviews__arrow up">⬆</button>
+                  <button (click)="next()" class="reviews__arrow down">⬇</button>
+                </div>
+              </div>
             </div>
           </div>
-        </ng-template>
-      </p-carousel>
-
+        </div>
+      </div>
     </div>
   </div>
 </div>

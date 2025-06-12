@@ -3,7 +3,6 @@
 .reviews {
   width: 100%;
   height: 100%;
-  // border: 1px solid red;
 
   &__wrapper {
     max-width: toRem(1720);
@@ -19,7 +18,6 @@
   &__card {
     width: 100%;
     display: flex;
-    // justify-content: space-between;
     min-height: 100%;
     flex: 1 1 auto;
     height: 100%;
@@ -38,27 +36,18 @@
   &__wrapper-content {
     display: flex;
     align-items: flex-start;
-    // justify-content: space-between;
     @include adaptiveValue("gap", 40, 15);
     flex-direction: column;
     margin-right: 3%;
 
     @media (max-width: toEm(998.98)) {
       margin-right: 0;
-      // max-width: toRem(700);
       margin: 0 auto;
     }
   }
   &__container {
     width: 100%;
   }
-
-  // .reviews__carousel
-
-  &__carousel {
-  }
-
-  // .reviews__img-wrapper
 
   &__img-wrapper {
     max-width: 100%;
@@ -98,18 +87,7 @@
     line-height: 1.2;
   }
 
-  &__title {
-  }
-
-  // .reviews__instagram-link
-
-  &__instagram-link {
-  }
-
-  // .reviews__text
-
   &__text {
-    // max-width: toRem(512);
     height: toRem(475);
     @include adaptiveValue("font-size", 22, 14);
     line-height: 1.4;
@@ -117,13 +95,11 @@
     flex-grow: 1;
     display: flex;
     align-items: center;
-    // border: 1px solid red;
 
     @media (max-width: toEm(998.98)) {
       height: toRem(280);
       @include adaptiveValue("font-size", 22, 18);
-       line-height: 1.5;
-      // height: max-content;
+      line-height: 1.5;
     }
     @media (max-width: toEm(835.98)) {
       height: toRem(300);
@@ -173,6 +149,7 @@
     @include adaptiveValue("gap", 50, 15);
   }
   &__arrow {
+    position: relative;
     background: none;
     border: 2px solid green;
     border-radius: 50%;
@@ -190,12 +167,32 @@
         transition: all 0.4s ease;
       }
     }
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background-image: url("src/assets/icons/arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;
+      object-fit: cover;
+    }
   }
 }
+.up span {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
 
+.down span {
+  transform: translate(-50%, -50%);
+}
 .carousel-window {
   overflow: hidden;
-  height: 600px;
+  height: toRem(600);
   position: relative;
   width: 100%;
 }
@@ -205,6 +202,6 @@
   flex: 1;
 }
 .carousel-item {
-  height: 600px;
+  height: toRem(600);
   transition: transform 0.5s ease;
 }

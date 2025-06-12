@@ -6,12 +6,12 @@ import { SectionId } from "@shared/enums/section.enum";
 })
 export class SectionsService {
   public sectionIds: SectionId[] = [
-    SectionId.About,
+    SectionId.Home,
     SectionId.Advantages,
     SectionId.Location,
     SectionId.Tours,
-    SectionId.Feedback,
-    SectionId.GalleryPhoto,
+    SectionId.Reviews,
+    SectionId.GalleryPhotos,
     SectionId.Instructors,
     SectionId.Pricing,
     SectionId.Contact,

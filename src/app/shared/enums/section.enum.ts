@@ -1,12 +1,12 @@
 // section.enum.ts
 export enum SectionId {
-  About = 'about',
+  Home = 'home',
   Advantages = 'advantages',
   Location = 'location',
   Tours = 'tours',
   Pricing = 'pricing',
-  GalleryPhoto = 'galleryPhoto',
-  Feedback = 'feedback',
+  GalleryPhotos = 'galleryphotos',
+  Reviews = 'reviews',
   Instructors = 'instructor',
   Contact = 'contact',
 }

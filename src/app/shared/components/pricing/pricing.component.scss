@@ -102,9 +102,6 @@
     }
   }
 
-  &__min-time-riding {
-  }
-
   &__min-time {
     @include adaptiveValue("font-size", 30, 12);
   }
@@ -191,8 +188,10 @@
 
   &__table-text-row-4-1 {
     span {
-      -webkit-line-clamp: 2;
       display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
       @include adaptiveValue("font-size", 18, 12);
     }
   }
@@ -211,9 +210,6 @@
     @media (max-width: toEm(395.98)) {
       height: toRem(54);
     }
-  }
-
-  &__table-text-row-4-3 {
   }
 
   &__comfort-included {
@@ -397,9 +393,6 @@
     }
   }
 
-  &__extra-services-title {
-  }
-
   &__extra-services-table {
     border-collapse: collapse;
     text-align: center;
@@ -431,7 +424,6 @@
     @media (max-width: toEm(336.98)) {
       max-width: toRem(144);
     }
-
   }
   &__column-price {
     border-left: toRem(1) solid $bgWhite;
@@ -466,8 +458,8 @@
       height: 100%;
       object-fit: cover;
       @media (max-width: toEm(960.98)) {
-      object-position: top;
-    }
+        object-position: top;
+      }
     }
   }
 

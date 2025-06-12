@@ -5,13 +5,13 @@
     "text-2row": "In the Breathtaking Carpathians"
   },
   "sections": {
-    "about": "About Us",
-    "advantages": "Why Choose Us",
+    "home": "BERDO",
+    "advantages": "Advantages",
     "location": "Location",
     "tours": "Tours",
     "pricing": "Pricing",
-    "galleryPhoto": "Gallery",
-    "feedback": "Reviews",
+    "galleryphotos": "Gallery",
+    "reviews": "Reviews",
     "instructor": "Instructors",
     "contact": "Contact"
   },

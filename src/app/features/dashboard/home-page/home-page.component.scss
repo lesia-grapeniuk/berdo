@@ -13,12 +13,6 @@
 }
 .app-header {
   width: 100%;
-  // position: absolute;
-  // top: 0;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // background-color: transparent;
-  // z-index: 99;
 }
 /* #region main */
 .wrapper-main {
@@ -34,6 +28,10 @@
   width: 100%;
   margin: 0 auto;
   z-index: 1;
+    @media (max-width: 550px) {
+    height: auto;
+    min-height: 100vh;
+  }
 
   &__gradient {
     z-index: 1;

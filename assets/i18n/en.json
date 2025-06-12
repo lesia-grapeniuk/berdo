@@ -204,5 +204,30 @@
       "experience": "5 years of experience",
       "description": "I live for motorcycles and the mountains. Every ride is a chance to share what I love: freedom, technique, and emotion. I carefully listen to each rider’s needs and always generously share tips to make your ride not just safe, but truly unforgettable."
     }
+  },
+  "reviews": {
+    "dmytro": {
+      "name": "Dmytro Demianenko",
+      "text": "❝ A case when your expectations are exceeded big time. One full day turned into a 10+ hour journey through varied trails, giving a rich and often surprising feel of the mountains on an enduro. Want extreme? You’ll get it, and stunning views will be the cherry on top. The bike was fresh and clean, full gear too. We got coffee and tea, and the care from the team was obvious even during planning. This isn’t just a rental — it’s a real experience, made with love for bikes, mountains and people. Highly recommend! Will come back for sure! ❞"
+    },
+    "artem": {
+      "name": "Artem Serdtsev",
+      "text": "❝ Totally recommend! Huge choice of bikes for your body size and skill. Yurii is very kind and pro — helped me pick a perfect bike and clean gear. The route was super scenic, changing based on my skills! Pure emotions! After the ride — hot shower and a gift: branded socks and a coffee 🥰 On the way, Yurii also gave us water. 2 hours of pure joy! My recommendation... ❞"
+    },
+    "denys": {
+      "name": "Denys Nahornyi",
+      "text": "❝ We booked enduro for the whole family. Very professional service. The bikes and gear were all fresh and smelled great. There’s a changing room and shower, everything for comfort. Trails vary by your skills. We loved it. Next time — quads! Thank you for the great emotions. Everyone loved it a lot!!!!!!!! ❞"
+    },
+    "artemT": {
+      "name": "Artem Taranenko",
+      "text": "❝ Got so much joy and that good kind of tired after 3 hours riding in the hills. The 300cc bike was in perfect shape, and the gear was fresh and comfy. Our guide Vasyl not only led the way but taught me new things. Guys, thanks for the great approach. Wish you success and hope to ride again! ❞"
+    },
+    "alexander": {
+      "name": "Alexander Zas",
+      "text": "❝ We booked today and rode across many ridges. Tons of joy, amazing views and memories. I recommend this place. Bikes are top, gear is clean and disinfected. So flexible — the guide even took my 14-year-old daughter as a passenger. Great service and hygiene — 5+ ❞"
+    },
+    "reviews-title-1row": "our new guests",
+    "reviews-title-2row": "quickly",
+    "reviews-title-3row": "become regulars"
   }
 }

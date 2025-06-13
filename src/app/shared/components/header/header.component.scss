@@ -157,7 +157,10 @@
   }
 }
 .white-text {
+  background-color: $bgButtonActive;
   color: $fontColorWhite;
+  padding-block: toRem(10);
+  width: 100%;
 }
 .burger-menu {
   display: flex;
@@ -184,11 +187,11 @@
     color: $fontMainGreen;
     transition: all 0.4s;
 
-      @media (any-hover: hover) {
-        &:hover {
-          text-decoration: underline;
-        }
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
       }
+    }
   }
 
   &__list {

@@ -175,15 +175,24 @@
   }
 
   &__title {
+    cursor: pointer;
     @include adaptiveValue("font-size", 28, 20);
     line-height: 1.1;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: toRem(2);
     color: $fontMainGreen;
+    transition: all 0.4s;
+
+      @media (any-hover: hover) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
   }
 
   &__list {
+    cursor: pointer;
     margin: 0 auto;
     @include adaptiveValue("font-size", 24, 18);
     display: flex;
@@ -192,5 +201,15 @@
     align-items: center;
     justify-content: space-between;
     @include adaptiveValue("gap", 40, 30);
+  }
+  &__item {
+    transition: all 0.4s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transition: all 0.4s;
+        transform: scale(1.06);
+      }
+    }
   }
 }

@@ -188,10 +188,6 @@
 
   &__table-text-row-4-1 {
     span {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
-      line-clamp: 2;
       @include adaptiveValue("font-size", 18, 12);
     }
   }

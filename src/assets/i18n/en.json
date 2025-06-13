@@ -60,7 +60,7 @@
         "Svydivets Ridge views"
       ],
       "description": "Relaxed ride through serene trails and meadows — the ideal way to connect with nature and gain basic off-road skills.",
-      "price": "3 000 UAH"
+      "price": "64 €"
     },
     "panoramas": {
       "level": "intermediate level",
@@ -72,7 +72,7 @@
         "Svydivets Ridge crossing"
       ],
       "description": "Ride through scenic ridgelines, stream crossings, and uphill trails with panoramic views and a dose of adrenaline.",
-      "price": "3 000 UAH"
+      "price": "64 €"
     },
     "brave": {
       "level": "advanced level",
@@ -85,7 +85,7 @@
         "Strictly for experienced riders"
       ],
       "description": "Ready for a real challenge? Ride deep into the wild Carpathians with steep climbs, rocky paths, and wild beauty.",
-      "price": "3 000 UAH"
+      "price": "64 €"
     },
     "extreme": {
       "level": "extreme level",
@@ -98,7 +98,7 @@
         "Raw Svydivets landscapes"
       ],
       "description": "🔥 Heart-pounding adrenaline in the mountains 🏔️. Extreme climbs, sharp drops, wild streams, and no room for fear 💪",
-      "price": "3 000 UAH"
+      "price": "64 €"
     },
     "study": {
       "level": "beginner level",
@@ -110,7 +110,7 @@
         "Svydivets Ridge background"
       ],
       "description": "Our instructors believe in you even more than your mom 😄. We make your first ride fun, safe, and unforgettable 🚀",
-      "price": "3 000 UAH"
+      "price": "64 €"
     }
   },
   "btn-book-adventure": "Book your adventure",
@@ -124,31 +124,31 @@
     "tablet-title-3": "extra services",
     "min-time-riding": "minimum ride time",
     "min-time": "2 hours",
-    "min-time-for-atv": "1 hr / 1 500 UAH",
+    "min-time-for-atv": "1 hr / 32 €",
     "table-title-1": "engine volume",
     "table-title-2": "125–250 cc",
     "table-title-3": "300 cc",
     "table-text-row-1-1": "2 hours",
-    "table-text-row-1-2": "3 000 UAH",
-    "table-text-row-1-3": "3 500 UAH",
+    "table-text-row-1-2": "64 €",
+    "table-text-row-1-3": "74 €",
     "table-text-row-2-1": "3 hours",
-    "table-text-row-2-2": "3 800 UAH",
-    "table-text-row-2-3": "4 300 UAH",
+    "table-text-row-2-2": "80 €",
+    "table-text-row-2-3": "91 €",
     "table-text-row-3-1": "extra hour",
-    "table-text-row-3-2": "800 UAH",
-    "table-text-row-3-3": "800 UAH",
+    "table-text-row-3-2": "17 €",
+    "table-text-row-3-3": "17 €",
     "table-text-row-4-1": "full day",
     "table-text-row-4-1-span": " (bike with gear + fuel, no guide included)",
-    "table-text-row-4-2": "4 500 UAH",
-    "table-text-row-4-3": "5 000 UAH",
+    "table-text-row-4-2": "95 € UAH",
+    "table-text-row-4-3": "105 €",
     "extra-services-title": "additional services",
-    "row-1-price-1": "4 500 UAH",
-    "row-1-price-2": "4 500 UAH",
-    "row-1-price-3": "1 000 UAH",
-    "row-1-price-4": "100 UAH",
-    "row-1-price-5": "500 UAH/hr",
-    "row-1-price-6": "200 UAH/hr",
-    "row-1-price-7": "500 UAH/hr",
+    "row-1-price-1": "95 €",
+    "row-1-price-2": "95 €",
+    "row-1-price-3": "21 €",
+    "row-1-price-4": "2.11 €",
+    "row-1-price-5": "11 €/hr",
+    "row-1-price-6": "4.21 €/hr",
+    "row-1-price-7": "10.5 €/hr",
     "row-1-service-1": "Guide services for the day",
     "row-1-service-2": "Full-day motorcycle tour",
     "row-1-service-3": "Gear rental",
@@ -191,12 +191,12 @@
     "instructor-title-3row": "what they do",
     "konan": {
       "name": "Vasyl",
-      "experience": "years of experience",
+      "experience": "7 years of experience",
       "description": "Enduro isn’t just a hobby for me — it’s a way of life. I love exploring new trails and sharing my experience with others. During my training sessions, we don’t just focus on riding techniques — we also enjoy the nature, overcome obstacles, and create unforgettable memories. I’m always there to support you, offer tips, and make sure your first (or next) ride is as safe and exciting as possible. Join me, and together we’ll discover the true spirit of enduro!"
     },
     "yuriy": {
       "name": "Yura",
-      "experience": "years of experience",
+      "experience": "12 years of experience",
       "description": "For me, enduro is about the mountains, freedom, and the journey to yourself. I don’t just ride – I live it. I love guiding guests through mountain trails, discovering new routes, and sharing the energy of adventure. Tourism and thrill are my element."
     },
     "sasha": {

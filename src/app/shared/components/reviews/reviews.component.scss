@@ -80,13 +80,34 @@
   }
 
   &__author-wrapper {
+    width: 100%;
+    display: flex;
+    gap: toRem(5);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title-instagram-link-wrapper {
     display: flex;
     flex-direction: column;
     gap: toRem(10);
     @include adaptiveValue("font-size", 30, 18);
     line-height: 1.2;
   }
+  &__link-google-reviews {
+     @include adaptiveValue("font-size", 16, 12);
+  }
+  &__title-instagram-link-wrapper,
+  &__link-google-reviews {
+    transition: all 0.3s;
 
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+        transition: all 0.3s;
+      }
+    }
+  }
   &__text {
     height: toRem(475);
     @include adaptiveValue("font-size", 22, 14);

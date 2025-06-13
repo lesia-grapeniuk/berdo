@@ -14,8 +14,11 @@
               </div>
               <div class="reviews__wrapper-content">
                 <div class="reviews__author-wrapper">
+                  <div class="reviews__title-instagram-link-wrapper">
                   <h3 class="reviews__title">{{ currentReview.nameKey | translate }}</h3>
                   <a class="reviews__instagram-link" [href]="currentReview.instagram" target="_blank">instagram</a>
+                </div>
+                <a class="reviews__link-google-reviews" href="https://surl.li/hvhedr">{{'reviews.allreviews' | translate}}</a>
                 </div>
                 <p class="reviews__text">{{ currentReview.textKey | translate }}</p>
                 <div class="reviews__btn-wrapper">

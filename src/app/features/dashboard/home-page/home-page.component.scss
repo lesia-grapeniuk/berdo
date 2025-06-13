@@ -799,7 +799,7 @@
     @media (max-width: toEm(768.98)) {
       max-width: toRem(478);
       min-width: toRem(274);
-      aspect-ratio: 511 / 274;
+      aspect-ratio: 511 / 345;
       @include adaptiveValue("padding-left", 120, 80);
     }
     img {
@@ -809,7 +809,8 @@
       object-position: bottom;
 
       @media (max-width: toEm(768.98)) {
-        object-position: 20% 79%;
+        object-position: 20% 19%;
+        // object-position: top;
       }
     }
   }

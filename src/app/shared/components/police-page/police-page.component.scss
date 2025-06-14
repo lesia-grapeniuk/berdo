@@ -63,7 +63,7 @@
   font-weight: 500;
   font-size: 1rem;
   background-color: $bgButtonActive;
-  border: 1px solid $fontHoverGreen;
+  border: toRem(1) solid $fontHoverGreen;
   padding: 1%;
 
   &:hover {

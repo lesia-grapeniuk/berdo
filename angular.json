@@ -18,10 +18,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/",
+            "baseHref": "/berdo/",
             "optimization": true,
             "sourceMap": false,
-            "outputPath": "dist/berdo/browser",
+            "outputPath": "dist/berdo",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js", "@angular/localize/init"],
@@ -48,7 +48,7 @@
           "configurations": {
             "production": {
               "outputHashing": "all",
-              "baseHref": "/",
+              "baseHref": "/berdo/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",

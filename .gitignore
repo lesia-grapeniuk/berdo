@@ -1,9 +1,19 @@
-node_modules/
-dist/
-.angular/
-.metadata/
-*.tsbuildinfo
-*.log
+# IDE / OS / general
 .DS_Store
+Thumbs.db
+*.log
+*.tsbuildinfo
+*.swp
 .env
 .vscode/
+
+# Angular build output
+/dist/
+/.angular/
+/.metadata/
+
+# Node
+/node_modules/
+
+# Optional: якщо використовуєш Mac
+.idea/

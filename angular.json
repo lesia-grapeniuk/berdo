@@ -29,8 +29,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
-              "src/assets/i18n",
-              "src/CNAME"
+              "src/assets/i18n"
             ],
             "styles": [
               "node_modules/primeflex/primeflex.css",

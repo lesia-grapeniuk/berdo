@@ -1,15 +1,14 @@
 {
   "name": "berdo",
   "version": "0.0.0",
-  "homepage": "/berdo/",
+  "homepage": "/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:clean": "ng build --base-href=/berdo/ && cp -r dist/berdo/browser/* dist/berdo && rm -rf dist/berdo/browser",
-    "deploy": "npm run build:clean && npx angular-cli-ghpages --dir=dist/berdo"
+    "deploy": "ng run berdo:deploy"
   },
   "private": true,
   "dependencies": {

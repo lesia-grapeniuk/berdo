@@ -3,11 +3,12 @@ import { PolicePageComponent } from "@shared/components/police-page/police-page.
 
 export const routes: Routes = [
   {
-    path: "home-page",
+    path: "",
     loadComponent: () =>
       import("./features/dashboard/home-page/home-page.component").then(
         (m) => m.HomePageComponent
       ),
+    pathMatch: "full",
   },
   {
     path: "policy",
@@ -15,7 +16,7 @@ export const routes: Routes = [
   },
   {
     path: "**",
-    redirectTo: "home-page",
+    redirectTo: "",
     pathMatch: "full",
   },
 ];

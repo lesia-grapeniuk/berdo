@@ -9,10 +9,11 @@ import {
 import { SectionId } from "@shared/enums/section.enum";
 import { SectionsService } from "@shared/services/sections.service";
 import { UiKitModule } from "@shared/UI-KIT/ui-kit.module";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: "app-header",
-  imports: [UiKitModule, CommonModule, TranslateModule],
+  imports: [UiKitModule, CommonModule, TranslateModule, RouterModule],
   templateUrl: "./header.component.html",
   styleUrl: "./header.component.scss",
   animations: [fadeExpand, fadeInOut, slideInOutRightToLeft],
@@ -20,7 +21,7 @@ import { UiKitModule } from "@shared/UI-KIT/ui-kit.module";
 export class HeaderComponent {
   public menuOpen = false;
   public isScrolled = false;
-  sectionId = SectionId;
+  public sectionId = SectionId;
 
   constructor(public sectionsService: SectionsService) {}
 

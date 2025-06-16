@@ -1,13 +1,5 @@
-import { CommonModule } from "@angular/common";
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  HostListener,
-  QueryList,
-  ViewChild,
-  ViewChildren,
-} from "@angular/core";
+import { CommonModule, ViewportScroller } from "@angular/common";
+import { AfterViewInit, Component, inject, DestroyRef, ElementRef, HostListener, QueryList, ViewChild, ViewChildren } from "@angular/core";
 import { TranslateModule } from "@ngx-translate/core";
 import { HeaderComponent } from "@shared/components/header/header.component";
 import { FooterComponent } from "@shared/components/footer/footer.component";
@@ -20,6 +12,7 @@ import { fadeExpand,staggerFadeDown,
 } from "@shared/animations/global-animations";
 import { ReviewsComponent } from "@shared/components/reviews/reviews.component";
 import { UiKitModule } from "@shared/UI-KIT/ui-kit.module";
+import { Router} from "@angular/router";
 
 @Component({
   selector: "app-home-page",
@@ -51,6 +44,7 @@ export class HomePageComponent implements AfterViewInit {
   @ViewChild("advantagesSection", { static: false })
   advantagesSectionRef!: ElementRef;
 
+  private readonly destroyRef = inject(DestroyRef);
   public advantagesInView = false;
   public hideVideo = false;
   public SectionId = SectionId;
@@ -58,7 +52,8 @@ export class HomePageComponent implements AfterViewInit {
   public expandedInstructors: { [key: string]: boolean } = {};
 
   constructor(
-    private sectionsService: SectionsService) {}
+    private sectionsService: SectionsService
+  ) {}
 
   onNavigateTo(section: SectionId) {
     this.sectionsService.scrollToSection(section);

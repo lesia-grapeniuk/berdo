@@ -36,6 +36,15 @@
   line-height: 1.2;
   @include adaptiveValue("font-size", 32, 22);
   color: $fontMainGreen;
+  transition: all 0.4s;
+  cursor: pointer;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: $bgButtonHover;
+      transition: all 0.4s;
+    }
+  }
 }
 .location-contacts {
   max-width: toRem(855);

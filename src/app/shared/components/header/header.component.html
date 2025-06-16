@@ -1,5 +1,5 @@
 <header [class.scrolled]="isScrolled" (scroll)="onWindowScroll()" class="header" [class.hidden-header]="menuOpen">
-  <h3 class="logo-title">BERDO</h3>
+  <h3 (click)="scrollTo(sectionId.Home)" class="logo-title">BERDO</h3>
   <ng-template #contacts let-className="className">
     <div class="location-contacts" [ngClass]="[className, isScrolled ? 'scrolled-text' : '']">
       <a target="_blank" class="location" href="https://surl.li/djovmg">
@@ -17,7 +17,7 @@
 <!-- burger-menu -->
   <div class="wrapper-burger-menu burger-menu" *ngIf="menuOpen" @slideInOutRightToLeft>
     <div class="burger-menu__top-wrapper" @fadeInOut>
-      <h4 class="burger-menu__title">BERDO</h4>
+      <h4 (click)="scrollTo(sectionId.Home)" class="burger-menu__title">BERDO</h4>
       <div class="flex justify-center flex-wrap gap-4">
         <p-button @fadeInOut icon="pi pi-times" [rounded]="true" [text]="true" severity="danger"
           (click)="closeMenu()" />

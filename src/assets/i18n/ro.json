@@ -1,0 +1,234 @@
+{
+  "main-screen": {
+    "title-1row": "Enduro Călătorii",
+    "text-1row": "individual pentru toți",
+    "text-2row": "în pitoreștilor Carpați"
+  },
+  "sections": {
+    "home": "BERDO",
+    "advantages": "Avantaje",
+    "location": "Locație",
+    "tours": "Tururi",
+    "pricing": "Prețuri",
+    "galleryphotos": "Galerie Foto",
+    "reviews": "Recenzii",
+    "instructor": "Instructori",
+    "contact": "Contact"
+  },
+  "left-block-main-screen": {
+    "text": "Am explorat toate subtilitățile enduro timp de 5 ani și te vom ajuta cu ușurință să simți puterea muntelui și libertatea deplasărilor"
+  },
+  "content-for-parallax": {
+    "title-1row": "Într-adevăr",
+    "title-2row": "închirierea noastră",
+    "title-3row": "este specială și potrivită"
+  },
+  "advantages": {
+    "title-1-block": "Alegem aventuri personalizate pentru fiecare",
+    "title-2-block": "Ne pasă de siguranța ta",
+    "title-3-block": "Gândim la confortul și emoțiile tale",
+    "description-1-block": "Toate turele sunt individuale — poți alege traseul ideal, de la începători până la pro",
+    "description-2-block": "Echipamentul complet (cască, botine, costum moto) este inclus în preț",
+    "description-3-block": "Tu adu haine de schimb — restul este asigurat: duș, parcare, GoPro, cafea și gustări"
+  },
+  "location": {
+    "title-1-row": "Suntem situați",
+    "title-2-row": "în cel mai înalt",
+    "title-3-row": "masiv muntos din Carpați",
+    "text": "În jurul zonei noastre se află 6 munți de 2000 m la 360°, iar până la baza unuia dintre ei se ajunge în aproximativ 1,5 ore",
+    "description-1-row": "tu alegi",
+    "description-2-row": "traseul personalizat —",
+    "description-3-row": "noi îți oferim",
+    "description-4-row": "emoții memorabile"
+  },
+  "header": {
+    "location": "Bohdan, regiunea Transcarpatia"
+  },
+  "footer": {
+    "policy-privacy": "Protecția",
+    "policy-policy": "datelor",
+    "data-saved": "Date protejate"
+  },
+  "routes": {
+    "walk": {
+      "level": "nivel ușor",
+      "title": "PLIMBARE CARPATĂ",
+      "points": [
+        "Poteci forestiere pentru începători",
+        "Poalele muntelui Hoverla (opțional urcare pe vârf pe jos)",
+        "Poalele muntelui Petros (opțional urcare pe jos)",
+        "Culmile Svydovets"
+      ],
+      "description": "Te invităm la o plimbare ușoară prin pădure și pajiști pitorești din Carpați, fără riscuri mari — perfect pentru exersarea tehnicilor de bază",
+      "price": "€64+"
+    },
+    "panoramas": {
+      "level": "nivel mediu",
+      "title": "PANORAME CU DRIV",
+      "points": [
+        "Poalele muntelui Petros (traseu ceva mai tehnic)",
+        "Drum spre ferma ecologică Rozental (trecere prin munți între sate, brânzărie)",
+        "Trecerea Arșița – Petros",
+        "Culmile Svydovets"
+      ],
+      "description": "Combinăm poteci montane, creste magnifice, treceri prin pâraie, urcări ce dezvăluie panorame spectaculoase și un strop de adrenalină",
+      "price": "€64+"
+    },
+    "brave": {
+      "level": "nivel avansat",
+      "title": "TRASEUL CURAJOȘILOR",
+      "points": [
+        "Trasee cunoscute doar de adevărați huțuli și instructori experimentați",
+        "Poteci adânci și coborâri abrupte",
+        "Instructori profesioniști",
+        "Cele mai dificile segmente",
+        "Doar pentru rideri cu experiență solidă"
+      ],
+      "description": "Veți cuceri zona sălbatică a Carpaților cu locuri inaccesibile, urcări și coborâri abrupte, poteci stâncoase și treceri prin râuri",
+      "price": "€74+"
+    },
+    "extreme": {
+      "level": "nivel extrem",
+      "title": "EXTREM CARPATIC",
+      "points": [
+        "Trasee pe care puțini le pot parcurge",
+        "Instructori experimentați",
+        "Cele mai dificile segmente",
+        "Urcări foarte abrupte",
+        "Culmile Svydovets"
+      ],
+      "description": "Este o adevărată 💥 explozie de adrenalină între crestele munților 🏔️ Urcări rapide, coborâri abrupte, torente montane și off‑road care îți pun la încercare limitele 💪",
+      "price": "€95+"
+    },
+    "study": {
+      "level": "nivel de început",
+      "title": "PRIMII METRI PE DOUĂ ROȚI",
+      "points": [
+        "Instruire într‑o zonă sigură cu teren plat",
+        "Suport constant al instructorilor (și moral 😄)",
+        "Echipament complet inclus",
+        "Culmile Svydovets"
+      ],
+      "description": "Credem în tine mai mult decât mama ta 😄 Instructorii noștri sunt o combinație de experiență vastă și răbdare. Lecțiile sunt relaxate și sigure 🚀",
+      "price": "€64+"
+    }
+  },
+  "btn-book-adventure": "Rezervă aventura",
+  "btn-book-place": "Rezervă locul",
+  "pricing": {
+    "pricing-title-1row": "pentru confortul tău",
+    "pricing-title-2row": "am oferit prețuri",
+    "pricing-title-3row": "avantajoase",
+    "tablet-title-1": "motoare",
+    "tablet-title-2": "quaduri",
+    "tablet-title-3": "servicii suplimentare",
+    "min-time-riding": "timp minim de cursă",
+    "min-time": "2 ore",
+    "min-time-for-atv": "1 hr / €32",
+    "table-title-1": "cubicaj",
+    "table-title-2": "125–250 cm³",
+    "table-title-3": "300 cm³",
+    "table-text-row-1-1": "2 ore",
+    "table-text-row-1-2": "64 €",
+    "table-text-row-1-3": "74 €",
+    "table-text-row-2-1": "3 ore",
+    "table-text-row-2-2": "80 €",
+    "table-text-row-2-3": "91 €",
+    "table-text-row-3-1": "oră adițională",
+    "table-text-row-3-2": "17 €",
+    "table-text-row-3-3": "17 €",
+    "table-text-row-4-1": "zi întreagă",
+    "table-text-row-4-1-span": " (motocicletă cu echipament + combustibil, fără ghid)",
+    "table-text-row-4-2": "95 €",
+    "table-text-row-4-3": "105 €",
+    "extra-services-title": "servicii adiționale",
+    "row-1-price-1": "95 €",
+    "row-1-price-2": "95 €",
+    "row-1-price-3": "21 €",
+    "row-1-price-4": "2,11 €",
+    "row-1-price-5": "11 €/hr",
+    "row-1-price-6": "4,21 €/hr",
+    "row-1-price-7": "10,5 €/hr",
+    "row-1-service-1": "Ghid pentru o zi",
+    "row-1-service-2": "Tur moto pe zi",
+    "row-1-service-3": "Închiriere echipament",
+    "row-1-service-4": "Spălare moto",
+    "row-1-service-5": "Plimbare cu pasagerul",
+    "row-1-service-6": "Așteptare cu ghid, pentru urcarea pe vârf",
+    "row-1-service-7": "Supraveghere ghid la vârf"
+  },
+  "comfort": {
+    "title": "Ne-am gândit la starea ta de spirit și am inclus în preț:",
+    "label-instructor": "ghid profesionist",
+    "label-coffee": "apă, cafea, ceai, gustări",
+    "label-gopro": "filmare GoPro",
+    "label-equipment": "echipament și combustibil",
+    "label-shower": "duș după tur",
+    "label-parking": "parcare cu supraveghere video"
+  },
+  "privacy": {
+    "title": "Politica de confidențialitate",
+    "intro": "Acest site aparține și este administrat de Întreprinderea Individuală Grapeniuk L.M. Respectăm confidențialitatea utilizatorilor și ne conformăm Legii Ucrainei „Despre protecția datelor cu caracter personal” și standardelor internaționale (GDPR).",
+    "no-data": "Nu colectăm, nu stocăm și nu procesăm automat informații personale. Nu folosim cookie-uri, servicii de analiză sau alte instrumente de urmărit activitatea utilizatorilor.",
+    "contact-info": "Dacă ne contactezi prin formular, e-mail sau alte canale, datele tale sunt folosite doar pentru a răspunde solicitării. Nu sunt transferate terților și sunt păstrate doar cât e necesar.",
+    "user-rights-title": "Fiecare utilizator are dreptul:",
+    "user-rights": {
+      "know": "- să știe ce date personale sunt stocate (dacă există);",
+      "correct": "- să solicite corectarea sau ștergerea lor;",
+      "withdraw": "- să își retragă consimțământul pentru prelucrare;",
+      "complain": "- să depună o plângere la autoritatea de supraveghere."
+    },
+    "update-info": "Ne rezervăm dreptul de a modifica această politică. Versiunea actualizată este disponibilă pe această pagină.",
+    "contact-us": "Pentru întrebări despre această politică, contactează-ne la:",
+    "email": "berdo@ukr.com"
+  },
+  "common": {
+    "back-to-home": "Înapoi la început"
+  },
+  "instructors": {
+    "instructor-title-1row": "În echipa noastră sunt doar profesioniști experimentați,",
+    "instructor-title-2row": "care iubesc",
+    "instructor-title-3row": "munca lor",
+    "konan": {
+      "name": "Vasja",
+      "experience": "7 ani experiență",
+      "description": "Pentru mine, enduro nu este doar un hobby, ci un stil de viață. Ador să descopăr trasee noi și să împărtășesc experiența. La antrenamentele mele nu doar învățăm tehnica, ci și ne bucurăm de natură, depășim obstacole și trăim momente de neuitat. Sunt mereu alături pentru a susține și face experiența ta sigură și memorabilă. Alătură-te și vom descoperi împreună lumea enduro!"
+    },
+    "yuriy": {
+      "name": "Yura",
+      "experience": "12 ani experiență",
+      "description": "Pentru mine, enduro înseamnă munți, libertate și descoperire de sine. Nu doar merg — trăiesc asta. Îmi place să conduc oaspeții pe potecile montane, să descopăr trasee noi și să transmit energia aventurii. Turismul și adrenalina sunt pasiunea mea. Am nervi de oțel și explic simplu — astfel nou-veniții și riderii avansați se simt în siguranță."
+    },
+    "sasha": {
+      "name": "Sașa",
+      "experience": "5 ani experiență",
+      "description": "Trăiesc pentru motociclete și munți. Fiecare ieșire e ocazia de a transmite ceea ce iubesc: libertate, tehnică, emoții. Ascult cu atenție dorințele clienților și ofer sfaturi generoase pentru a face experiența nu doar sigură, dar și memorabilă."
+    }
+  },
+  "reviews": {
+    "allreviews": "Mai multe recenzii",
+    "dmytro": {
+      "name": "Dmytro Demianenko",
+      "text": "❝ Acel moment când așteptările sunt depășite de mult. O zi întreagă de enduro s-a transformat într‑o aventură de peste 10 ore, cu un traseu foarte variat, care a oferit o experiență bogată și neașteptată pentru posibilitățile moto enduro la munte 😊 Dacă vrei extrem — îl primești înzecit, iar priveliștile devin bonusuri plăcute. Motorul era aproape nou, echipamentul complet și proaspăt, am fost răsfățați cu cafea și ceai. Am simțit o ospitalitate maximă și grijă personală încă de la planificarea de la distanță. Nu este doar un service de închiriat — e o agenție de emoții incredibile, creată cu suflet și iubire pentru munți, motoare și oameni. Recomand cu drag și voi reveni cu siguranță! ❞"
+    },
+    "artem": {
+      "name": "Artem Serdtsev",
+      "text": "❝ Recomand cu mare drag! Oferă o gamă largă de motociclete potrivite pentru dimensiunile și nivelul tău! Proprietarul Yuri este foarte prietenos și profesionist! Mi-a ales motocicleta și echipamentul, totul curat și proaspăt! Traseul a trecut prin locuri superbe (la fiecare 10 metri merită să oprești și să faci o poză). Nivelul de dificultate se ajustează în funcție de abilitățile tale! Emoțiile sunt la cote maxime!!! La final am folosit dușul și am primit și sosete de brand și cafea 🥰 În drum Yura a oferit apă — a fost un 2 ore de pură plăcere! Recomand! ❞"
+    },
+    "denys": {
+      "name": "Denys Nahorniy",
+      "text": "❝ Am rezervat enduro pentru întreaga familie. Abordare foarte profesională din partea proprietarilor, calitate ridicată a echipamentului și motoarelor, totul nou și curat, zona de vestiar și duș, toate condițiile pentru relaxare confortabilă, trasee adaptate abilităților — a plăcut tuturor, plănuim acum booking-ul unui tur cu quad. Mulțumim pentru emoțiile oferite, tuturor le-a plăcut cu adevărat!!!!!!!! ❞"
+    },
+    "artemT": {
+      "name": "Artem Taranenko",
+      "text": "❝ Am trăit o bucurie imensă și o plăcere plăcută după o sesiune de trei ore prin munți. Motorul 300 era în perfectă stare, echipamentul excelent, niciodată uzat. Ghidul Vasja nu doar ne orienta, ci ne învăța lucruri noi. Mulțumesc băieți pentru abordarea profesională, succes și abia așteptem revenirile! ❞"
+    },
+    "alexander": {
+      "name": "Alexander Zas",
+      "text": "❝ Azi am folosit serviciile acestui loc. Am explorat toate crestele, am avut parte de distracție, peisaje uimitoare și amintiri memorabile. Recomand. Motos — top, echipament curat și dezinfectat. Flexibilitate totală (ghidul a luat la bord o fată de 14 ani ca pasager). Serviciu, echipament, duș, curățenie – tot 5+. ❞"
+    },
+    "reviews-title-1row": "noii noștri clienți",
+    "reviews-title-2row": "devin",
+    "reviews-title-3row": "loiali"
+  }
+}

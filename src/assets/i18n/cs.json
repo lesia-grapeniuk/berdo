@@ -1,0 +1,234 @@
+{
+  "main-screen": {
+    "title-1row": "Enduro Jízdy",
+    "text-1row": "individuálně pro každého",
+    "text-2row": "v malebných Karpatech"
+  },
+  "sections": {
+    "home": "BERDO",
+    "advantages": "Výhody",
+    "location": "Lokalita",
+    "tours": "Trasy",
+    "pricing": "Ceny",
+    "galleryphotos": "Foto Galerie",
+    "reviews": "Recenze",
+    "instructor": "Instruktoři",
+    "contact": "Kontakty"
+  },
+  "left-block-main-screen": {
+    "text": "Ovládli jsme všechny nuance endura za 5 let, takže vám pomůžeme pocítit skutečnou sílu hor a svobodu pohybu"
+  },
+  "content-for-parallax": {
+    "title-1row": "Naše půjčovna je opravdu",
+    "title-2row": "výjimečná a",
+    "title-3row": "vhodná pro každého"
+  },
+  "advantages": {
+    "title-1-block": "Připravené na míru pro každého",
+    "title-2-block": "Záleží nám na vaší bezpečnosti",
+    "title-3-block": "Dbáme na váš komfort a zážitky",
+    "description-1-block": "Všechny jízdy jsou individuální – můžete si vybrat trasu podle sebe: od začátečníka po profi",
+    "description-2-block": "V ceně je kompletní vybavení: helma, motoboty a moto-kostým",
+    "description-3-block": "Stačí si vzít náhradní oblečení, o zbytek se postaráme: sprcha, parkování, GoPro, káva a sladkosti"
+  },
+  "location": {
+    "title-1-row": "Nacházíme se",
+    "title-2-row": "v nejvyšším",
+    "title-3-row": "pohoří Karpat",
+    "text": "Okolo naší lokace na 360° je 6 dvoutisícových vrcholů, cesta k podnožím jedné z nich trvá cca 1,5 hodiny",
+    "description-1-row": "vyberete si",
+    "description-2-row": "vlastní trasu –",
+    "description-3-row": "my vám darujeme",
+    "description-4-row": "nezapomenutelné emoce"
+  },
+  "header": {
+    "location": "Bohdan, Zakarpatská oblast"
+  },
+  "footer": {
+    "policy-privacy": "Politika",
+    "policy-policy": "soukromí",
+    "data-saved": "Data chráněna"
+  },
+  "routes": {
+    "walk": {
+      "level": "lehká úroveň",
+      "title": "KARPATSKÁ PROCHÁZKA",
+      "points": [
+        "Lesní stezky pro začátečníky",
+        "Podnoží hory Hoverla (možnost výstupu na vrchol pěšky)",
+        "Podnoží hory Petros (možnost výstupu pěšky)",
+        "Chrbty Svydovských hor"
+      ],
+      "description": "Nabízíme lehké lesní stezky, krásné karpatské louky bez zbytečného rizika, pro osvojení základních dovedností jízdy",
+      "price": "od 3 000 UAH"
+    },
+    "panoramas": {
+      "level": "střední úroveň",
+      "title": "ADRENALINOVÉ PANORAMATA",
+      "points": [
+        "Podnoží hory Petros (náročnější)",
+        "Cesta k eko‑farmě Rozenthal (přechod horami mezi vesnicemi, sýrárna)",
+        "Přechod Aršyce – Petros",
+        "Chrbty Svydovských hor"
+      ],
+      "description": "Spojíme horské stezky, malebné hřebeny, brody přes řeky, výstupy s úžasným výhledem a slušnou dávku adrenalinu",
+      "price": "€64+"
+    },
+    "brave": {
+      "level": "vysoká úroveň",
+      "title": "CESTA STATEČNÝCH",
+      "points": [
+        "Trasy známé jen pravým Huculům a zkušeným instruktorům",
+        "Trasy v hlubokém lese a strmými sjezdy",
+        "Zkušení instruktoři",
+        "Nejnáročnější pasáže",
+        "Pouze pro zkušené jezdce"
+      ],
+      "description": "Zdoláme divokou část Karpat s těžko dostupnými místy, strmými výstupy a sjezdy, kamenitými stezkami a říčními přechody",
+      "price": "€74+"
+    },
+    "extreme": {
+      "level": "extra úroveň",
+      "title": "KARPATSKÝ EXTRÉM",
+      "points": [
+        "Trasy, které ne každý zvládne",
+        "Zkušení instruktoři",
+        "Nejnáročnější pasáže",
+        "Nejstrmější výstupy",
+        "Chrbty Svydovských hor"
+      ],
+      "description": "To je opravdový 💥výbuch adrenalinu mezi vrcholy 🏔️ Strmé výstupy, prudké sjezdy, horské potoky a terénní výzva 💪",
+      "price": "€95+"
+    },
+    "study": {
+      "level": "počáteční úroveň",
+      "title": "PRVNÍ METRY NA DVOU KOLECH",
+      "points": [
+        "Výuka na bezpečném místě s rovnou plochou",
+        "Trvalá podpora instruktorů (i morální 😄)",
+        "Kompletní vybavení",
+        "Chrbty Svydovských hor"
+      ],
+      "description": "Věříme ve vás více než vaše máma 😄 Naši instruktoři mají spoustu zkušeností a trpělivosti. Výuka je snadná a bezpečná 🚀",
+      "price": "€64+"
+    }
+  },
+  "btn-book-adventure": "Rezervovat dobrodružství",
+  "btn-book-place": "Rezervovat místo",
+  "pricing": {
+    "pricing-title-1row": "pro váš komfort",
+    "pricing-title-2row": "vytvořili jsme",
+    "pricing-title-3row": "výhodné nabídky",
+    "tablet-title-1": "motocykly",
+    "tablet-title-2": "čtyřkolky",
+    "tablet-title-3": "další služby",
+    "min-time-riding": "minimální doba jízdy",
+    "min-time": "2 hodiny",
+    "min-time-for-atv": "1 hr / 32 €",
+    "table-title-1": "objem motoru",
+    "table-title-2": "125–250 cm³",
+    "table-title-3": "300 cm³",
+    "table-text-row-1-1": "2 hodiny",
+    "table-text-row-1-2": "64 €",
+    "table-text-row-1-3": "74 €",
+    "table-text-row-2-1": "3 hodiny",
+    "table-text-row-2-2": "80 €",
+    "table-text-row-2-3": "91 €",
+    "table-text-row-3-1": "další hodina",
+    "table-text-row-3-2": "17 €",
+    "table-text-row-3-3": "17 €",
+    "table-text-row-4-1": "celý den",
+    "table-text-row-4-1-span": " (motocykl s vybavením + natankování, bez průvodce)",
+    "table-text-row-4-2": "95 €",
+    "table-text-row-4-3": "105 €",
+    "extra-services-title": "samostatné doplňkové služby",
+    "row-1-price-1": "95 €",
+    "row-1-price-2": "95 €",
+    "row-1-price-3": "21 €",
+    "row-1-price-4": "2,11 €",
+    "row-1-price-5": "11 €/hr",
+    "row-1-price-6": "4,21 €/hr",
+    "row-1-price-7": "10,5 €/hr",
+    "row-1-service-1": "Služby průvodce na den",
+    "row-1-service-2": "Denní moto výlet",
+    "row-1-service-3": "Půjčení výbavy",
+    "row-1-service-4": "Mycí servis motocyklu",
+    "row-1-service-5": "Jízda s pasažérem",
+    "row-1-service-6": "Čekání průvodcem při výstupu na vrchol",
+    "row-1-service-7": "Průvodce pěšky na vrchol"
+  },
+  "comfort": {
+    "title": "Postarali jsme se o vaši náladu a přidali do ceny:",
+    "label-instructor": "doprovod profesionálního průvodce",
+    "label-coffee": "voda, káva, čaj, sladkosti",
+    "label-gopro": "záznam jízdy na GoPro",
+    "label-equipment": "vybavení a natankování",
+    "label-shower": "sprcha po jízdě",
+    "label-parking": "parkování s videonadzorem"
+  },
+  "privacy": {
+    "title": "Zásady ochrany osobních údajů",
+    "intro": "Tuto webovou stránku vlastní a provozuje OSVČ Harpenjuk L.M. Respektujeme soukromí uživatelů a dodržujeme zákon Ukrajiny „O ochraně osobních údajů“ i mezinárodní standardy (GDPR).",
+    "no-data": "Neshromažďujeme, neukládáme ani nevyužíváme žádné osobní údaje automaticky. Nepoužíváme cookies, analytické nebo sledovací nástroje.",
+    "contact-info": "Pokud nás kontaktujete prostřednictvím formulářů, e‑mailu nebo jiných kanálů, poskytnuté údaje použijeme výhradně k odpovědi na váš dotaz a nebudou sdíleny s třetími stranami. Budou uchovávány po dobu nezbytně nutnou k vyřízení.",
+    "user-rights-title": "Každý uživatel má právo:",
+    "user-rights": {
+      "know": "- vědět, jaké osobní údaje o něm máme;",
+      "correct": "- žádat o jejich opravu nebo smazání;",
+      "withdraw": "- odvolat svůj souhlas se zpracováním;",
+      "complain": "- podat stížnost u příslušného úřadu."
+    },
+    "update-info": "Vyhrazujeme si právo tyto zásady měnit. Aktuální verze je vždy na této stránce.",
+    "contact-us": "Máte‑li dotazy ohledně této politiky, kontaktujte nás na:",
+    "email": "berdo@ukr.com"
+  },
+  "common": {
+    "back-to-home": "Zpět na domovskou stránku"
+  },
+  "instructors": {
+    "instructor-title-1row": "V našem týmu jsou jen zkušení profesionálové,",
+    "instructor-title-2row": "kteří milují",
+    "instructor-title-3row": "svou práci",
+    "konan": {
+      "name": "Vasja",
+      "experience": "7 let zkušeností",
+      "description": "Pro mě je enduro nejen koníček, ale životní styl. Rád objevují nové trasy a sdílím zkušenosti. Během mých tréninků se učíme techniku, užíváme přírodu, překonáváme překážky a prožíváme nezapomenutelné chvíle. Jsem vždy po ruce, abych vás podpořil a zajistil bezpečnou jízdu. Přidejte se ke mně a odhalíme svět endura společně!"
+    },
+    "yuriy": {
+      "name": "Juraj",
+      "experience": "12 let zkušeností",
+      "description": "Pro mě je enduro hory, svoboda a cesta k sobě. Nejen jezdím – žiju tím. Rád provázím hosty horskými stezkami, objevuji nové trasy a sdílím dobrodružnou energii. Turistika a adrenalin jsou mou živlu. Mám ocelové nervy a umím vysvětlit jasně a klidně, takže je se mnou pohodlí pro začátečníky i pokročilé."
+    },
+    "sasha": {
+      "name": "Saša",
+      "experience": "5 let zkušeností",
+      "description": "Žiji motocykly a horami. Každý výjezd je příležitost sdílet to, co miluji: svobodu, techniku, emoce. Naslouchám přáním klientů a vždy poskytnu množství rad, aby vaše jízda byla nejen bezpečná, ale také nezapomenutelná."
+    }
+  },
+  "reviews": {
+    "allreviews": "Více recenzí",
+    "dmytro": {
+      "name": "Dmytro Demianenko",
+      "text": "❝ Ten případ, kdy očekávání byla překonána několikanásobně. Denní jízda se proměnila v 10+ hodinové dobrodružství s rozmanitou trasou, která nabídla bohaté a často nečekané zážitky z možností enduro motorky v horách. Pokud zatoužíte po extrému – dostanete ho naplno, a dechberoucí výhledy budou jen příjemným bonusem. Motorka byla prakticky nová, v perfektním stavu, výbava kompletní a čerstvá, během dne jsme byli pohoštěni kávou a čajem. Celkově bylo cítit maximální pohostinnost a osobní péči – a to už při plánování na dálku. To není jen půjčovna motorek, ale spíš agentura nezapomenutelných zážitků, do které byla vložena duše a která vznikla z lásky k horám, technice a lidem. Moc doporučuji a určitě se vrátím! ❞"
+    },
+    "artem": {
+      "name": "Artem Serdtcev",
+      "text": "❝ Vřele doporučuji! Široký výběr mototechniky přesně podle vaší postavy a úrovně dovedností! Majitel Juraj je velmi přátelský a profesionální člověk – vybral mi motorku i výbavu přesně na míru (všechno čisté, voňavé a jako nové)! Trasa vedla přes nádherné scenérie (chtělo se zastavovat co 10 metrů a fotit 🤭). Náročnost trasy se přizpůsobuje vašim schopnostem – skvělé pro každého! Emoce na maximu!!! Na konci jsme mohli využít pohodlnou sprchu a jako bonus dostali firemní ponožky s logem a kávu 🥰 A mimochodem, během jízdy Juraj nabízel vodu, kterou měl s sebou! 2 hodiny čistého požitku! Můj doporučovák…❞"
+    },
+    "denys": {
+      "name": "Denys Nahornyj",
+      "text": "❝Objednali jsme enduro půjčovnu pro celou rodinu. Majitelé k tomu přistupují velmi profesionálně, kvalita vybavení i motorek je na vysoké úrovni – všechno nové, čisté a voňavé. K dispozici je šatna i sprcha, zkrátka veškerý komfort pro skvělý odpočinek. Trasy jsou rozmanité podle úrovně jezdců. Všechno se nám moc líbilo a už plánujeme čtyřkolkový výlet. Děkujeme za krásné emoce – opravdu se to líbilo úplně všem!❞"
+    },
+    "artemT": {
+      "name": "Artem Taranenko",
+      "text": "❝ Zažil jsem spoustu radosti a příjemné únavy po tříhodinové jízdě v horách. Třístovka motorka byla ve skvělém stavu, vybavení perfektní, žádný „ojetý“ kus. Průvodce Vasyl nejen ukazoval trasu, ale i mě naučil něco nového. Kluci, díky za váš přístup k věci – ať se vám daří a doufám, že se brzy zase uvidíme! ❞"
+    },
+    "alexander": {
+      "name": "Alexander Zas",
+      "text": "❝ Dnes jsme využili služby této půjčovny. Projeli jsme všechny hřebeny, nasbírali spoustu zážitků, úžasné výhledy a vzpomínky. Doporučuji! Motorky super, výbava čistá a dezinfikovaná. Absolutní individuální přístup – průvodce vezl dceru (14 let) jako spolujezdkyni. Služby, výbava, sprcha i čistota – vše na 5+!❞"
+    },
+    "reviews-title-1row": "naši noví klienti",
+    "reviews-title-2row": "se vždy",
+    "reviews-title-3row": "vrací"
+  }
+}

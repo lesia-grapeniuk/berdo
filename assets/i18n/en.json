@@ -60,7 +60,7 @@
         "Svydivets Ridge views"
       ],
       "description": "Relaxed ride through serene trails and meadows — the ideal way to connect with nature and gain basic off-road skills.",
-      "price": "64 €"
+      "price": "€64+"
     },
     "panoramas": {
       "level": "intermediate level",
@@ -72,7 +72,7 @@
         "Svydivets Ridge crossing"
       ],
       "description": "Ride through scenic ridgelines, stream crossings, and uphill trails with panoramic views and a dose of adrenaline.",
-      "price": "64 €"
+      "price": "€64+"
     },
     "brave": {
       "level": "advanced level",
@@ -85,7 +85,7 @@
         "Strictly for experienced riders"
       ],
       "description": "Ready for a real challenge? Ride deep into the wild Carpathians with steep climbs, rocky paths, and wild beauty.",
-      "price": "64 €"
+      "price": "€74+"
     },
     "extreme": {
       "level": "extreme level",
@@ -98,7 +98,7 @@
         "Raw Svydivets landscapes"
       ],
       "description": "🔥 Heart-pounding adrenaline in the mountains 🏔️. Extreme climbs, sharp drops, wild streams, and no room for fear 💪",
-      "price": "64 €"
+      "price": "€95+"
     },
     "study": {
       "level": "beginner level",
@@ -110,7 +110,7 @@
         "Svydivets Ridge background"
       ],
       "description": "Our instructors believe in you even more than your mom 😄. We make your first ride fun, safe, and unforgettable 🚀",
-      "price": "64 €"
+      "price": "€64+"
     }
   },
   "btn-book-adventure": "Book your adventure",
@@ -124,7 +124,7 @@
     "tablet-title-3": "extra services",
     "min-time-riding": "minimum ride time",
     "min-time": "2 hours",
-    "min-time-for-atv": "1 hr / 32 €",
+    "min-time-for-atv": "1 hr / €32",
     "table-title-1": "engine volume",
     "table-title-2": "125–250 cc",
     "table-title-3": "300 cc",
@@ -139,16 +139,16 @@
     "table-text-row-3-3": "17 €",
     "table-text-row-4-1": "full day",
     "table-text-row-4-1-span": " (bike with gear + fuel, no guide included)",
-    "table-text-row-4-2": "95 € UAH",
+    "table-text-row-4-2": "95 €",
     "table-text-row-4-3": "105 €",
     "extra-services-title": "additional services",
     "row-1-price-1": "95 €",
     "row-1-price-2": "95 €",
     "row-1-price-3": "21 €",
-    "row-1-price-4": "2.11 €",
+    "row-1-price-4": "2,11 €",
     "row-1-price-5": "11 €/hr",
-    "row-1-price-6": "4.21 €/hr",
-    "row-1-price-7": "10.5 €/hr",
+    "row-1-price-6": "4,21 €/hr",
+    "row-1-price-7": "10,5 €/hr",
     "row-1-service-1": "Guide services for the day",
     "row-1-service-2": "Full-day motorcycle tour",
     "row-1-service-3": "Gear rental",

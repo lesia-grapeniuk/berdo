@@ -1187,3 +1187,12 @@
   text-align: right;
 }
 /* #endregion reviews */
+.visually-hidden-for-gallery-photo-description {
+  position: absolute;
+  width: toRem(1);
+  height: toRem(1);
+  padding: 0;
+  margin: toRem(-1);
+  visibility: hidden;
+  border: 0;
+}

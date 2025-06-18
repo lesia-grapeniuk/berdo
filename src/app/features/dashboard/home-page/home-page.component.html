@@ -3,12 +3,12 @@
   <app-header class="app-header"></app-header>
 
   <div class="wrapper-main">
-    <section id="home" #mainScreenSection class="main-screen parallax">
+    <section id="home" #mainScreenSection class="main-screen parallax" role="region" aria-label="Головна секція BERDO">
       <div class="main-screen__container container-main">
         <!-- top -->
         <div class="container-main__top">
           <div #leftParallax #animated class="wrapper-title slide-left in-view">
-            <h1 class="main-screen__title">{{'main-screen.title-1row' | translate }}</h1>
+            <h1 class="main-screen__title" itemprop="name">{{'main-screen.title-1row' | translate }}</h1>
           </div>
           <div #rightParallax #animated class="main-screen__text-wrapper slide-right in-view">
             <p class="main-screen__text">{{ 'main-screen.text-1row' | translate }}</p>
@@ -18,25 +18,35 @@
         <!-- bottom -->
         <div class="container-main__bottom bottom-block-main-screen">
           <!-- left bottom block -->
-          <div #upParallax #animated class="
+          <article #upParallax #animated class="
               bottom-block-main-screen__left
               left-block-main-screen
               slide-up
               slide-left
               in-view
-              responsive-anim">
+              responsive-anim"
+              itemscope
+              itemtype="https://schema.org/Service">
+            <meta itemprop="name" content="Ендуро катання в Карпатах" />
             <p class="left-block-main-screen__text"> {{ 'left-block-main-screen.text' | translate }} </p>
-          </div>
+          </article>
           <!-- right bottom block -->
-          <div class="bottom-block-main-screen__right">
-            <a href="tel:380960861515" class="bottom-block-main-screen__call">
+          <article class="bottom-block-main-screen__right" itemscope itemtype="https://schema.org/Service">
+            <meta itemprop="name" content="Ендуро катання в Карпатах" />
+            <a href="tel:+380960861515" itemprop="url" class="bottom-block-main-screen__call" aria-label="Зателефонувати нам">
               <img src="assets/icons/phone.svg" alt="іконка трубки телефонаю зателефонувати">
             </a>
-          </div>
+          </article>
         </div>
       </div>
 
-      <video class="main-screen__video" poster="assets/videos/video-main-muted.mp4" #backgroundVideo autoplay muted loop
+      <p class="visually-hidden">Катання на ендуро та квадроциклах в Карпатах – дивіться відео.</p>
+
+      <video
+        class="main-screen__video"
+        poster="assets/videos/video-main-muted.mp4"
+        #backgroundVideo autoplay muted loop
+        aria-label="Відео тур на мотоциклах та квадроциклах в Карпатах"
         playsinline preload="auto" [class.video-hidden]="hideVideo">
         <source src="assets/videos/main_second.mp4" type="video/mp4" />
       </video>
@@ -44,7 +54,8 @@
       <div class="main-screen__gradient"></div>
     </section>
     <!-- next content-for-parallax -->
-    <section id="advantages" #parallaxSection class="content-for-parallax">
+    <section id="advantages" #parallaxSection class="content-for-parallax" role="region"
+  aria-label="Переваги BERDO прокату">
       <div class="content-for-parallax__wrapper">
         <div class="content-for-parallax__content">
           <!-- content-for-parallax first block for title-->
@@ -61,44 +72,50 @@
             #advantagesSection class="content-for-parallax__advantages advantages">
             <!-- advantages__content-block left-container -->
             <div class="advantages__content-block advantages__content-block--left">
-              <div class="advantages__card">
+              <article class="advantages__card" itemscope itemtype="https://schema.org/Service">
+                <meta itemprop="name" content="Індивідуальні пригоди на мотоциклі" />
                 <div class="advantages__image-wrapper">
                   <img src="assets/images/advantages/individual-trip.webp"
-                    alt="фото з райдером на мотоциклі в гірському лісі">
+                    alt="фото з райдером на мотоциклі в гірському лісі"
+                    itemprop="image">
                 </div>
-                <h4 class="advantages__title">{{'advantages.title-1-block' | translate }}</h4>
-                <p class="advantages__description">{{"advantages.description-1-block" | translate }}</p>
-              </div>
+                <h4 itemprop="serviceType" class="advantages__title">{{'advantages.title-1-block' | translate }}</h4>
+                <p itemprop="description" class="advantages__description">{{"advantages.description-1-block" | translate }}</p>
+              </article>
             </div>
             <!-- advantages__content-block center-container -->
             <div class="advantages__content-block advantages__content-block--center">
-              <div class="advantages__card card-center">
+              <article class="advantages__card card-center" itemscope itemtype="https://schema.org/Service">
+                <meta itemprop="name" content="Індивідуальні пригоди на мотоциклі та повне спорядження" />
                 <div class="advantages__content-block-center-wrapper">
                   <div class="advantages__image-wrapper image-center-block">
                     <img src="assets/images/advantages/safety.webp"
-                      alt="фото з райдером на мотоциклі в гірському лісі з повним екіпіруванням">
+                      alt="фото з райдером на мотоциклі в гірському лісі з повним екіпіруванням"
+                      itemprop="image">
                   </div>
-                  <h4 class="advantages__title">{{'advantages.title-2-block' | translate }}</h4>
-                  <p class="advantages__description">{{"advantages.description-2-block" | translate }}</p>
+                  <h4 itemprop="serviceType" class="advantages__title">{{'advantages.title-2-block' | translate }}</h4>
+                  <p itemprop="description" class="advantages__description">{{"advantages.description-2-block" | translate }}</p>
                 </div>
-              </div>
+              </article>
             </div>
             <!-- advantages__content-block right-container -->
             <div class="advantages__content-block advantages__content-block--right">
-              <div class="advantages__card">
+              <article class="advantages__card" itemscope itemtype="https://schema.org/Service">
+                <meta itemprop="name" content="Комфортні умови, душ, смаколики, ароматна кава" />
                 <div class="advantages__image-wrapper">
-                  <img src="assets/images/advantages/comfort.webp" alt="фото з рушниками та засобами для душу">
+                  <img src="assets/images/advantages/comfort.webp" alt="фото з рушниками та засобами для душу"
+                  itemprop="image">
                 </div>
-                <h4 class="advantages__title">{{'advantages.title-3-block' | translate }}</h4>
-                <p class="advantages__description">{{"advantages.description-3-block" | translate }}</p>
-              </div>
+                <h4 itemprop="serviceType" class="advantages__title">{{'advantages.title-3-block' | translate }}</h4>
+                <p itemprop="description" class="advantages__description">{{"advantages.description-3-block" | translate }}</p>
+              </article>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="location" class="location">
+    <section id="location" class="location" role="region" aria-label="Локація BERDO прокату">
       <div class="location__wrapper">
         <div class="location__title-wrapper">
           <h2 #animatedTitle class="location__title-1-row animate-left title-location">{{'location.title-1-row' |
@@ -108,10 +125,12 @@
           <h2 #animatedTitle class="location__title-3-row animate-left title-location">{{'location.title-3-row' |
             translate}}</h2>
 
-          <div class="location__wrapper-text">
-            <a target="_blank" class="location__link" href="https://surl.li/djovmg"></a>
+          <article class="location__wrapper-text" itemscope itemtype="https://schema.org/Place">
+            <meta itemprop="name" content="BERDO – ендуро прокат у Карпатах">
+            <meta itemprop="address" content="село Богдан, Рахівський район, Закарпатська область, Україна">
+            <a target="_blank" class="location__link" href="https://surl.li/djovmg" itemprop="hasMap" rel="noopener noreferrer" aria-label="Відкрити локацію BERDO в Google Maps"></a>
             <p class="location__text">{{'location.text' | translate}}</p>
-          </div>
+          </article>
         </div>
 
         <div class="location__description-wrapper">
@@ -131,37 +150,79 @@
 
     <app-track-carrousel class="tracks-carrousel"></app-track-carrousel>
 
-    <section id="galleryphotos" class="gallery-photos">
+    <section
+      id="galleryphotos"
+      class="gallery-photos"
+      role="region"
+      aria-label="Фото з BERDO прокату"
+      itemscope
+      itemtype="https://schema.org/ImageGallery">
       <div class="gallery-photos__wrapper">
         <div class="gallery-photos__container container-gallery-block">
           <div class="container-gallery-block__top top-block-gallery">
-            <div class="top-block-gallery__left-photo-wrapper">
-              <img #animatedTitle class="animate-left" src="assets/images/gallery-photos/top-left.webp"
-                alt="фото з райдером який сидить на мотоциклі високо в горах">
-            </div>
-            <div class="top-block-gallery__right-photo-wrapper">
+            <figure class="top-block-gallery__left-photo-wrapper" itemscope itemtype="https://schema.org/ImageObject">
+              <img
+                #animatedTitle
+                class="animate-left"
+                src="assets/images/gallery-photos/top-left.webp"
+                alt="фото з райдером який сидить на мотоциклі високо в горах"
+                loading="lazy"
+                itemprop="contentUrl">
+                <meta itemprop="name" content="Райдер на мотоциклі високо в Карпатах" />
+                <meta itemprop="description" content="Фото з BERDO прокату в гірській місцевості" />
+            <figcaption class="visually-hidden-for-gallery-photo-description">Райдер на мотоциклі високо в Карпатах</figcaption>
+            </figure>
+            <figure class="top-block-gallery__right-photo-wrapper" itemscope itemtype="https://schema.org/ImageObject">
               <div class="gallery-photos__title-wrapper">
                 <h2 class="gallery-photos__title-logo">BERDO</h2>
               </div>
-              <img src="assets/images/gallery-photos/top-right.webp"
-                alt="фото з клієнтами які сидять на квадроциклах та мотоциклах та готові стартувати в подорож">
-            </div>
+              <img
+                src="assets/images/gallery-photos/top-right.webp"
+                loading="lazy"
+                alt="фото з клієнтами які сидять на квадроциклах та мотоциклах та готові стартувати в подорож"
+                itemprop="contentUrl">
+                <meta itemprop="name" content="фото з клієнтами які сидять на квадроциклах та мотоциклах та готові стартувати в подорож" />
+                <meta itemprop="description" content="Фото з квадро прокату в гірській місцевості" />
+                <figcaption class="visually-hidden-for-gallery-photo-description">фото з клієнтами які сидять на квадроциклах та мотоциклах та готові стартувати в подорож</figcaption>
+            </figure>
           </div>
           <div class="container-gallery-block__bottom bottom-block-gallery">
-            <div class="bottom-block-gallery__left-photo-wrapper">
-              <img src="assets/images/gallery-photos/bottom-left.webp"
-                alt="фото з клієнтами які сидять на мотоциклах в горах">
-            </div>
-            <div class="bottom-block-gallery__right-photo-wrapper">
-              <img #animatedTitle class="animate-right" src="assets/images/gallery-photos/bottom-right.webp"
-                alt="фото з клієнтами які сидять на мотоциклах в горах">
-            </div>
+            <figure class="bottom-block-gallery__left-photo-wrapper" itemscope itemtype="https://schema.org/ImageObject">
+              <img
+                src="assets/images/gallery-photos/bottom-left.webp"
+                alt="фото з туру де клієнти сидять на мотоциклах на фоні Карпат"
+                loading="lazy"
+                itemprop="contentUrl">
+                <meta itemprop="name" content="фото з туру де клієнти сидять на мотоциклах на фоні Карпат" />
+                <meta itemprop="description" content="Фото з прокату мотоциклів в гірській місцевості" />
+                <figcaption class="visually-hidden-for-gallery-photo-description">фото з туру де клієнти сидять на мотоциклах на фоні Карпат</figcaption>
+            </figure>
+            <figure class="bottom-block-gallery__right-photo-wrapper">
+              <img
+                #animatedTitle
+                class="animate-right"
+                src="assets/images/gallery-photos/bottom-right.webp"
+                alt="дівчина на квадроциклі на фоні заходу сонця високо в Карпатах"
+                loading="lazy"
+                itemprop="contentUrl">
+                <meta itemprop="name" content="дівчина на квадроциклі на фоні заходу сонця високо в Карпатах" />
+                <meta itemprop="description" content="неймовірні панорами на фоні захлду сонця в Карпатах" />
+                <figcaption class="visually-hidden-for-gallery-photo-description">дівчина на квадроциклі на фоні заходу сонця високо в Карпатах</figcaption>
+            </figure>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="pricing" class="pricing">
+    <section
+      id="pricing"
+      class="pricing"
+      role="region"
+      aria-label="Ціни на прокат квадроциклів та мотоциклів BERDO"
+      itemscope
+      itemtype="https://schema.org/OfferCatalog">
+      <meta itemprop="name" content="Ціни на прокат BERDO" />
+      <meta itemprop="description" content="Ознайомтесь з цінами на прокат мотоциклів та квадроциклів у Карпатах з гідом, спорядженням та комфортом" />
       <div class="pricing__wrapper">
         <div class="pricing__title-wrapper">
           <h2 #animatedTitle class="pricing__title animate-left pricing-title-1row">
@@ -176,7 +237,15 @@
       </div>
     </section>
 
-    <section id="reviews" class="reviews">
+    <section
+      id="reviews"
+      class="reviews"
+      role="region"
+      aria-label="Відгуки клієнтів BERDO"
+      itemscope
+      itemtype="https://schema.org/Review">
+      <meta itemprop="itemReviewed" content="Прокат мотоциклів та квадроциклів BERDO в Карпатах" />
+      <meta itemprop="reviewBody" content="Відгуки реальних клієнтів, які пройшли пригоди з BERDO" />
       <div class="reviews__wrapper">
         <div class="reviews__title-wrapper">
           <h2 #animatedTitle class="reviews__title animate-left reviews-title-1row">
@@ -191,7 +260,7 @@
       </div>
     </section>
 
-    <section id="instructor" class="instructors">
+    <section id="instructor" class="instructors" role="region" aria-label="Інструктори BERDO прокату">
       <div class="instructors__wrapper">
         <div class="instructors__title-wrapper">
           <h2 #animatedTitle class="instructors__title animate-left instructors-title-1row">
@@ -204,49 +273,55 @@
 
         <div class="instructors__instructors-wrapper instructors-block">
           <div class="instructors-block__cards instructor-card-container">
-            <div class="instructor-card-container__card instructor-card-container__card--first">
-              <div class="instructor-card-container__wrapper-card">
-                <div class="instructor-card-container__name">{{ 'instructors.konan.name' | translate }}</div>
+            <div class="instructor-card-container__card instructor-card-container__card--first" itemscope itemtype="https://schema.org/Person">
+              <article class="instructor-card-container__wrapper-card">
+                <h3 class="instructor-card-container__name" itemprop="name">{{ 'instructors.konan.name' | translate }}</h3>
                 <div class="instructor-card-container__wrapper-img">
-                  <img src="assets/images/instructors/konan.webp" alt="фото інструктора">
+                  <img src="assets/images/instructors/konan.webp" alt="Інструктор BERDO прокату — Вася" itemprop="image" loading="lazy">
                 </div>
                 <div class="instructor-card-container__discription-block">
                   <p class="instructor-card-container__discription"
                     [@fadeExpand]="expandedInstructors['konan'] ? 'open' : 'closed'"
-                    class="instructor-card-container__discription">{{"instructors.konan.description" | translate}}</p>
+                    class="instructor-card-container__discription"
+                    itemprop="description">{{"instructors.konan.description" | translate}}</p>
                   <p (click)="toggleExpanded('konan')" [class.expanded]="expandedInstructors['konan']"
-                    class="instructor-card-container__expirience">{{"instructors.konan.experience" | translate}}</p>
+                    class="instructor-card-container__expirience"
+                    itemprop="jobTitle">{{"instructors.konan.experience" | translate}}</p>
                 </div>
-              </div>
+              </article>
             </div>
-            <div class="instructor-card-container__card instructor-card-container__card--second">
-              <div class="instructor-card-container__wrapper-card wrapper-card-second">
-                <div class="instructor-card-container__name">{{"instructors.yuriy.name" | translate}}</div>
+            <div class="instructor-card-container__card instructor-card-container__card--second" itemscope itemtype="https://schema.org/Person">
+              <article class="instructor-card-container__wrapper-card wrapper-card-second">
+                <h3 class="instructor-card-container__name" itemprop="name">{{"instructors.yuriy.name" | translate}}</h3>
                 <div class="instructor-card-container__wrapper-img">
-                  <img src="assets/images/instructors/yuriy.webp" alt="фото інструктора">
+                  <img src="assets/images/instructors/yuriy.webp" alt="Інструктор BERDO прокату — Юра" itemprop="image" loading="lazy">
                 </div>
                 <div class="instructor-card-container__discription-block">
                   <p class="instructor-card-container__discription"
-                    [@fadeExpand]="expandedInstructors['yuriy'] ? 'open' : 'closed'">{{"instructors.yuriy.description" |
+                    [@fadeExpand]="expandedInstructors['yuriy'] ? 'open' : 'closed'"
+                    itemprop="description">{{"instructors.yuriy.description" |
                     translate}}</p>
                   <p (click)="toggleExpanded('yuriy')" [class.expanded]="expandedInstructors['yuriy']"
-                    class="instructor-card-container__expirience">{{"instructors.yuriy.experience" | translate}}</p>
+                    class="instructor-card-container__expirience"
+                    itemprop="jobTitle">{{"instructors.yuriy.experience" | translate}}</p>
                 </div>
-              </div>
+              </article>
             </div>
-            <div class="instructor-card-container__card instructor-card-container__card--third">
-              <div class="instructor-card-container__wrapper-card">
-                <div class="instructor-card-container__name">{{"instructors.sasha.name" | translate}}</div>
+            <div class="instructor-card-container__card instructor-card-container__card--third" itemscope itemtype="https://schema.org/Person">
+              <article class="instructor-card-container__wrapper-card">
+                <h3 class="instructor-card-container__name" itemprop="name">{{"instructors.sasha.name" | translate}}</h3>
                 <div class="instructor-card-container__wrapper-img">
-                  <img src="assets/images/instructors/sasha.webp" alt="фото інструктора">
+                  <img src="assets/images/instructors/sasha.webp" alt="Інструктор BERDO прокату — Саша" itemprop="image" loading="lazy">
                 </div>
                 <div class="instructor-card-container__discription-block">
                   <p [@fadeExpand]="expandedInstructors['sasha'] ? 'open' : 'closed'"
-                    class="instructor-card-container__discription">{{"instructors.sasha.description" | translate}}</p>
+                    class="instructor-card-container__discription"
+                    itemprop="description">{{"instructors.sasha.description" | translate}}</p>
                   <p (click)="toggleExpanded('sasha')" [class.expanded]="expandedInstructors['sasha']"
-                    class="instructor-card-container__expirience">{{"instructors.sasha.experience" | translate}}</p>
+                    class="instructor-card-container__expirience"
+                    itemprop="jobTitle">{{"instructors.sasha.experience" | translate}}</p>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -254,8 +329,6 @@
     </section>
 
   </div>
-
-
 
   <app-footer class="app-footer"></app-footer>
 </div>

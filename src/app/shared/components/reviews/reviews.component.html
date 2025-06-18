@@ -8,7 +8,7 @@
             *ngIf="currentReview"
             @fadeInCard
           >
-            <div class="reviews__card">
+            <article class="reviews__card">
               <div class="reviews__img-wrapper">
                 <img [src]="currentReview.image" />
               </div>
@@ -26,7 +26,7 @@
                   <button (click)="next()" class="reviews__arrow down"><span></span></button>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>

@@ -1,25 +1,25 @@
 <header [class.scrolled]="isScrolled" (scroll)="onWindowScroll()" class="header" [class.hidden-header]="menuOpen">
-  <h3 (click)="scrollTo(sectionId.Home)" class="logo-title">BERDO</h3>
+  <a (click)="scrollTo(sectionId.Home)" class="logo-title" role="link">BERDO</a>
   <ng-template #contacts let-className="className">
     <div class="location-contacts" [ngClass]="[className, isScrolled ? 'scrolled-text' : '']">
-      <a target="_blank" class="location" href="https://surl.li/djovmg">
+      <a target="_blank" class="location" href="https://surl.li/djovmg" aria-label="Адреса нашої локації в Google Maps">
         <span>{{ "header.location" | translate }}</span>
       </a>
-      <a class="contact" href="tel:+380960861515">
+      <a class="contact" href="tel:+380960861515" aria-label="Зателефонувати нам за номером +38 096 086 15 15">
         <span>+38 096 086 15 15</span>
       </a>
     </div>
   </ng-template>
   <ng-container *ngTemplateOutlet="contacts; context: { className: 'dark-text' }"></ng-container>
 
-  <p-button class="btn-burger-menu" (click)="toggleMenu()" icon="pi-mobile pi pi-bars"></p-button>
+  <p-button aria-label="Відкрити меню" class="btn-burger-menu" (click)="toggleMenu()" icon="pi-mobile pi pi-bars"></p-button>
   <div class="backdrop" *ngIf="menuOpen" (click)="closeMenu()" @fadeInOut></div>
 <!-- burger-menu -->
   <div class="wrapper-burger-menu burger-menu" *ngIf="menuOpen" @slideInOutRightToLeft>
     <div class="burger-menu__top-wrapper" @fadeInOut>
       <h4 (click)="scrollTo(sectionId.Home)" class="burger-menu__title">BERDO</h4>
       <div class="flex justify-center flex-wrap gap-4">
-        <p-button @fadeInOut icon="pi pi-times" [rounded]="true" [text]="true" severity="danger"
+        <p-button aria-label="Закрити меню" @fadeInOut icon="pi pi-times" [rounded]="true" [text]="true" severity="danger"
           (click)="closeMenu()" />
       </div>
     </div>

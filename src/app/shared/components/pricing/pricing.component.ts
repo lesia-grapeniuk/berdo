@@ -13,6 +13,7 @@ import { BookingTripComponent } from "../buttons/booking-trip/booking-trip.compo
 export class PricingComponent {
   public extraServices = [
   { serviceKey: 'pricing.row-1-service-1', priceKey: 'pricing.row-1-price-1' },
+  { serviceKey: 'pricing.row-1-service-8', priceKey: 'pricing.row-1-price-8' },
   { serviceKey: 'pricing.row-1-service-2', priceKey: 'pricing.row-1-price-2' },
   { serviceKey: 'pricing.row-1-service-3', priceKey: 'pricing.row-1-price-3' },
   { serviceKey: 'pricing.row-1-service-4', priceKey: 'pricing.row-1-price-4' },

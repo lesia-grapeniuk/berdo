@@ -30,7 +30,17 @@
             "assets": [
               "src/assets",
               "src/assets/i18n",
-              "src/CNAME"
+              "src/CNAME",
+              {
+                "glob": "sitemap.xml",
+                "input": "src",
+                "output": "."
+              },
+              {
+                "glob": "robots.txt",
+                "input": "src",
+                "output": "."
+              }
             ],
             "styles": [
               "node_modules/primeflex/primeflex.css",

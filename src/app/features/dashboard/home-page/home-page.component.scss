@@ -1196,3 +1196,16 @@
   visibility: hidden;
   border: 0;
 }
+
+/* SEO блок - прихований від користувача, але видимий для пошукових систем */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

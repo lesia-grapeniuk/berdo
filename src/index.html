@@ -2,55 +2,117 @@
 <html lang="uk">
 
 <head>
-  <meta charset="utf-8">
-  <title>BERDO | Прокат Ендуро і Квадроциклів в Карпатах</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="/">
+  <meta charset="utf-8" />
+  <title>Прокат Ендуро і Квадроциклів в Карпатах | BERDO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
 
-  <!-- Google -->
-  <meta name="description" content="Прокат квадроциклів та мотоциклів в Карпатах. Гіди, екіп, goPro, душ, кава. Емоції гарантовано.">
-  <meta name="google-site-verification" content="jA9YJlT2s5bwm0GqsWfRcXcp436DVGwV1cp00u45dkE">
+  <!-- 🔍 SEO -->
+  <meta name="description"
+    content="Прокат квадроциклів та мотоциклів в Карпатах. Професійні гіди, GoPro-зйомка, екіпірування, душ і кава. Емоції гарантовано! BERDO — твоя пригода в горах." />
+  <link rel="canonical" href="https://berdo.rentals/" />
+
+  <!-- 🌍 hreflang для SEO -->
+  <link rel="alternate" hreflang="uk" href="https://berdo.rentals/" />
+  <link rel="alternate" hreflang="en" href="https://berdo.rentals/en/" />
+  <link rel="alternate" hreflang="de" href="https://berdo.rentals/de/" />
+  <link rel="alternate" hreflang="ro" href="https://berdo.rentals/ro/" />
+  <link rel="alternate" hreflang="cs" href="https://berdo.rentals/cs/" />
+  <link rel="alternate" hreflang="x-default" href="https://berdo.rentals/" />
+
 
   <!-- ✅ Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/logo3.svg">
+  <link rel="icon" href="assets/icons/logo3.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <meta name="theme-color" content="#000000" />
 
-  <!-- ✅ Open Graph -->
-  <meta property="og:title" content="BERDO | Прокат Ендуро і Квадроциклів в Карпатах">
-  <meta property="og:description" content="Прокат квадроциклів та мотоциклів в Карпатах. Гіди, екіп, goPro, душ, кава. Емоції гарантовано.">
-  <meta property="og:image" content="https://berdo.rentals/assets/logo_google.jpg">
-  <meta property="og:url" content="https://berdo.rentals/">
-  <meta property="og:type" content="website">
 
-  <!-- ✅ Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BERDO | Прокат Ендуро і Квадроциклів">
-  <meta name="twitter:description" content="Ендуро, квадро, екіп, душ, гіди, емоції. Гори чекають!">
-  <meta name="twitter:image" content="https://berdo.rentals/assets/logo_google.jpg">
+  <!-- 🔗 Open Graph -->
+  <meta property="og:title" content="BERDO | Прокат Ендуро і Квадроциклів в Карпатах" />
+  <meta property="og:description"
+    content="Прокат ендуро, квадроциклів та мотоциклів. Зйомка на GoPro, екіпірування, душ і драйв у горах." />
+  <meta property="og:image" content="https://berdo.rentals/assets/logo_google.jpg" />
+  <meta property="og:url" content="https://berdo.rentals/" />
+  <meta property="og:type" content="website" />
 
-  <!-- ✅ Schema.org Structured Data -->
+  <!-- 🐦 Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BERDO | Прокат Ендуро в Карпатах" />
+  <meta name="twitter:description" content="Ендуро, квадроцикли, душ, екіп, GoPro. Пригоди в Карпатах — тут!" />
+  <meta name="twitter:image" content="https://berdo.rentals/assets/logo_google.jpg" />
+
+  <!-- ✅ Structured Data -->
+  <!-- ✅ Schema.org: Локація -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SportsActivityLocation",
-    "name": "BERDO Прокат Ендуро і Квадроциклів",
-    "image": "https://berdo.rentals/assets/icons/logo3.svg",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "UA",
-      "addressRegion": "Карпати",
-      "addressLocality": "Богдан"
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Прокат Ендуро і Квадроциклів BERDO",
+  "image": "https://berdo.rentals/assets/logo_google.jpg",
+  "url": "https://berdo.rentals/",
+  "priceRange": "$$",
+  "telephone": "+380978533269",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "UA",
+    "addressRegion": "Закарпатська область",
+    "addressLocality": "Богдан"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.2025,
+    "longitude": 24.3800
+  },
+  "openingHours": "Mo-Su 08:00-20:00"
+}
+</script>
+
+  <!-- ✅ Schema.org: FAQ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Чи потрібен досвід водіння для ендуро?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ні, наші інструктори навчать з нуля!"
+      }
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 48.2025,
-      "longitude": 24.3800
+    {
+      "@type": "Question",
+      "name": "Чи надаєте екіпірування?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Так, у нас повне екіпірування включено у вартість."
+      }
     },
-    "url": "https://berdo.rentals/",
-    "telephone": "+380978533269",
-    "openingHours": "Mo-Su 08:00-20:00"
-  }
-  </script>
+    {
+      "@type": "Question",
+      "name": "Чи знімаєте ви катання на GoPro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Так, кожне катання можемо зняти на GoPro для вашої памʼяті."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Чи можна бронювати заздалегідь?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Так, ми рекомендуємо бронювати за день-два до поїздки, особливо в сезон."
+      }
+    }
+  ]
+}
+</script>
+
+  <!-- Google Verification -->
+  <meta name="google-site-verification" content="jA9YJlT2s5bwm0GqsWfRcXcp436DVGwV1cp00u45dkE" />
 </head>
 
 <body>

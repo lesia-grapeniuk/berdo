@@ -1,34 +1,34 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 import { AppLanguage } from '@shared/enums/language.enum';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LanguageService {
   private readonly defaultLang: AppLanguage = AppLanguage.Ukrainian;
+  private readonly supportedLangs = Object.values(AppLanguage);
 
-  constructor(private translate: TranslateService) {}
+  constructor(
+    private translate: TranslateService,
+    private router: Router
+  ) {}
 
   initLang(): void {
-    const savedLang = localStorage.getItem('appLang') as AppLanguage;
+    const urlLang = this.router.url.split('/')[1] as AppLanguage;
+    const langToUse = this.supportedLangs.includes(urlLang) ? urlLang : this.defaultLang;
 
-    if (savedLang && Object.values(AppLanguage).includes(savedLang)) {
-      this.translate.setDefaultLang(savedLang);
-      this.translate.use(savedLang);
-    } else {
-      this.translate.setDefaultLang(this.defaultLang);
-      this.translate.use(this.defaultLang);
-      localStorage.setItem('appLang', this.defaultLang);
-    }
+    this.translate.setDefaultLang(langToUse);
+    this.translate.use(langToUse);
   }
 
   changeLang(lang: AppLanguage): void {
     this.translate.use(lang);
-    localStorage.setItem('appLang', lang);
+    this.router.navigate([`/${lang}`]);
   }
 
   getCurrentLang(): string {
-    return this.translate.currentLang;
+    return this.translate.currentLang || this.defaultLang;
   }
 }

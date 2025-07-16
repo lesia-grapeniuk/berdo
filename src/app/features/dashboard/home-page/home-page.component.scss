@@ -459,7 +459,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  // z-index: 11;
   padding-inline: toRem(15);
   @include adaptiveValue("padding-block", 133, 50);
 

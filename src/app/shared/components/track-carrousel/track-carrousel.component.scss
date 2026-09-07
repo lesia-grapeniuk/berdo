@@ -20,7 +20,7 @@
   height: 100%;
   max-width: toRem(1900);
   margin: 0 auto;
-  @include adaptiveValue("margin-block", 156, 80);
+  @include adaptiveValue("margin-block", 250, 80);
   display: flex;
   justify-content: center;
   align-items: center;
